@@ -1,5 +1,8 @@
-import { ArrowRight, Clock, BookOpen } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import guideBeginnerImage from "@/assets/guide-beginner.jpg";
+import guidePredatorImage from "@/assets/guide-predator.jpg";
+import guideClimateImage from "@/assets/guide-climate.jpg";
 
 const guides = [
   {
@@ -7,21 +10,24 @@ const guides = [
     title: "Complete Beginner's Guide to Chicken Keeping",
     description: "Everything you need to know before getting your first flock, from choosing breeds to preparing your space.",
     readTime: "15 min read",
-    featured: true,
+    image: guideBeginnerImage,
+    imageAlt: "Hands gently holding a fluffy golden brown chick",
   },
   {
     category: "Construction",
     title: "Building a Predator-Proof Coop",
     description: "Step-by-step guide to securing your coop against common predators with tested methods.",
     readTime: "12 min read",
-    featured: false,
+    image: guidePredatorImage,
+    imageAlt: "Secure wooden chicken coop with heavy-duty hardware cloth and latches",
   },
   {
     category: "Climate",
     title: "Hot Climate Coop Design: Arizona Focus",
     description: "Specialized techniques for keeping chickens cool and healthy in extreme heat conditions.",
     readTime: "10 min read",
-    featured: false,
+    image: guideClimateImage,
+    imageAlt: "Desert chicken coop with shade structures and chickens in Arizona landscape",
   },
 ];
 
@@ -48,12 +54,14 @@ const FeaturedGuides = () => {
           {guides.map((guide, i) => (
             <article
               key={i}
-              className={`group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl cursor-pointer ${
-                guide.featured ? "lg:col-span-1 lg:row-span-1" : ""
-              }`}
+              className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl cursor-pointer"
             >
-              <div className="aspect-video bg-gradient-to-br from-primary/20 via-accent/10 to-earth-green/20 flex items-center justify-center">
-                <BookOpen className="h-12 w-12 text-primary/40" />
+              <div className="aspect-video overflow-hidden">
+                <img 
+                  src={guide.image} 
+                  alt={guide.imageAlt}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               
               <div className="p-6 space-y-4">

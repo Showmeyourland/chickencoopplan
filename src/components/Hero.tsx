@@ -1,5 +1,6 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroImage from "@/assets/hero-coop.jpg";
 
 const Hero = () => {
   const highlights = [
@@ -54,20 +55,12 @@ const Hero = () => {
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 via-accent/10 to-earth-green/30 p-8 shadow-2xl shadow-primary/10">
-              <div className="w-full h-full rounded-2xl bg-card flex items-center justify-center border border-border/50">
-                <div className="text-center space-y-4 p-8">
-                  <div className="mx-auto w-24 h-24 rounded-full gradient-hero flex items-center justify-center">
-                    <span className="text-4xl">🐔</span>
-                  </div>
-                  <h3 className="font-serif text-2xl font-semibold text-foreground">
-                    Expert Knowledge
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    10+ comprehensive research areas covering every aspect of chicken keeping
-                  </p>
-                </div>
-              </div>
+            <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-primary/20 border border-border/50">
+              <img 
+                src={heroImage} 
+                alt="Beautiful rustic chicken coop in a sunny backyard with free-range chickens" 
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Floating stats cards */}
