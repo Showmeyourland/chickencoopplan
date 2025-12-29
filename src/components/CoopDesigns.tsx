@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Download, ShoppingCart, Users, Ruler, Wrench } from "lucide-react";
+import { Download, CreditCard, Users, Ruler, Wrench } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -11,91 +11,97 @@ import coopModern from "@/assets/coop-modern.jpg";
 import coopDesert from "@/assets/coop-desert.jpg";
 
 const categories = [
-  { id: "all", label: "All Plans", count: 40 },
-  { id: "walk-in", label: "Walk-in Chicken Coop Plans", count: 49 },
-  { id: "house", label: "Chicken House Plans", count: 29 },
-  { id: "tractor", label: "Movable Chicken Tractor Plans", count: 5 },
-  { id: "a-frame", label: "A-Frame Chicken Coop Plans", count: 1 },
+  { id: "all", label: "All Plans", count: 45 },
+  { id: "walk-in", label: "Walk-In Coops", count: 18 },
+  { id: "standard", label: "Standard Coops", count: 15 },
+  { id: "tractor", label: "Chicken Tractors", count: 8 },
+  { id: "specialty", label: "Specialty Designs", count: 4 },
 ];
 
 const designs = [
   {
     id: 1,
-    name: "Walk-In Chicken Coop Plan",
-    description: "This walk-in chicken coop offers a spacious interior to house up to 12 chickens, and the integrated run is a safe space for them to explore and forage during the day.",
+    name: "The Homesteader",
+    description: "A spacious walk-in design with integrated run. Perfect for medium flocks with room to grow and easy daily access.",
     image: coopHomestead,
     category: "walk-in",
-    capacity: "12 chickens",
-    dimensions: "20 x 9",
-    difficulty: "Beginner friendly",
+    capacity: "8-12 birds",
+    dimensions: "8' × 12'",
+    difficulty: "Beginner",
     hasFree: true,
     hasPremium: true,
     premiumPrice: 29,
+    popular: true,
   },
   {
     id: 2,
-    name: "Mobile Chicken Coop",
-    description: "Having a portable chicken coop means you can move it whenever and wherever you want to give your chickens fresh grass to scratch and eat.",
+    name: "Rolling Pasture",
+    description: "Portable tractor design on wheels for rotational grazing. Give your flock fresh ground every day.",
     image: coopTractor,
     category: "tractor",
-    capacity: "8 chickens",
-    dimensions: "5 x 13",
-    difficulty: "Beginner friendly",
+    capacity: "4-6 birds",
+    dimensions: "4' × 8'",
+    difficulty: "Beginner",
     hasFree: true,
     hasPremium: true,
-    premiumPrice: 24,
+    premiumPrice: 19,
+    popular: false,
   },
   {
     id: 3,
-    name: "Classic Red Barn Coop",
-    description: "This Amish-style coop suits safe upcountry backyards with nesting boxes accessible from outside, two windows for light, and a droppings tray for easy cleaning.",
+    name: "Classic Barnyard",
+    description: "Traditional red barn styling with modern functionality. External nesting boxes and easy-clean design.",
     image: coopStarter,
-    category: "house",
-    capacity: "6 chickens",
-    dimensions: "6 x 6",
-    difficulty: "Medium",
+    category: "standard",
+    capacity: "4-6 birds",
+    dimensions: "4' × 4'",
+    difficulty: "Beginner",
     hasFree: true,
     hasPremium: true,
-    premiumPrice: 34,
+    premiumPrice: 24,
+    popular: false,
   },
   {
     id: 4,
-    name: "Extra Large Chicken Coop with Run",
-    description: "The Chicken's Dream Home plan is designed by a professional architect and offers clear directions to help you construct your Egg-cellent hideaway.",
+    name: "Ranch Deluxe",
+    description: "Our largest design for serious chicken keepers. Full walk-in access with separate roosting and nesting areas.",
     image: coopEstate,
     category: "walk-in",
-    capacity: "20 chickens",
-    dimensions: "9 x 42",
-    difficulty: "Beginner friendly",
+    capacity: "15-25 birds",
+    dimensions: "12' × 16'",
+    difficulty: "Intermediate",
     hasFree: true,
     hasPremium: true,
     premiumPrice: 49,
+    popular: false,
   },
   {
     id: 5,
-    name: "Modern Solar Chicken Coop",
-    description: "This modern loft-design chicken coop is perfect for urban and suburban chicken growers. The elevated hutch makes this coop perfect for areas that tend to flood.",
+    name: "Urban Modern",
+    description: "Sleek contemporary design perfect for city backyards. Compact footprint with smart storage solutions.",
     image: coopModern,
-    category: "house",
-    capacity: "12 chickens",
-    dimensions: "17 x 6",
+    category: "specialty",
+    capacity: "3-5 birds",
+    dimensions: "4' × 6'",
+    difficulty: "Intermediate",
+    hasFree: true,
+    hasPremium: true,
+    premiumPrice: 34,
+    popular: false,
+  },
+  {
+    id: 6,
+    name: "Desert Breeze",
+    description: "Engineered for hot climates with maximum ventilation and shade coverage. Keeps flocks cool in 100°F+ weather.",
+    image: coopDesert,
+    category: "specialty",
+    capacity: "6-10 birds",
+    dimensions: "8' × 10'",
     difficulty: "Intermediate",
     hasFree: true,
     hasPremium: true,
     premiumPrice: 39,
-  },
-  {
-    id: 6,
-    name: "Desert Climate Chicken Coop",
-    description: "Designed with Arizona heat in mind, this coop features extended shade structures and maximum ventilation to keep your flock cool and comfortable.",
-    image: coopDesert,
-    category: "house",
-    capacity: "10 chickens",
-    dimensions: "10 x 8",
-    difficulty: "Intermediate",
-    hasFree: true,
-    hasPremium: true,
-    premiumPrice: 44,
+    popular: false,
   },
 ];
 
@@ -107,42 +113,35 @@ const CoopDesigns = () => {
     : designs.filter(d => d.category === activeCategory);
 
   return (
-    <section id="plans" className="py-16 bg-background">
+    <section id="plans" className="py-20 bg-background">
       <div className="container">
         {/* Section Header */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-display text-foreground">
-            DIY Chicken Coop Plans
+            Chicken Coop Plans
           </h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-            These free chicken coop plans offer sizes from small chicken coops to large chicken houses. 
-            Additionally, they serve as a resource for chicken coop ideas, offering innovative designs and inspiration.
+            Browse our collection of free and premium coop blueprints. Every plan includes 
+            detailed instructions, cut lists, and material specifications.
           </p>
         </div>
 
         {/* Category Filters */}
-        <div className="flex flex-wrap justify-center gap-3 mb-8 p-4 bg-card rounded-xl border border-border">
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
                 activeCategory === cat.id
-                  ? "bg-foreground text-background"
-                  : "bg-transparent text-foreground border border-border hover:border-foreground"
+                  ? "bg-primary text-primary-foreground shadow-md"
+                  : "bg-card text-foreground border border-border hover:border-primary/50"
               }`}
             >
-              {cat.label} ({cat.count})
+              {cat.label}
+              <span className="ml-1.5 opacity-60">({cat.count})</span>
             </button>
           ))}
-        </div>
-
-        {/* Filter Options */}
-        <div className="flex flex-wrap justify-center gap-6 mb-10 text-sm text-muted-foreground">
-          <div><strong>Winter readiness:</strong> Insulated chicken coops (43)</div>
-          <div><strong>Accommodates:</strong> 3 chickens — 50 chickens</div>
-          <div><strong>Width:</strong> 2 feets — 20 feets</div>
-          <div><strong>Length:</strong> 3 feets — 42 feets</div>
         </div>
 
         {/* Coop Cards */}
@@ -150,63 +149,62 @@ const CoopDesigns = () => {
           {filteredDesigns.map((design) => (
             <article
               key={design.id}
-              className="bg-card rounded-xl overflow-hidden border border-border hover:shadow-xl transition-shadow"
+              className="group bg-card rounded-2xl overflow-hidden border border-border hover:border-primary/30 hover:shadow-xl transition-all duration-300"
             >
               {/* Image */}
-              <div className="aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden">
                 <img
                   src={design.image}
                   alt={design.name}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                {design.popular && (
+                  <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
+                    Most Popular
+                  </Badge>
+                )}
               </div>
 
               {/* Content */}
               <div className="p-6 space-y-4">
-                <h3 className="font-display text-2xl text-foreground">
-                  {design.name}
-                </h3>
-                
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {design.description}
-                </p>
+                <div>
+                  <h3 className="font-display text-2xl text-foreground group-hover:text-primary transition-colors">
+                    {design.name}
+                  </h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                    {design.description}
+                  </p>
+                </div>
 
-                {/* Specs Table */}
-                <div className="border border-border rounded-lg overflow-hidden text-sm">
-                  <div className="flex border-b border-border">
-                    <div className="w-1/3 px-3 py-2 bg-muted font-medium flex items-center gap-2">
-                      <Users className="h-4 w-4" /> Capacity
-                    </div>
-                    <div className="w-2/3 px-3 py-2">{design.capacity}</div>
+                {/* Specs */}
+                <div className="grid grid-cols-3 gap-3 py-3 border-y border-border">
+                  <div className="text-center">
+                    <Users className="h-4 w-4 mx-auto text-primary mb-1" />
+                    <div className="text-xs text-muted-foreground">Capacity</div>
+                    <div className="text-sm font-medium">{design.capacity}</div>
                   </div>
-                  <div className="flex border-b border-border">
-                    <div className="w-1/3 px-3 py-2 bg-muted font-medium flex items-center gap-2">
-                      <Ruler className="h-4 w-4" /> Dimensions
-                    </div>
-                    <div className="w-2/3 px-3 py-2">{design.dimensions}</div>
+                  <div className="text-center">
+                    <Ruler className="h-4 w-4 mx-auto text-primary mb-1" />
+                    <div className="text-xs text-muted-foreground">Size</div>
+                    <div className="text-sm font-medium">{design.dimensions}</div>
                   </div>
-                  <div className="flex">
-                    <div className="w-1/3 px-3 py-2 bg-muted font-medium flex items-center gap-2">
-                      <Wrench className="h-4 w-4" /> Difficulty
-                    </div>
-                    <div className="w-2/3 px-3 py-2">{design.difficulty}</div>
+                  <div className="text-center">
+                    <Wrench className="h-4 w-4 mx-auto text-primary mb-1" />
+                    <div className="text-xs text-muted-foreground">Level</div>
+                    <div className="text-sm font-medium">{design.difficulty}</div>
                   </div>
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex gap-3 pt-2">
-                  {design.hasFree && (
-                    <Button variant="default" className="flex-1 gap-2">
-                      <Download className="h-4 w-4" />
-                      Free Plan
-                    </Button>
-                  )}
-                  {design.hasPremium && (
-                    <Button variant="outline" className="flex-1 gap-2">
-                      <ShoppingCart className="h-4 w-4" />
-                      Premium Plan
-                    </Button>
-                  )}
+                <div className="flex gap-3">
+                  <Button variant="default" className="flex-1 gap-2">
+                    <Download className="h-4 w-4" />
+                    Free PDF
+                  </Button>
+                  <Button variant="outline" className="flex-1 gap-2">
+                    <CreditCard className="h-4 w-4" />
+                    Premium ${design.premiumPrice}
+                  </Button>
                 </div>
               </div>
             </article>
@@ -214,9 +212,9 @@ const CoopDesigns = () => {
         </div>
 
         {/* Load More */}
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="font-display text-lg px-8">
-            Load More Plans
+        <div className="text-center mt-14">
+          <Button variant="outline" size="lg" className="font-semibold px-8">
+            View All 45 Plans
           </Button>
         </div>
       </div>

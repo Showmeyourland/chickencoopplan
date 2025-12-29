@@ -1,39 +1,37 @@
+import { Ruler, Users, Sun, Shield } from "lucide-react";
+
 const facts = [
-  { stat: "4 sq ft", label: "Indoor space", desc: "per bird minimum" },
-  { stat: "10 sq ft", label: "Outdoor run", desc: "per chicken" },
-  { stat: "8-10\"", label: "Roosting bar", desc: "per bird" },
-  { stat: "1 box", label: "Nesting box", desc: "per 4 hens" },
-  { stat: "14 hrs", label: "Light needed", desc: "for laying" },
-  { stat: "½\" mesh", label: "Hardware cloth", desc: "predator-proof" },
+  { icon: Ruler, stat: "4 sq ft", label: "Indoor space per bird" },
+  { icon: Users, stat: "10 sq ft", label: "Outdoor run per bird" },
+  { icon: Sun, stat: "14 hours", label: "Light for egg laying" },
+  { icon: Shield, stat: "½\" mesh", label: "Predator-proof wire" },
 ];
 
 const QuickFacts = () => {
   return (
-    <section className="py-12 bg-foreground">
+    <section className="py-16 bg-primary">
       <div className="container">
-        <div className="text-center mb-8">
+        <div className="text-center mb-10">
           <h2 className="text-3xl font-display text-primary-foreground">
-            Quick Reference Facts
+            Quick Sizing Guide
           </h2>
-          <p className="mt-2 text-primary-foreground/70 text-sm">
-            Essential numbers every chicken keeper should know
+          <p className="mt-2 text-primary-foreground/80">
+            Essential measurements for planning your coop
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {facts.map((fact, i) => (
             <div
               key={i}
-              className="text-center p-4 rounded-lg bg-primary-foreground/10 border border-primary-foreground/20"
+              className="text-center p-6 rounded-xl bg-primary-foreground/10 border border-primary-foreground/20"
             >
-              <div className="text-2xl font-display text-accent">
+              <fact.icon className="h-8 w-8 mx-auto text-accent mb-3" />
+              <div className="text-3xl font-display text-primary-foreground">
                 {fact.stat}
               </div>
-              <div className="text-sm font-medium text-primary-foreground mt-1">
+              <div className="text-sm text-primary-foreground/70 mt-1">
                 {fact.label}
-              </div>
-              <div className="text-xs text-primary-foreground/60">
-                {fact.desc}
               </div>
             </div>
           ))}
