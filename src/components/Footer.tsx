@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Egg, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,12 +27,12 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
+            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
                 <Egg className="h-5 w-5 text-primary-foreground" />
               </div>
               <span className="font-display text-xl">CoopCraft</span>
-            </div>
+            </Link>
             <p className="text-sm text-primary-foreground/70">
               Professional DIY chicken coop plans for backyard farmers. 
               Build with confidence.
@@ -41,36 +42,36 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg mb-4">Plans</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Free Downloads</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Premium Collection</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Custom Designs</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Material Calculator</a></li>
+              <li><Link to="/chicken-coop-plans-guide" className="hover:text-primary-foreground transition-colors">Free Plans Guide</Link></li>
+              <li><Link to="/recommended-plans" className="hover:text-primary-foreground transition-colors">Recommended Plans</Link></li>
+              <li><Link to="/plan-reviews" className="hover:text-primary-foreground transition-colors">Plan Reviews</Link></li>
+              <li><Link to="/premium-resources" className="hover:text-primary-foreground transition-colors">Premium Resources</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display text-lg mb-4">Guides</h4>
+            <ul className="space-y-2 text-sm text-primary-foreground/70">
+              <li><Link to="/ultimate-chicken-coop-guide" className="hover:text-primary-foreground transition-colors">Ultimate Coop Guide</Link></li>
+              <li><Link to="/coop-building-guide" className="hover:text-primary-foreground transition-colors">Building Guide</Link></li>
+              <li><Link to="/chicken-coop-cost-guide" className="hover:text-primary-foreground transition-colors">Cost Guide</Link></li>
+              <li><Link to="/chicken-care-basics" className="hover:text-primary-foreground transition-colors">Chicken Care</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-display text-lg mb-4">Resources</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Building Guides</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Sizing Calculator</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Blog</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-display text-lg mb-4">Company</h4>
-            <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a></li>
+              <li><Link to="/blog" className="hover:text-primary-foreground transition-colors">Blog</Link></li>
+              <li><Link to="/blog/chicken-coop-cost-breakdown-2025" className="hover:text-primary-foreground transition-colors">2025 Cost Breakdown</Link></li>
+              <li><Link to="/" className="hover:text-primary-foreground transition-colors">Browse Designs</Link></li>
+              <li><Link to="/blog" className="hover:text-primary-foreground transition-colors">All Articles</Link></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/50">
-          © 2024 CoopCraft. All rights reserved.
+          © 2025 CoopCraft. All rights reserved.
         </div>
       </div>
     </footer>
