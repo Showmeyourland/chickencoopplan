@@ -1,96 +1,98 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowRight, CheckCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-coop.jpg";
 
 const Hero = () => {
+  const features = [
+    "Step-by-step building instructions",
+    "Complete material lists included",
+    "Beginner to advanced difficulty",
+  ];
+
   return (
-    <section className="relative overflow-hidden gradient-hero py-12 lg:py-20">
+    <section className="relative overflow-hidden gradient-hero py-16 lg:py-24">
       <div className="container relative">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground leading-none">
-              DIY Chicken Coop Plans:{" "}
-              <span className="text-primary relative">
-                40+ Free
-                <svg className="absolute -right-4 -top-2 w-6 h-6 text-accent" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                </svg>
-              </span>{" "}
-              Beginner Designs!
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+              <Star className="h-4 w-4 fill-current" />
+              Trusted by 50,000+ backyard farmers
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display text-foreground leading-tight">
+              Free Chicken Coop Plans for{" "}
+              <span className="text-primary">Every Backyard</span>
             </h1>
             
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Our chicken coop plans are specifically designed to simplify the building process 
-              while ensuring safety and comfort for your birds. With basic construction skills, 
-              you can efficiently build a suitable home for your chickens without excessive time or expense.
+              Download professional-grade DIY chicken coop blueprints at no cost. 
+              From compact urban coops to sprawling homestead designs, find the 
+              perfect plan for your flock.
             </p>
 
-            {/* Author Credits */}
-            <div className="flex flex-wrap items-center gap-6 py-4">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" 
-                    alt="Author"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="text-sm">
-                  <div className="text-muted-foreground">Written by</div>
-                  <div className="font-semibold text-foreground">Joseph Truini →</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-muted overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" 
-                    alt="Reviewer"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="text-sm">
-                  <div className="text-muted-foreground">Reviewed by</div>
-                  <div className="font-semibold text-foreground">Phillip J. Clauer →</div>
-                </div>
-              </div>
-            </div>
+            <ul className="space-y-3">
+              {features.map((feature, i) => (
+                <li key={i} className="flex items-center gap-3 text-foreground">
+                  <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
 
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="font-semibold">
-                Free PDF Plans
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Button size="lg" className="font-semibold gap-2">
+                Browse Free Plans
+                <ArrowRight className="h-4 w-4" />
               </Button>
               <Button size="lg" variant="outline" className="font-semibold">
-                Coop Design Guide
+                View Premium Collection
               </Button>
+            </div>
+
+            {/* Stats */}
+            <div className="flex gap-8 pt-4">
+              <div>
+                <div className="text-3xl font-display text-foreground">45+</div>
+                <div className="text-sm text-muted-foreground">Free Plans</div>
+              </div>
+              <div>
+                <div className="text-3xl font-display text-foreground">12k+</div>
+                <div className="text-sm text-muted-foreground">Downloads</div>
+              </div>
+              <div>
+                <div className="text-3xl font-display text-foreground">4.9</div>
+                <div className="text-sm text-muted-foreground">Avg Rating</div>
+              </div>
             </div>
           </div>
 
           <div className="relative hidden lg:block">
-            <div className="relative">
-              {/* Circular image container like EasyCoops */}
-              <div className="aspect-square max-w-lg mx-auto rounded-full overflow-hidden border-8 border-accent/30 shadow-2xl">
-                <img 
-                  src={heroImage} 
-                  alt="Beautiful chicken coop with free-range chickens" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            {/* Stacked card effect */}
+            <div className="absolute inset-4 bg-primary/20 rounded-3xl rotate-3" />
+            <div className="absolute inset-2 bg-primary/10 rounded-3xl -rotate-2" />
+            <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-card">
+              <img 
+                src={heroImage} 
+                alt="Beautiful backyard chicken coop" 
+                className="w-full h-full object-cover"
+              />
               
-              {/* Speech bubbles */}
-              <div className="absolute top-10 right-0 bg-foreground text-primary-foreground px-4 py-2 rounded-lg font-display text-lg rotate-6 shadow-lg">
-                YOU BUILD IT...
-              </div>
-              <div className="absolute bottom-20 right-10 bg-primary text-primary-foreground px-4 py-2 rounded-lg font-display text-lg -rotate-6 shadow-lg">
-                ...WE'LL PECK IT!
+              {/* Floating badge */}
+              <div className="absolute bottom-6 left-6 bg-card/95 backdrop-blur-sm rounded-xl p-4 shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="text-2xl">🏠</span>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-foreground">Walk-In Coop</div>
+                    <div className="text-sm text-muted-foreground">Fits 8-12 chickens</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Decorative chicken feathers */}
-      <div className="absolute top-10 left-10 opacity-10 text-8xl rotate-12">🪶</div>
-      <div className="absolute bottom-10 right-20 opacity-10 text-6xl -rotate-12">🪶</div>
     </section>
   );
 };
