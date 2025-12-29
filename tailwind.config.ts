@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Playfair Display", "Georgia", "serif"],
+        display: ["Bebas Neue", "Impact", "sans-serif"],
         sans: ["Source Sans 3", "system-ui", "sans-serif"],
       },
       colors: {
@@ -51,12 +51,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        earth: {
-          brown: "hsl(var(--earth-brown))",
-          gold: "hsl(var(--warm-gold))",
-          green: "hsl(var(--soft-green))",
-          rust: "hsl(var(--rust))",
-        },
+        cream: "hsl(var(--cream))",
+        orange: "hsl(var(--warm-orange))",
+        forest: "hsl(var(--forest-green))",
+        yellow: "hsl(var(--soft-yellow))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

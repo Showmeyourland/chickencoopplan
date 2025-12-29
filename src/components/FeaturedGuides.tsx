@@ -33,28 +33,28 @@ const guides = [
 
 const FeaturedGuides = () => {
   return (
-    <section id="guides" className="py-20 bg-secondary/50">
+    <section id="guides" className="py-16 bg-secondary/50">
       <div className="container">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-10">
           <div>
-            <span className="text-sm font-medium text-primary uppercase tracking-wider">
-              Featured Content
-            </span>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-serif font-bold text-foreground">
-              Essential Guides
+            <h2 className="text-4xl font-display text-foreground">
+              How-to Guides
             </h2>
+            <p className="mt-2 text-muted-foreground">
+              Expert tips and step-by-step instructions for chicken keeping success
+            </p>
           </div>
-          <Button variant="outline" className="group">
+          <Button variant="outline" className="gap-2 font-semibold">
             View All Guides
-            <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="h-4 w-4" />
           </Button>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {guides.map((guide, i) => (
             <article
               key={i}
-              className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-xl cursor-pointer"
+              className="group bg-card rounded-xl overflow-hidden border border-border hover:shadow-xl transition-all cursor-pointer"
             >
               <div className="aspect-video overflow-hidden">
                 <img 
@@ -64,9 +64,9 @@ const FeaturedGuides = () => {
                 />
               </div>
               
-              <div className="p-6 space-y-4">
+              <div className="p-5 space-y-3">
                 <div className="flex items-center gap-3">
-                  <span className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+                  <span className="px-3 py-1 text-xs font-semibold bg-primary/10 text-primary rounded-full">
                     {guide.category}
                   </span>
                   <span className="flex items-center gap-1 text-xs text-muted-foreground">
@@ -75,19 +75,17 @@ const FeaturedGuides = () => {
                   </span>
                 </div>
                 
-                <h3 className="font-serif text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+                <h3 className="font-display text-xl text-foreground group-hover:text-primary transition-colors">
                   {guide.title}
                 </h3>
                 
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground">
                   {guide.description}
                 </p>
 
-                <div className="pt-2">
-                  <span className="text-sm font-medium text-primary group-hover:underline">
-                    Read Guide →
-                  </span>
-                </div>
+                <span className="inline-block text-sm font-semibold text-primary group-hover:underline">
+                  Read Guide →
+                </span>
               </div>
             </article>
           ))}
