@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'chicken-coop-lighting-guide',
+    slug: 'chicken-coop-lighting-guide',
+    title: 'Chicken Coop Lighting Requirements: Natural vs Artificial (2025)',
+    excerpt: 'Complete coop lighting guide covering egg production impacts, energy efficiency, and safe timer systems. Includes 3 interactive tools: Daylight & Lay Planner, LED Cost Calculator, and Timer Schedule Builder.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Lighting Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 30,
+    category: 'Care',
+    tags: ['Lighting', 'Egg Production', 'Energy Efficiency', 'Timer Systems', 'LED'],
+    difficulty: 'Beginner',
+    costRange: '$20-$80',
+    featured: true,
+    image: '/src/assets/guide-lighting.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Lighting Requirements: Natural vs Artificial (2025)',
+      metaDescription: 'Complete coop lighting guide with 3 tools: Daylight Planner, LED Cost Calculator, Timer Builder. Boost egg production safely.',
+    },
+  },
+  {
     id: 'free-chicken-coop-plans',
     slug: 'free-chicken-coop-plans',
     title: 'Free Chicken Coop Plans: 25 Best Sources Reviewed (2025)',
