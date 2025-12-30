@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'coop-permit-guide',
+    slug: 'coop-permit-guide',
+    title: 'Chicken Coop Permit Requirements: Complete State-by-State Guide (2025)',
+    excerpt: 'Complete chicken coop permit guide covering all 50 states. Application processes, costs, timelines, and appeals. Navigate coop permits with confidence using our comprehensive legal breakdown.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Legal Research & Compliance Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 30,
+    category: 'Planning',
+    tags: ['Permits', 'Legal', 'Zoning', 'HOA', 'Regulations'],
+    difficulty: 'Beginner',
+    costRange: '$0-$500 (permits)',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Chicken Coop Permit Requirements: State-by-State Guide (2025)',
+      metaDescription: 'Complete chicken coop permit guide covering all 50 states. Application processes, costs, timelines, and appeals procedures.',
+    },
+  },
+  {
     id: 'coop-materials-guide',
     slug: 'coop-materials-guide',
     title: 'Best Chicken Coop Materials for Every Budget (2025 Guide)',
