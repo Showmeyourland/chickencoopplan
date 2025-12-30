@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'free-vs-premium-plans',
+    slug: 'free-vs-premium-plans',
+    title: 'DIY Chicken Coop Plans: Free vs Premium - Which Should You Choose? (2025)',
+    excerpt: 'Comprehensive guide comparing free and premium chicken coop plans with interactive tools: Cost Estimator, Plan Suitability Quiz, and Ventilation Calculator to help you decide.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Plan Comparison Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 30,
+    category: 'Costs',
+    tags: ['Free Plans', 'Premium Plans', 'Comparison', 'Budget', 'DIY', 'Decision Guide'],
+    difficulty: 'Beginner',
+    costRange: '$200-$1,400',
+    featured: true,
+    image: '/src/assets/guide-free-vs-premium-plans.jpg',
+    seo: {
+      metaTitle: 'DIY Chicken Coop Plans: Free vs Premium - Which Should You Choose? (2025)',
+      metaDescription: 'Compare free vs premium chicken coop plans with our interactive tools. Cost Estimator, Plan Quiz, and Ventilation Calculator to find your perfect plan.',
+    },
+  },
+  {
     id: 'urban-chicken-coop-plans',
     slug: 'urban-chicken-coop-plans',
     title: 'Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)',
