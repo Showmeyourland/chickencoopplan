@@ -220,7 +220,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
               <Link to="/">
                 <Button size="lg">Browse Free Plans</Button>
               </Link>
-              <Link to="/coop-building-guide">
+              <Link to="/guides/how-to-build-chicken-coop">
                 <Button size="lg" variant="outline">Building Guide</Button>
               </Link>
             </div>
@@ -239,8 +239,8 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
               <span className="font-display text-lg text-foreground">CoopCraft</span>
             </Link>
             <div className="flex gap-6 text-sm text-muted-foreground">
-              <Link to="/blog" className="hover:text-foreground transition-colors">Blog</Link>
-              <Link to="/ultimate-chicken-coop-guide" className="hover:text-foreground transition-colors">Guides</Link>
+              <Link to="/guides" className="hover:text-foreground transition-colors">All Guides</Link>
+              <Link to="/guides/how-to-build-chicken-coop" className="hover:text-foreground transition-colors">Building Guide</Link>
               <Link to="/" className="hover:text-foreground transition-colors">Plans</Link>
             </div>
             <p className="text-sm text-muted-foreground">
