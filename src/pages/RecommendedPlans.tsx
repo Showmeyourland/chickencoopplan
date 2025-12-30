@@ -101,13 +101,13 @@ const RecommendedPlans = () => {
               While you wait, explore our free resources:
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/blog">
+              <Link to="/guides">
                 <Button variant="outline">Browse All Guides</Button>
               </Link>
-              <Link to="/chicken-coop-plans-guide">
-                <Button variant="outline">Free vs Premium Plans</Button>
+              <Link to="/guides/small-chicken-coop-plans">
+                <Button variant="outline">Small Coop Plans</Button>
               </Link>
-              <Link to="/coop-building-guide">
+              <Link to="/guides/how-to-build-chicken-coop">
                 <Button variant="outline">Building Tutorials</Button>
               </Link>
             </div>

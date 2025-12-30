@@ -112,11 +112,11 @@ const PlanReviews = () => {
               Start planning your coop with our current guides:
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/chicken-coop-cost-guide">
+              <Link to="/guides/cost-breakdown-2025">
                 <Button variant="outline">Cost Guide</Button>
               </Link>
-              <Link to="/chicken-coop-plans-guide">
-                <Button variant="outline">Plans Overview</Button>
+              <Link to="/guides/small-chicken-coop-plans">
+                <Button variant="outline">Small Coop Plans</Button>
               </Link>
               <Link to="/">
                 <Button variant="outline">Browse Designs</Button>

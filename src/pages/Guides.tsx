@@ -125,32 +125,6 @@ const Guides = () => {
             )}
           </section>
 
-          {/* Pillar Content Links */}
-          <section className="mb-16 p-8 bg-secondary/50 rounded-2xl">
-            <h2 className="font-display text-2xl text-foreground mb-6">Complete Resource Guides</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link to="/guides/ultimate-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Ultimate Coop Guide</h3>
-                <p className="text-sm text-muted-foreground">Everything you need to know about chicken coops</p>
-              </Link>
-              <Link to="/guides/plans-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Plans Guide</h3>
-                <p className="text-sm text-muted-foreground">Free vs premium plan comparisons</p>
-              </Link>
-              <Link to="/guides/cost-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Cost Guide</h3>
-                <p className="text-sm text-muted-foreground">Complete budget breakdowns</p>
-              </Link>
-              <Link to="/guides/chicken-care" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Chicken Care</h3>
-                <p className="text-sm text-muted-foreground">Beginner's guide to raising chickens</p>
-              </Link>
-              <Link to="/guides/building-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
-                <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Building Guide</h3>
-                <p className="text-sm text-muted-foreground">Step-by-step construction tutorials</p>
-              </Link>
-            </div>
-          </section>
 
           {/* Newsletter */}
           <NewsletterSignup variant="full" />
