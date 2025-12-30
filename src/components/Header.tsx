@@ -24,11 +24,8 @@ const Header = () => {
             Free Plans
             <span className="px-1.5 py-0.5 text-[10px] font-bold bg-accent text-accent-foreground rounded">NEW</span>
           </a>
-          <a href="/blog" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/guides" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Guides
-          </a>
-          <a href="/ultimate-chicken-coop-guide" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            Resources
           </a>
           <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             About

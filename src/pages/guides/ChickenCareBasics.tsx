@@ -51,7 +51,7 @@ const ChickenCareBasics = () => {
       <SEO
         title="Backyard Chicken Care: Complete Beginner's Guide"
         description="Everything you need to know about caring for backyard chickens. Housing requirements, feeding, health, and seasonal care tips for beginners."
-        canonical="/chicken-care-basics"
+        canonical="/guides/chicken-care"
       />
 
       {/* Header */}
@@ -77,7 +77,7 @@ const ChickenCareBasics = () => {
 
       <main className="py-12">
         <div className="container max-w-5xl">
-          <Breadcrumbs items={[{ label: 'Guides', href: '/blog' }, { label: 'Chicken Care Basics' }]} className="mb-8" />
+          <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: 'Chicken Care Basics' }]} className="mb-8" />
 
           {/* Hero */}
           <div className="text-center mb-16">
@@ -178,7 +178,7 @@ const ChickenCareBasics = () => {
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </Link>
-                <Link to="/coop-building-guide">
+                <Link to="/guides/building-guide">
                   <Button variant="outline" className="gap-2">
                     DIY Building Guide
                   </Button>
@@ -191,11 +191,11 @@ const ChickenCareBasics = () => {
           <section className="mb-12">
             <h2 className="font-display text-2xl text-foreground mb-6">Continue Learning</h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/ultimate-chicken-coop-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/ultimate-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Ultimate Coop Guide</h3>
                 <p className="text-sm text-muted-foreground">Complete resource for coop planning and building</p>
               </Link>
-              <Link to="/guides/coop-cost-breakdown-2025" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/cost-breakdown-2025" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Cost Breakdown 2025</h3>
                 <p className="text-sm text-muted-foreground">Budget for your coop project</p>
               </Link>

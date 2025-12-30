@@ -23,19 +23,17 @@ export interface Article {
 }
 
 export type ArticleCategory = 
-  | 'Building Guides'
-  | 'Cost & Budgeting'
-  | 'Chicken Care'
-  | 'Plans & Reviews'
-  | 'Local Guides'
+  | 'Building'
+  | 'Costs'
+  | 'Planning'
+  | 'Care'
   | 'Troubleshooting';
 
 export const categories: ArticleCategory[] = [
-  'Building Guides',
-  'Cost & Budgeting',
-  'Chicken Care',
-  'Plans & Reviews',
-  'Local Guides',
+  'Building',
+  'Costs',
+  'Planning',
+  'Care',
   'Troubleshooting'
 ];
 
@@ -44,7 +42,7 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 export const articles: Article[] = [
   {
     id: 'coop-cost-breakdown-2025',
-    slug: 'chicken-coop-cost-breakdown-2025',
+    slug: 'cost-breakdown-2025',
     title: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
     excerpt: 'Complete cost analysis for building a chicken coop in 2025. Covers budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with detailed material lists and money-saving strategies.',
     author: 'Sarah Martinez',
@@ -52,7 +50,7 @@ export const articles: Article[] = [
     date: '2025-01-15',
     updatedDate: '2025-01-15',
     readingTime: 25,
-    category: 'Cost & Budgeting',
+    category: 'Costs',
     tags: ['Budget', 'Materials', 'Planning', 'DIY'],
     difficulty: 'Beginner',
     costRange: '$250-$1,200',

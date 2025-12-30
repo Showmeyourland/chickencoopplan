@@ -10,7 +10,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { articles, categories, getFeaturedArticles, searchArticles } from '@/lib/articles';
 import type { ArticleCategory } from '@/lib/articles';
 
-const Blog = () => {
+const Guides = () => {
   const [selectedCategory, setSelectedCategory] = useState<ArticleCategory | 'All'>('All');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -27,9 +27,9 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Chicken Coop Guides & Resources - Expert Building Advice"
+        title="Chicken Coop Guides - Building, Costs, Care & More"
         description="Expert guides on building chicken coops, managing costs, and caring for backyard chickens. Free resources and step-by-step tutorials."
-        canonical="/blog"
+        canonical="/guides"
       />
 
       {/* Header */}
@@ -58,7 +58,7 @@ const Blog = () => {
         <div className="container">
           {/* Breadcrumbs */}
           <Breadcrumbs 
-            items={[{ label: 'Blog' }]} 
+            items={[{ label: 'Guides' }]} 
             className="mb-8"
           />
 
@@ -129,23 +129,23 @@ const Blog = () => {
           <section className="mb-16 p-8 bg-secondary/50 rounded-2xl">
             <h2 className="font-display text-2xl text-foreground mb-6">Complete Resource Guides</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <Link to="/ultimate-chicken-coop-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/ultimate-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Ultimate Coop Guide</h3>
                 <p className="text-sm text-muted-foreground">Everything you need to know about chicken coops</p>
               </Link>
-              <Link to="/chicken-coop-plans-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/plans-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Plans Guide</h3>
                 <p className="text-sm text-muted-foreground">Free vs premium plan comparisons</p>
               </Link>
-              <Link to="/chicken-coop-cost-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/cost-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Cost Guide</h3>
                 <p className="text-sm text-muted-foreground">Complete budget breakdowns</p>
               </Link>
-              <Link to="/chicken-care-basics" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/chicken-care" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Chicken Care</h3>
                 <p className="text-sm text-muted-foreground">Beginner's guide to raising chickens</p>
               </Link>
-              <Link to="/coop-building-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/building-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Building Guide</h3>
                 <p className="text-sm text-muted-foreground">Step-by-step construction tutorials</p>
               </Link>
@@ -175,4 +175,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default Guides;
