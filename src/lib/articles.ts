@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'diy-plans-comparison',
+    slug: 'diy-plans-comparison',
+    title: 'DIY Chicken Coop Plans: Free vs Premium - Which Should You Choose?',
+    excerpt: 'Honest comparison of free vs premium DIY chicken coop plans. Quality assessment, hidden costs analysis, and unbiased recommendations to help you choose the right plans for your project.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'DIY Building Expert | 3+ years testing 25+ plan sources',
+    date: '2025-01-28',
+    updatedDate: '2025-01-28',
+    readingTime: 45,
+    category: 'Planning',
+    tags: ['DIY', 'Plans', 'Free vs Premium', 'Cost Analysis', 'Building'],
+    difficulty: 'Beginner',
+    costRange: '$0-$150 (plans only)',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'DIY Chicken Coop Plans: Free vs Premium Comparison 2025',
+      metaDescription: 'Honest comparison of free vs premium DIY chicken coop plans. Quality assessment, hidden costs analysis, and recommendations based on 70+ real projects.',
+    },
+  },
+  {
     id: 'small-chicken-coop-plans',
     slug: 'small-chicken-coop-plans',
     title: 'Small Chicken Coop Plans: 15 Best Designs for Backyards Under 1000 sq ft',
