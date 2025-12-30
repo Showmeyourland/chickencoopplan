@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'large-chicken-coop-plans',
+    slug: 'large-chicken-coop-plans',
+    title: 'Large Chicken Coop Plans: Housing 20+ Birds Efficiently (2025)',
+    excerpt: 'Complete large coop guide with 3 interactive tools: Space Calculator, Ventilation Estimator, and Automation Planner. Scale your flock without scaling your workload.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Large Flock Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 32,
+    category: 'Building',
+    tags: ['Large Coop', 'Scaling', 'Ventilation', 'Automation', '20+ Birds'],
+    difficulty: 'Intermediate',
+    costRange: '$1,500-$5,000',
+    featured: true,
+    image: '/src/assets/guide-large-coop.jpg',
+    seo: {
+      metaTitle: 'Large Chicken Coop Plans: Housing 20+ Birds Efficiently (2025)',
+      metaDescription: 'Large coop guide with 3 tools: Space Calculator, Ventilation Estimator, Automation Planner. Design for 20+ birds without the headaches.',
+    },
+  },
+  {
     id: 'chicken-coop-flooring-guide',
     slug: 'chicken-coop-flooring-guide',
     title: 'Chicken Coop Flooring Options: Pros & Cons of Every Material (2025)',
