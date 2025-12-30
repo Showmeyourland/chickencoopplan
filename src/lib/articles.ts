@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'arizona-chicken-coop-guide',
+    slug: 'arizona-chicken-coop-guide',
+    title: 'The Complete Arizona Chicken Coop Guide: Building for Desert Success (2025)',
+    excerpt: 'Complete Arizona chicken coop building guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix, Tucson, and statewide requirements.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | 8+ Years Arizona Experience',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 40,
+    category: 'Building',
+    tags: ['Arizona', 'Desert', 'Heat Management', 'Regional', 'Climate'],
+    difficulty: 'Intermediate',
+    costRange: '$800-$2,500',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Arizona Chicken Coop Guide: Desert Climate Building Requirements (2025)',
+      metaDescription: 'Complete Arizona chicken coop guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix and Tucson.',
+    },
+  },
+  {
     id: 'coop-ventilation-guide',
     slug: 'coop-ventilation-guide',
     title: 'Complete Chicken Coop Ventilation Guide: Prevent Problems Before They Start (2025)',
