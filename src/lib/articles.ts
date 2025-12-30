@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'coop-materials-guide',
+    slug: 'coop-materials-guide',
+    title: 'Best Chicken Coop Materials for Every Budget (2025 Guide)',
+    excerpt: 'Complete chicken coop materials guide with real-world durability testing, current 2025 pricing, and regional supplier recommendations. Save money with our budget-tested material choices.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Coop Builder & Materials Tester',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Building',
+    tags: ['Materials', 'Building', 'Budget', 'Lumber', 'Hardware'],
+    difficulty: 'Beginner',
+    costRange: '$200-$2,000+',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Best Chicken Coop Materials for Every Budget (2025 Guide)',
+      metaDescription: 'Complete chicken coop materials guide with real-world durability testing, current 2025 pricing, and regional supplier recommendations.',
+    },
+  },
+  {
     id: 'chicken-coop-size-calculator',
     slug: 'chicken-coop-size-calculator',
     title: 'Chicken Coop Size Calculator: How Much Space Do You Really Need? (2025)',
