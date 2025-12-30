@@ -42,20 +42,19 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg mb-4">Plans</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/guides/plans-guide" className="hover:text-primary-foreground transition-colors">Free Plans Guide</Link></li>
               <li><Link to="/recommended-plans" className="hover:text-primary-foreground transition-colors">Recommended Plans</Link></li>
               <li><Link to="/plan-reviews" className="hover:text-primary-foreground transition-colors">Plan Reviews</Link></li>
+              <li><Link to="/guides/small-chicken-coop-plans" className="hover:text-primary-foreground transition-colors">Small Coop Plans</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-display text-lg mb-4">Guides</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/guides/ultimate-guide" className="hover:text-primary-foreground transition-colors">Ultimate Coop Guide</Link></li>
-              <li><Link to="/guides/building-guide" className="hover:text-primary-foreground transition-colors">Building Guide</Link></li>
-              <li><Link to="/guides/cost-guide" className="hover:text-primary-foreground transition-colors">Cost Guide</Link></li>
-              <li><Link to="/guides/chicken-care" className="hover:text-primary-foreground transition-colors">Chicken Care</Link></li>
+              <li><Link to="/guides/how-to-build-chicken-coop" className="hover:text-primary-foreground transition-colors">How to Build a Coop</Link></li>
               <li><Link to="/guides/cost-breakdown-2025" className="hover:text-primary-foreground transition-colors">2025 Cost Breakdown</Link></li>
+              <li><Link to="/guides/chicken-coop-materials" className="hover:text-primary-foreground transition-colors">Materials Guide</Link></li>
+              <li><Link to="/guides/predator-proof-coop" className="hover:text-primary-foreground transition-colors">Predator Proofing</Link></li>
             </ul>
           </div>
 
@@ -64,6 +63,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link to="/guides" className="hover:text-primary-foreground transition-colors">All Guides</Link></li>
               <li><Link to="/" className="hover:text-primary-foreground transition-colors">Browse Designs</Link></li>
+              <li><Link to="/guides/chicken-coop-size-calculator" className="hover:text-primary-foreground transition-colors">Size Calculator</Link></li>
             </ul>
           </div>
         </div>
