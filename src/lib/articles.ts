@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'mobile-chicken-coop-plans',
+    slug: 'mobile-chicken-coop-plans',
+    title: 'Mobile Chicken Coop Plans: Best Tractor Designs for Rotational Grazing (2025)',
+    excerpt: 'Complete mobile coop guide with 3 interactive tools: Rotation Planner, Weight/Moveability Estimator, and Pasture Impact Calculator. Master rotational grazing with the right tractor design.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Rotational Grazing Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 30,
+    category: 'Building',
+    tags: ['Mobile Coop', 'Chicken Tractor', 'Rotational Grazing', 'Pasture', 'DIY'],
+    difficulty: 'Intermediate',
+    costRange: '$200-$800',
+    featured: true,
+    image: '/src/assets/guide-mobile-coop.jpg',
+    seo: {
+      metaTitle: 'Mobile Chicken Coop Plans: Best Tractor Designs for Rotational Grazing (2025)',
+      metaDescription: 'Mobile coop guide with 3 tools: Rotation Planner, Weight Estimator, Pasture Impact Calculator. Build a tractor that actually moves.',
+    },
+  },
+  {
     id: 'winter-chicken-coop-guide',
     slug: 'winter-chicken-coop-guide',
     title: 'Winter Chicken Coop Preparation: Complete Weatherization Guide (2025)',
