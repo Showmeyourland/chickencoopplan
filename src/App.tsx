@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -50,6 +50,12 @@ const App = () => (
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />
+            
+            {/* Legacy URL Redirects - preserving backlinks from expired domain */}
+            <Route path="/simple-chicken-coop-plans-learn-easily-build-chicken-coop" element={<Navigate to="/guides/small-chicken-coop-plans" replace />} />
+            <Route path="/how-to-build-a-chicken-coop" element={<Navigate to="/guides/how-to-build-chicken-coop" replace />} />
+            <Route path="/chicken-coop-designs" element={<Navigate to="/recommended-plans" replace />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
