@@ -41,6 +41,28 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: '4x4-chicken-coop-plans',
+    slug: '4x4-chicken-coop-plans',
+    title: '4x4 Chicken Coop Plans: Complete Guide to Building Your First Backyard Coop (2025)',
+    excerpt: 'Free 4x4 chicken coop plans perfect for 3-4 chickens. Step-by-step construction guide with cost breakdown, material lists, and beginner tips. Build your dream coop for under $300.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Keeper | 8+ Years Experience',
+    date: '2025-01-29',
+    updatedDate: '2025-01-29',
+    readingTime: 25,
+    category: 'Building',
+    tags: ['DIY', 'Building', 'Beginner', '4x4 Coop', 'Plans'],
+    difficulty: 'Beginner',
+    projectTime: '1-2 weekends',
+    costRange: '$250-$650',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: '4x4 Chicken Coop Plans: Complete Beginner Guide 2025',
+      metaDescription: 'Free 4x4 chicken coop plans for 3-4 chickens. Step-by-step construction guide with cost breakdown, material lists, and beginner tips.',
+    },
+  },
+  {
     id: 'diy-plans-comparison',
     slug: 'diy-plans-comparison',
     title: 'DIY Chicken Coop Plans: Free vs Premium - Which Should You Choose?',

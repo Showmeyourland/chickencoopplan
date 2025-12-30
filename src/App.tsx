@@ -16,6 +16,7 @@ import CoopCostBreakdown2025 from "./pages/guides/CoopCostBreakdown2025";
 import HowToBuildChickenCoop from "./pages/guides/HowToBuildChickenCoop";
 import SmallChickenCoopPlans from "./pages/guides/SmallChickenCoopPlans";
 import DIYPlansComparison from "./pages/guides/DIYPlansComparison";
+import FourByFourCoopPlans from "./pages/guides/FourByFourCoopPlans";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/guides/how-to-build-chicken-coop" element={<HowToBuildChickenCoop />} />
             <Route path="/guides/small-chicken-coop-plans" element={<SmallChickenCoopPlans />} />
             <Route path="/guides/diy-plans-comparison" element={<DIYPlansComparison />} />
+            <Route path="/guides/4x4-chicken-coop-plans" element={<FourByFourCoopPlans />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
