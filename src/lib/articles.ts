@@ -41,6 +41,28 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'how-to-build-chicken-coop',
+    slug: 'how-to-build-chicken-coop',
+    title: 'How to Build a Chicken Coop: Complete Step-by-Step Guide for 2025',
+    excerpt: 'Learn how to build a chicken coop with our beginner-friendly guide. Includes material lists, cost breakdowns, common mistakes to avoid, and real failure stories from experienced builders.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | 12+ years raising desert chickens',
+    date: '2025-01-20',
+    updatedDate: '2025-01-20',
+    readingTime: 45,
+    category: 'Building',
+    tags: ['DIY', 'Building', 'Beginner', 'Materials', 'Step-by-Step'],
+    difficulty: 'Beginner',
+    projectTime: '2-4 weeks',
+    costRange: '$250-$1,200',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'How to Build a Chicken Coop: Complete Step-by-Step Guide for 2025',
+      metaDescription: 'Learn how to build a chicken coop with our beginner-friendly guide. Includes material lists, cost breakdowns, and common mistakes to avoid.',
+    },
+  },
+  {
     id: 'coop-cost-breakdown-2025',
     slug: 'cost-breakdown-2025',
     title: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
@@ -55,7 +77,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$250-$1,200',
     featured: true,
-    image: '/og-image.jpg',
+    image: undefined,
     seo: {
       metaTitle: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
       metaDescription: 'Complete 2025 cost guide for building a chicken coop. Budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with material lists.',
