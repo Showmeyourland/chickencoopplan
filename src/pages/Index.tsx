@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import CoopDesigns from "@/components/CoopDesigns";
 import QuickFacts from "@/components/QuickFacts";
 import FeaturedGuides from "@/components/FeaturedGuides";
+import HomeFAQ from "@/components/HomeFAQ";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 
@@ -21,6 +22,7 @@ const Index = () => {
         <CoopDesigns />
         <QuickFacts />
         <FeaturedGuides />
+        <HomeFAQ />
       </main>
       <Footer />
     </div>
