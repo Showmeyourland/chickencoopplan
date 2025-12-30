@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'predator-proof-coop-guide',
+    slug: 'predator-proof-coop-guide',
+    title: 'Predator-Proof Chicken Coop: Complete Security Guide (2025)',
+    excerpt: 'Complete predator-proofing guide with regional threat assessment, 5-layer security systems, hardware cloth specifications, and proven protection strategies tested against coyotes, raccoons, hawks, and more.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Predator Defense Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 40,
+    category: 'Troubleshooting',
+    tags: ['Predators', 'Security', 'Hardware Cloth', 'Protection', 'Safety'],
+    difficulty: 'Advanced',
+    costRange: '$200-$1,500',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Predator-Proof Chicken Coop: Complete Security Guide (2025)',
+      metaDescription: 'Complete predator-proofing guide with 5-layer security systems, hardware cloth specs, and proven protection strategies for coyotes, raccoons, and hawks.',
+    },
+  },
+  {
     id: 'coop-permit-guide',
     slug: 'coop-permit-guide',
     title: 'Chicken Coop Permit Requirements: Complete State-by-State Guide (2025)',
