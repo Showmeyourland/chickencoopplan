@@ -630,7 +630,7 @@ const FreeVsPremiumPlans = () => {
               <TableRow>
                 <TableCell className="font-medium">Upfront Cost</TableCell>
                 <TableCell className="text-green-600">$0</TableCell>
-                <TableCell>$29-$99</TableCell>
+                <TableCell>$20-$50</TableCell>
               </TableRow>
               <TableRow>
                 <TableCell className="font-medium">Material Lists</TableCell>
@@ -843,9 +843,8 @@ const FreeVsPremiumPlans = () => {
           <AccordionItem value="item-2">
             <AccordionTrigger>How much do premium plans typically cost?</AccordionTrigger>
             <AccordionContent>
-              Premium chicken coop plans typically range from $29-$99, with most quality plans in the $40-$60 range. This includes 
-              complete material lists, step-by-step instructions, and often customer support. Compare this to potential rework costs 
-              of $100-$500+ with incomplete free plans.
+              Premium chicken coop plans typically range from $20-$50. This includes complete material lists, step-by-step 
+              instructions, and customer support. Compare this to potential rework costs of $100-$500+ with incomplete free plans.
             </AccordionContent>
           </AccordionItem>
 
