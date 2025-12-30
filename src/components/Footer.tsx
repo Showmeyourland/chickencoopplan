@@ -53,8 +53,8 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/70">
               <li><Link to="/guides/how-to-build-chicken-coop" className="hover:text-primary-foreground transition-colors">How to Build a Coop</Link></li>
               <li><Link to="/guides/cost-breakdown-2025" className="hover:text-primary-foreground transition-colors">2025 Cost Breakdown</Link></li>
-              <li><Link to="/guides/chicken-coop-materials" className="hover:text-primary-foreground transition-colors">Materials Guide</Link></li>
-              <li><Link to="/guides/predator-proof-coop" className="hover:text-primary-foreground transition-colors">Predator Proofing</Link></li>
+              <li><Link to="/guides/coop-materials-guide" className="hover:text-primary-foreground transition-colors">Materials Guide</Link></li>
+              <li><Link to="/guides/predator-proof-coop-guide" className="hover:text-primary-foreground transition-colors">Predator Proofing</Link></li>
             </ul>
           </div>
 

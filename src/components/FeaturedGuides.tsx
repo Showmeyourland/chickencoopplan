@@ -45,17 +45,17 @@ const FeaturedGuides = () => {
               </h3>
               <p className="text-sm text-muted-foreground">Complete budget guide from $250 to premium builds.</p>
             </Link>
-            <Link to="/guides/building-guide" className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors">
+            <Link to="/guides/how-to-build-chicken-coop" className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors">
               <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-2">
                 DIY Building Guide
               </h3>
               <p className="text-sm text-muted-foreground">Step-by-step construction tutorials.</p>
             </Link>
-            <Link to="/guides/chicken-care" className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors">
+            <Link to="/guides/expensive-coop-mistakes" className="group bg-card border border-border rounded-xl p-6 hover:border-primary/50 transition-colors">
               <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-2">
-                Chicken Care Basics
+                Avoid Costly Mistakes
               </h3>
-              <p className="text-sm text-muted-foreground">Everything beginners need to know.</p>
+              <p className="text-sm text-muted-foreground">7 expensive errors to avoid.</p>
             </Link>
           </div>
         )}
