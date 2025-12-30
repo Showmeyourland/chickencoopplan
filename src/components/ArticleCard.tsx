@@ -3,6 +3,64 @@ import { Clock, ArrowRight } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import type { Article } from '@/lib/articles';
 
+// Import guide images
+import guideArizona from '@/assets/guide-arizona.jpg';
+import guideBeginner from '@/assets/guide-beginner.jpg';
+import guideChickenRun from '@/assets/guide-chicken-run.jpg';
+import guideCleaning from '@/assets/guide-cleaning.jpg';
+import guideClimate from '@/assets/guide-climate.jpg';
+import guideCoopMistakes from '@/assets/guide-coop-mistakes.jpg';
+import guideCoopSizeCalculator from '@/assets/guide-coop-size-calculator.jpg';
+import guideCostBreakdown from '@/assets/guide-cost-breakdown.jpg';
+import guideFlooringOptions from '@/assets/guide-flooring-options.jpg';
+import guideFreeCoopPlans from '@/assets/guide-free-coop-plans.jpg';
+import guideFreeVsPremiumPlans from '@/assets/guide-free-vs-premium-plans.jpg';
+import guideHowToBuildCoop from '@/assets/guide-how-to-build-coop.jpg';
+import guideInsulation from '@/assets/guide-insulation.jpg';
+import guideLargeCoop from '@/assets/guide-large-coop.jpg';
+import guideLighting from '@/assets/guide-lighting.jpg';
+import guideMaterials from '@/assets/guide-materials.jpg';
+import guideMobileCoop from '@/assets/guide-mobile-coop.jpg';
+import guidePermits from '@/assets/guide-permits.jpg';
+import guidePredator from '@/assets/guide-predator.jpg';
+import guideSmallCoopPlans from '@/assets/guide-small-coop-plans.jpg';
+import guideUrbanCoop from '@/assets/guide-urban-coop.jpg';
+import guideVentilation from '@/assets/guide-ventilation.jpg';
+import guideWinterCoop from '@/assets/guide-winter-coop.jpg';
+import guide4x4CoopPlans from '@/assets/guide-4x4-coop-plans.jpg';
+
+// Map slug to imported image
+const imageMap: Record<string, string> = {
+  'arizona-chicken-coop-guide': guideArizona,
+  'beginner-chicken-guide': guideBeginner,
+  'chicken-run-design-guide': guideChickenRun,
+  'chicken-coop-cleaning-guide': guideCleaning,
+  'climate-chicken-coop-guide': guideClimate,
+  'expensive-coop-mistakes': guideCoopMistakes,
+  'coop-size-calculator': guideCoopSizeCalculator,
+  'coop-cost-breakdown-2025': guideCostBreakdown,
+  'chicken-coop-flooring-guide': guideFlooringOptions,
+  'free-chicken-coop-plans': guideFreeCoopPlans,
+  'free-vs-premium-plans': guideFreeVsPremiumPlans,
+  'how-to-build-chicken-coop': guideHowToBuildCoop,
+  'chicken-coop-insulation-guide': guideInsulation,
+  'large-chicken-coop-plans': guideLargeCoop,
+  'chicken-coop-lighting-guide': guideLighting,
+  'coop-materials-guide': guideMaterials,
+  'mobile-chicken-coop-plans': guideMobileCoop,
+  'coop-permit-guide': guidePermits,
+  'predator-proof-coop-guide': guidePredator,
+  'small-chicken-coop-plans': guideSmallCoopPlans,
+  'urban-chicken-coop-plans': guideUrbanCoop,
+  'coop-ventilation-guide': guideVentilation,
+  'winter-chicken-coop-guide': guideWinterCoop,
+  '4x4-coop-plans': guide4x4CoopPlans,
+};
+
+const getArticleImage = (slug: string): string | undefined => {
+  return imageMap[slug];
+};
+
 interface ArticleCardProps {
   article: Article;
   variant?: 'default' | 'featured' | 'compact';
@@ -31,16 +89,18 @@ const ArticleCard = ({ article, variant = 'default' }: ArticleCardProps) => {
     );
   }
 
+  const articleImage = getArticleImage(article.slug);
+
   if (variant === 'featured') {
     return (
       <Link 
         to={articleUrl}
         className="group block bg-card border border-border rounded-2xl overflow-hidden hover:border-primary/50 hover:shadow-lg transition-all"
       >
-        {article.image && (
+        {articleImage && (
           <div className="aspect-video bg-muted overflow-hidden">
             <img 
-              src={article.image} 
+              src={articleImage} 
               alt={article.title}
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
             />
