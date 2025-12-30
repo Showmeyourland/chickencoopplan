@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'chicken-coop-insulation-guide',
+    slug: 'chicken-coop-insulation-guide',
+    title: 'Chicken Coop Insulation Guide: When and How to Insulate (2025)',
+    excerpt: 'Complete insulation guide with 3 interactive tools: Insulation Decision Wizard, R-Value Planner, and Condensation Risk Checker. Climate-based decisions and safe installation.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Cold Climate Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Building',
+    tags: ['Insulation', 'Winter', 'Moisture Control', 'Ventilation', 'Climate'],
+    difficulty: 'Intermediate',
+    costRange: '$100-$600',
+    featured: true,
+    image: '/src/assets/guide-insulation.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Insulation Guide: When and How to Insulate (2025)',
+      metaDescription: 'Complete insulation guide with 3 tools: Decision Wizard, R-Value Planner, Condensation Risk Checker. Know when and how to insulate safely.',
+    },
+  },
+  {
     id: 'large-chicken-coop-plans',
     slug: 'large-chicken-coop-plans',
     title: 'Large Chicken Coop Plans: Housing 20+ Birds Efficiently (2025)',
