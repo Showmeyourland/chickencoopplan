@@ -20,8 +20,8 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
   
   const breadcrumbItems = [
     { label: "Home", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: article.category, href: `/blog?category=${encodeURIComponent(article.category)}` },
+    { label: "Guides", href: "/guides" },
+    { label: article.category, href: `/guides?category=${encodeURIComponent(article.category)}` },
     { label: article.title }
   ];
 
@@ -33,7 +33,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
       <SEO 
         title={article.seo?.metaTitle || article.title}
         description={article.seo?.metaDescription || article.excerpt}
-        canonical={`/blog/${article.slug}`}
+        canonical={`/guides/${article.slug}`}
         image={article.image}
         type="article"
         author={article.author}
@@ -47,7 +47,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
         datePublished={article.date}
         dateModified={article.updatedDate || article.date}
         image={article.image || '/og-image.jpg'}
-        url={`/blog/${article.slug}`}
+        url={`/guides/${article.slug}`}
       />
 
       {/* Header */}
@@ -63,7 +63,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             </div>
           </Link>
           
-          <Link to="/blog">
+          <Link to="/guides">
             <Button variant="outline" size="sm" className="gap-2">
               <ArrowLeft className="h-4 w-4" />
               All Guides

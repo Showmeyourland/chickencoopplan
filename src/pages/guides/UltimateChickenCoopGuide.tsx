@@ -12,9 +12,9 @@ const UltimateChickenCoopGuide = () => {
       icon: HomeIcon,
       description: 'Choose the right size, location, and design for your flock.',
       links: [
-        { label: 'How Many Chickens Can I Keep?', href: '/blog' },
-        { label: 'Choosing the Right Location', href: '/blog' },
-        { label: 'Coop Size Calculator', href: '/blog' },
+        { label: 'How Many Chickens Can I Keep?', href: '/guides' },
+        { label: 'Choosing the Right Location', href: '/guides' },
+        { label: 'Coop Size Calculator', href: '/guides' },
       ],
     },
     {
@@ -22,9 +22,9 @@ const UltimateChickenCoopGuide = () => {
       icon: Hammer,
       description: 'Step-by-step building guides and material selection.',
       links: [
-        { label: 'DIY Building Guide', href: '/coop-building-guide' },
-        { label: 'Essential Tools List', href: '/blog' },
-        { label: 'Material Comparisons', href: '/guides/coop-cost-breakdown-2025#material-comparisons' },
+        { label: 'DIY Building Guide', href: '/guides/building-guide' },
+        { label: 'Essential Tools List', href: '/guides' },
+        { label: 'Material Comparisons', href: '/guides/cost-breakdown-2025' },
       ],
     },
     {
@@ -32,9 +32,9 @@ const UltimateChickenCoopGuide = () => {
       icon: DollarSign,
       description: 'Understand all costs involved in building and maintaining a coop.',
       links: [
-        { label: '2025 Cost Breakdown', href: '/guides/coop-cost-breakdown-2025' },
-        { label: 'Budget vs Premium Builds', href: '/guides/coop-cost-breakdown-2025#detailed-breakdowns' },
-        { label: 'Money-Saving Tips', href: '/guides/coop-cost-breakdown-2025#money-saving' },
+        { label: '2025 Cost Breakdown', href: '/guides/cost-breakdown-2025' },
+        { label: 'Budget vs Premium Builds', href: '/guides/cost-breakdown-2025' },
+        { label: 'Money-Saving Tips', href: '/guides/cost-breakdown-2025' },
       ],
     },
     {
@@ -42,9 +42,9 @@ const UltimateChickenCoopGuide = () => {
       icon: Heart,
       description: 'Keep your flock healthy and happy year-round.',
       links: [
-        { label: 'Beginner Care Guide', href: '/chicken-care-basics' },
-        { label: 'Feeding Basics', href: '/blog' },
-        { label: 'Seasonal Care Tips', href: '/blog' },
+        { label: 'Beginner Care Guide', href: '/guides/chicken-care' },
+        { label: 'Feeding Basics', href: '/guides' },
+        { label: 'Seasonal Care Tips', href: '/guides' },
       ],
     },
     {
@@ -52,9 +52,9 @@ const UltimateChickenCoopGuide = () => {
       icon: AlertTriangle,
       description: 'Common problems and how to solve them.',
       links: [
-        { label: 'Predator Protection', href: '/blog' },
-        { label: 'Ventilation Issues', href: '/blog' },
-        { label: 'Common Building Mistakes', href: '/blog' },
+        { label: 'Predator Protection', href: '/guides' },
+        { label: 'Ventilation Issues', href: '/guides' },
+        { label: 'Common Building Mistakes', href: '/guides' },
       ],
     },
   ];
@@ -64,7 +64,7 @@ const UltimateChickenCoopGuide = () => {
       <SEO
         title="Ultimate Chicken Coop Guide: Everything You Need to Know"
         description="The complete guide to chicken coops. Learn planning, building, costs, chicken care, and troubleshooting. Your one-stop resource for backyard chicken keeping."
-        canonical="/ultimate-chicken-coop-guide"
+        canonical="/guides/ultimate-guide"
       />
 
       {/* Header */}
@@ -90,7 +90,7 @@ const UltimateChickenCoopGuide = () => {
 
       <main className="py-12">
         <div className="container max-w-5xl">
-          <Breadcrumbs items={[{ label: 'Guides', href: '/blog' }, { label: 'Ultimate Chicken Coop Guide' }]} className="mb-8" />
+          <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: 'Ultimate Chicken Coop Guide' }]} className="mb-8" />
 
           {/* Hero */}
           <div className="text-center mb-16">

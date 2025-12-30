@@ -3,7 +3,7 @@ import BlogLayout from "@/components/BlogLayout";
 import { getArticleBySlug } from "@/lib/articles";
 
 const CoopCostBreakdown2025 = () => {
-  const article = getArticleBySlug('chicken-coop-cost-breakdown-2025');
+  const article = getArticleBySlug('cost-breakdown-2025');
   
   if (!article) {
     return <div>Article not found</div>;

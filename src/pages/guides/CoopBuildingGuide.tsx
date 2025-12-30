@@ -26,7 +26,7 @@ const CoopBuildingGuide = () => {
       <SEO
         title="DIY Chicken Coop Building: Step-by-Step Instructions"
         description="Complete DIY chicken coop building guide. Step-by-step instructions, tool lists, material guides, and expert tips for building your own chicken coop."
-        canonical="/coop-building-guide"
+        canonical="/guides/building-guide"
       />
 
       {/* Header */}
@@ -52,7 +52,7 @@ const CoopBuildingGuide = () => {
 
       <main className="py-12">
         <div className="container max-w-5xl">
-          <Breadcrumbs items={[{ label: 'Guides', href: '/blog' }, { label: 'DIY Building Guide' }]} className="mb-8" />
+          <Breadcrumbs items={[{ label: 'Guides', href: '/guides' }, { label: 'DIY Building Guide' }]} className="mb-8" />
 
           {/* Hero */}
           <div className="text-center mb-16">
@@ -167,11 +167,11 @@ const CoopBuildingGuide = () => {
           <section className="mb-12">
             <h2 className="font-display text-2xl text-foreground mb-6">Related Resources</h2>
             <div className="grid sm:grid-cols-2 gap-4">
-              <Link to="/guides/coop-cost-breakdown-2025" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/cost-breakdown-2025" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Cost Breakdown 2025</h3>
                 <p className="text-sm text-muted-foreground">Detailed material costs and budgeting</p>
               </Link>
-              <Link to="/chicken-coop-plans-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
+              <Link to="/guides/plans-guide" className="group p-4 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <h3 className="font-display text-lg text-foreground group-hover:text-primary transition-colors mb-1">Plans Guide</h3>
                 <p className="text-sm text-muted-foreground">Compare plan options and features</p>
               </Link>

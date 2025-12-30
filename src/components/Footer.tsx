@@ -42,30 +42,28 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg mb-4">Plans</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/chicken-coop-plans-guide" className="hover:text-primary-foreground transition-colors">Free Plans Guide</Link></li>
+              <li><Link to="/guides/plans-guide" className="hover:text-primary-foreground transition-colors">Free Plans Guide</Link></li>
               <li><Link to="/recommended-plans" className="hover:text-primary-foreground transition-colors">Recommended Plans</Link></li>
               <li><Link to="/plan-reviews" className="hover:text-primary-foreground transition-colors">Plan Reviews</Link></li>
-              <li><Link to="/premium-resources" className="hover:text-primary-foreground transition-colors">Premium Resources</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-display text-lg mb-4">Guides</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/ultimate-chicken-coop-guide" className="hover:text-primary-foreground transition-colors">Ultimate Coop Guide</Link></li>
-              <li><Link to="/coop-building-guide" className="hover:text-primary-foreground transition-colors">Building Guide</Link></li>
-              <li><Link to="/chicken-coop-cost-guide" className="hover:text-primary-foreground transition-colors">Cost Guide</Link></li>
-              <li><Link to="/chicken-care-basics" className="hover:text-primary-foreground transition-colors">Chicken Care</Link></li>
+              <li><Link to="/guides/ultimate-guide" className="hover:text-primary-foreground transition-colors">Ultimate Coop Guide</Link></li>
+              <li><Link to="/guides/building-guide" className="hover:text-primary-foreground transition-colors">Building Guide</Link></li>
+              <li><Link to="/guides/cost-guide" className="hover:text-primary-foreground transition-colors">Cost Guide</Link></li>
+              <li><Link to="/guides/chicken-care" className="hover:text-primary-foreground transition-colors">Chicken Care</Link></li>
+              <li><Link to="/guides/cost-breakdown-2025" className="hover:text-primary-foreground transition-colors">2025 Cost Breakdown</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-display text-lg mb-4">Resources</h4>
+            <h4 className="font-display text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm text-primary-foreground/70">
-              <li><Link to="/blog" className="hover:text-primary-foreground transition-colors">Blog</Link></li>
-              <li><Link to="/blog/chicken-coop-cost-breakdown-2025" className="hover:text-primary-foreground transition-colors">2025 Cost Breakdown</Link></li>
+              <li><Link to="/guides" className="hover:text-primary-foreground transition-colors">All Guides</Link></li>
               <li><Link to="/" className="hover:text-primary-foreground transition-colors">Browse Designs</Link></li>
-              <li><Link to="/blog" className="hover:text-primary-foreground transition-colors">All Articles</Link></li>
             </ul>
           </div>
         </div>
