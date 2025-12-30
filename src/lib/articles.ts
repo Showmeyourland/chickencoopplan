@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'winter-chicken-coop-guide',
+    slug: 'winter-chicken-coop-guide',
+    title: 'Winter Chicken Coop Preparation: Complete Weatherization Guide (2025)',
+    excerpt: 'Complete winter weatherization guide with 3 interactive tools: Heater Decision Tool, Insulation Planner, and Emergency Checklist Builder. Keep your flock safe through cold weather.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Cold Weather Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Care',
+    tags: ['Winter', 'Weatherization', 'Heating', 'Insulation', 'Emergency Planning'],
+    difficulty: 'Intermediate',
+    costRange: '$50-$500',
+    featured: true,
+    image: '/src/assets/guide-winter-coop.jpg',
+    seo: {
+      metaTitle: 'Winter Chicken Coop Preparation: Complete Weatherization Guide (2025)',
+      metaDescription: 'Winter coop guide with 3 interactive tools: Heater Decision, Insulation Planner, Emergency Checklist. Keep your flock safe in cold weather.',
+    },
+  },
+  {
     id: 'free-vs-premium-plans',
     slug: 'free-vs-premium-plans',
     title: 'DIY Chicken Coop Plans: Free vs Premium - Which Should You Choose? (2025)',
