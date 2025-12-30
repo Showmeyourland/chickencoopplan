@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'expensive-coop-mistakes',
+    slug: 'expensive-coop-mistakes',
+    title: '5 Expensive Chicken Coop Mistakes That Cost Beginners $1000+ (Learn From My Failures)',
+    excerpt: 'Avoid these costly chicken coop mistakes that cost me over $2,000 in my first year. Real failure stories with prevention strategies to save beginners thousands.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | 12+ Years Experience',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 25,
+    category: 'Troubleshooting',
+    tags: ['Mistakes', 'Beginner', 'Cost Savings', 'Prevention', 'Tips'],
+    difficulty: 'Beginner',
+    costRange: '$900 prevention vs $2,347 losses',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: '5 Expensive Chicken Coop Mistakes That Cost Beginners $1000+ (2025)',
+      metaDescription: 'Avoid these costly chicken coop mistakes that cost me over $2,000 in my first year. Real failure stories with prevention strategies.',
+    },
+  },
+  {
     id: 'arizona-chicken-coop-guide',
     slug: 'arizona-chicken-coop-guide',
     title: 'The Complete Arizona Chicken Coop Guide: Building for Desert Success (2025)',
