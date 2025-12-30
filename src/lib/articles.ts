@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'chicken-coop-flooring-guide',
+    slug: 'chicken-coop-flooring-guide',
+    title: 'Chicken Coop Flooring Options: Pros & Cons of Every Material (2025)',
+    excerpt: 'Complete flooring guide with 3 interactive tools: Cost Estimator, Cleaning Schedule Planner, and Health Risk Checker. Find the best floor for your coop and climate.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Coop Design Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 28,
+    category: 'Building',
+    tags: ['Flooring', 'Materials', 'Cleaning', 'Health', 'Bedding'],
+    difficulty: 'Beginner',
+    costRange: '$0-$500',
+    featured: true,
+    image: '/src/assets/guide-flooring-options.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Flooring Options: Pros & Cons of Every Material (2025)',
+      metaDescription: 'Compare coop flooring with 3 tools: Cost Estimator, Cleaning Planner, Health Risk Checker. Dirt, wood, concrete, sand & more.',
+    },
+  },
+  {
     id: 'mobile-chicken-coop-plans',
     slug: 'mobile-chicken-coop-plans',
     title: 'Mobile Chicken Coop Plans: Best Tractor Designs for Rotational Grazing (2025)',
