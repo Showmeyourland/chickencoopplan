@@ -13,6 +13,7 @@ import ChickenCoopCostGuide from "./pages/guides/ChickenCoopCostGuide";
 import ChickenCareBasics from "./pages/guides/ChickenCareBasics";
 import CoopBuildingGuide from "./pages/guides/CoopBuildingGuide";
 import CoopCostBreakdown2025 from "./pages/guides/CoopCostBreakdown2025";
+import HowToBuildChickenCoop from "./pages/guides/HowToBuildChickenCoop";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/guides/chicken-care" element={<ChickenCareBasics />} />
             <Route path="/guides/building-guide" element={<CoopBuildingGuide />} />
             <Route path="/guides/cost-breakdown-2025" element={<CoopCostBreakdown2025 />} />
+            <Route path="/guides/how-to-build-chicken-coop" element={<HowToBuildChickenCoop />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
