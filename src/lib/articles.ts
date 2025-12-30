@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'chicken-coop-cleaning-guide',
+    slug: 'chicken-coop-cleaning-guide',
+    title: 'Chicken Coop Cleaning Schedule: Maintenance Made Simple (2025)',
+    excerpt: 'Complete chicken coop cleaning schedule with daily, weekly, monthly, and seasonal tasks. Includes 3 interactive tools: Schedule Builder, Ammonia Risk Checker, and Deep-Clean Checklist Generator.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Coop Maintenance Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 25,
+    category: 'Care',
+    tags: ['Cleaning', 'Maintenance', 'Health', 'Ammonia', 'Bedding'],
+    difficulty: 'Beginner',
+    costRange: '$20-$100/year',
+    featured: true,
+    image: '/src/assets/guide-cleaning.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Cleaning Schedule: Maintenance Made Simple (2025)',
+      metaDescription: 'Complete cleaning schedule with 3 tools: Schedule Builder, Ammonia Checker, Deep-Clean Generator. Keep your coop healthy with minimal effort.',
+    },
+  },
+  {
     id: 'chicken-run-design-guide',
     slug: 'chicken-run-design-guide',
     title: 'Chicken Run Design: Maximizing Outdoor Space & Safety (2025)',
