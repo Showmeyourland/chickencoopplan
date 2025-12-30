@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import BlogLayout from "@/components/BlogLayout";
+import { getArticleBySlug } from "@/lib/articles";
 
 const CoopCostBreakdown2025 = () => {
+  const article = getArticleBySlug('chicken-coop-cost-breakdown-2025');
+  
+  if (!article) {
+    return <div>Article not found</div>;
+  }
+
   return (
-    <BlogLayout
-      title="Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds"
-      author="Sarah Martinez | Backyard Chicken Expert"
-      date="Updated January 2025"
-    >
+    <BlogLayout article={article}>
       {/* Intro */}
       <section className="mb-12">
         <p className="text-xl text-foreground leading-relaxed mb-6">

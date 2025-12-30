@@ -13,6 +13,9 @@ import ChickenCoopPlansGuide from "./pages/guides/ChickenCoopPlansGuide";
 import ChickenCoopCostGuide from "./pages/guides/ChickenCoopCostGuide";
 import ChickenCareBasics from "./pages/guides/ChickenCareBasics";
 import CoopBuildingGuide from "./pages/guides/CoopBuildingGuide";
+import RecommendedPlans from "./pages/RecommendedPlans";
+import PlanReviews from "./pages/PlanReviews";
+import PremiumResources from "./pages/PremiumResources";
 
 const queryClient = new QueryClient();
 
@@ -26,12 +29,15 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/guides/coop-cost-breakdown-2025" element={<CoopCostBreakdown2025 />} />
+            <Route path="/blog/chicken-coop-cost-breakdown-2025" element={<CoopCostBreakdown2025 />} />
             <Route path="/ultimate-chicken-coop-guide" element={<UltimateChickenCoopGuide />} />
             <Route path="/chicken-coop-plans-guide" element={<ChickenCoopPlansGuide />} />
             <Route path="/chicken-coop-cost-guide" element={<ChickenCoopCostGuide />} />
             <Route path="/chicken-care-basics" element={<ChickenCareBasics />} />
             <Route path="/coop-building-guide" element={<CoopBuildingGuide />} />
+            <Route path="/recommended-plans" element={<RecommendedPlans />} />
+            <Route path="/plan-reviews" element={<PlanReviews />} />
+            <Route path="/premium-resources" element={<PremiumResources />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

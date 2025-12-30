@@ -13,8 +13,13 @@ export interface Article {
   difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
   projectTime?: string;
   estimatedCost?: string;
+  costRange?: string;
   featured?: boolean;
   image?: string;
+  seo?: {
+    metaTitle?: string;
+    metaDescription?: string;
+  };
 }
 
 export type ArticleCategory = 
@@ -39,7 +44,7 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 export const articles: Article[] = [
   {
     id: 'coop-cost-breakdown-2025',
-    slug: 'coop-cost-breakdown-2025',
+    slug: 'chicken-coop-cost-breakdown-2025',
     title: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
     excerpt: 'Complete cost analysis for building a chicken coop in 2025. Covers budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with detailed material lists and money-saving strategies.',
     author: 'Sarah Martinez',
@@ -50,8 +55,13 @@ export const articles: Article[] = [
     category: 'Cost & Budgeting',
     tags: ['Budget', 'Materials', 'Planning', 'DIY'],
     difficulty: 'Beginner',
-    estimatedCost: '$250-$1,200',
+    costRange: '$250-$1,200',
     featured: true,
+    image: '/og-image.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
+      metaDescription: 'Complete 2025 cost guide for building a chicken coop. Budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with material lists.',
+    },
   },
 ];
 
@@ -60,11 +70,14 @@ export function getArticlesByCategory(category: ArticleCategory): Article[] {
   return articles.filter(article => article.category === category);
 }
 
-export function getRelatedArticles(currentArticle: Article, limit: number = 3): Article[] {
+export function getRelatedArticles(currentSlug: string, category: ArticleCategory, limit: number = 3): Article[] {
+  const currentArticle = articles.find(a => a.slug === currentSlug);
+  if (!currentArticle) return articles.slice(0, limit);
+  
   return articles
     .filter(article => 
-      article.id !== currentArticle.id && 
-      (article.category === currentArticle.category || 
+      article.slug !== currentSlug && 
+      (article.category === category || 
        article.tags.some(tag => currentArticle.tags.includes(tag)))
     )
     .slice(0, limit);
