@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'coop-ventilation-guide',
+    slug: 'coop-ventilation-guide',
+    title: 'Complete Chicken Coop Ventilation Guide: Prevent Problems Before They Start (2025)',
+    excerpt: 'Expert chicken coop ventilation guide with climate-specific designs, troubleshooting solutions, and cost-effective upgrades. Prevent respiratory diseases and flock health problems.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Ventilation Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Building',
+    tags: ['Ventilation', 'Air Quality', 'Health', 'Climate', 'Building'],
+    difficulty: 'Intermediate',
+    costRange: '$50-$400',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Complete Chicken Coop Ventilation Guide (2025)',
+      metaDescription: 'Expert ventilation guide with climate-specific designs, troubleshooting solutions, and cost-effective upgrades to prevent respiratory diseases.',
+    },
+  },
+  {
     id: 'predator-proof-coop-guide',
     slug: 'predator-proof-coop-guide',
     title: 'Predator-Proof Chicken Coop: Complete Security Guide (2025)',
