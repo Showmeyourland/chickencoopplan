@@ -27,6 +27,7 @@ import LargeChickenCoopPlans from "./pages/guides/LargeChickenCoopPlans";
 import ChickenCoopInsulationGuide from "./pages/guides/ChickenCoopInsulationGuide";
 import FreeChickenCoopPlans from "./pages/guides/FreeChickenCoopPlans";
 import ChickenCoopLightingGuide from "./pages/guides/ChickenCoopLightingGuide";
+import ChickenRunDesignGuide from "./pages/guides/ChickenRunDesignGuide";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
@@ -63,6 +64,7 @@ const App = () => (
             <Route path="/guides/chicken-coop-insulation-guide" element={<ChickenCoopInsulationGuide />} />
             <Route path="/guides/free-chicken-coop-plans" element={<FreeChickenCoopPlans />} />
             <Route path="/guides/chicken-coop-lighting-guide" element={<ChickenCoopLightingGuide />} />
+            <Route path="/guides/chicken-run-design-guide" element={<ChickenRunDesignGuide />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />

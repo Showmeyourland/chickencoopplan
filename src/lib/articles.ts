@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'chicken-run-design-guide',
+    slug: 'chicken-run-design-guide',
+    title: 'Chicken Run Design: Maximizing Outdoor Space & Safety (2025)',
+    excerpt: 'Complete chicken run design guide covering size calculations, fencing options, predator-proofing, and enrichment features. Includes 3 interactive tools: Run Size Calculator, Fencing Estimator, and Enrichment Planner.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Run Design Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Building',
+    tags: ['Chicken Run', 'Fencing', 'Predator-Proofing', 'Enrichment', 'Outdoor Space'],
+    difficulty: 'Intermediate',
+    costRange: '$200-$1,500',
+    featured: true,
+    image: '/src/assets/guide-chicken-run.jpg',
+    seo: {
+      metaTitle: 'Chicken Run Design: Maximizing Outdoor Space & Safety (2025)',
+      metaDescription: 'Complete run design guide with 3 tools: Size Calculator, Fencing Estimator, Enrichment Planner. Build a safe, enriching outdoor space.',
+    },
+  },
+  {
     id: 'chicken-coop-lighting-guide',
     slug: 'chicken-coop-lighting-guide',
     title: 'Chicken Coop Lighting Requirements: Natural vs Artificial (2025)',
