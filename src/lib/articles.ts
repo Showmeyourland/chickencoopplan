@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'urban-chicken-coop-plans',
+    slug: 'urban-chicken-coop-plans',
+    title: 'Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)',
+    excerpt: 'Expert urban chicken coop designs for city backyards. Includes noise reduction, neighbor relations, space optimization, and regulations for successful city chicken keeping.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Urban Chicken Expert | Seattle, Portland, Austin Experience',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Planning',
+    tags: ['Urban', 'City', 'Small Space', 'Neighbor Relations', 'Noise Reduction'],
+    difficulty: 'Intermediate',
+    costRange: '$600-$2,500',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)',
+      metaDescription: 'Expert urban chicken coop designs for city backyards. Noise reduction, neighbor relations, space optimization, and regulations for city chicken keeping.',
+    },
+  },
+  {
     id: 'expensive-coop-mistakes',
     slug: 'expensive-coop-mistakes',
     title: '5 Expensive Chicken Coop Mistakes That Cost Beginners $1000+ (Learn From My Failures)',
