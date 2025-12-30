@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'small-chicken-coop-plans',
+    slug: 'small-chicken-coop-plans',
+    title: 'Small Chicken Coop Plans: 15 Best Designs for Backyards Under 1000 sq ft',
+    excerpt: 'Discover the best small chicken coop plans for urban backyards. 15 space-saving designs with detailed pros/cons, city ordinance tips, and space optimization strategies for lots under 1000 sq ft.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Urban Chicken Expert | 12+ years helping city dwellers keep chickens',
+    date: '2025-01-25',
+    updatedDate: '2025-01-25',
+    readingTime: 35,
+    category: 'Planning',
+    tags: ['Small Space', 'Urban', 'Planning', 'DIY', 'City Ordinances'],
+    difficulty: 'Beginner',
+    costRange: '$150-$800',
+    featured: true,
+    image: undefined,
+    seo: {
+      metaTitle: 'Small Chicken Coop Plans: 15 Best Designs for Backyards Under 1000 sq ft',
+      metaDescription: 'Discover the best small chicken coop plans for urban backyards. 15 space-saving designs with detailed pros/cons and city ordinance tips.',
+    },
+  },
+  {
     id: 'how-to-build-chicken-coop',
     slug: 'how-to-build-chicken-coop',
     title: 'How to Build a Chicken Coop: Complete Step-by-Step Guide for 2025',
