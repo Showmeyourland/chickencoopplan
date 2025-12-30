@@ -1,11 +1,12 @@
 import { Egg, ShoppingCart, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between">
-        <div className="flex items-center gap-3">
+        <Link to="/" className="flex items-center gap-3">
           <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary">
             <Egg className="h-6 w-6 text-primary-foreground" />
           </div>
@@ -17,19 +18,16 @@ const Header = () => {
               Build Better Coops
             </span>
           </div>
-        </div>
+        </Link>
         
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#plans" className="flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors">
+          <Link to="/recommended-plans" className="flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-primary transition-colors">
             Free Plans
             <span className="px-1.5 py-0.5 text-[10px] font-bold bg-accent text-accent-foreground rounded">NEW</span>
-          </a>
-          <a href="/guides" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          </Link>
+          <Link to="/guides" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Guides
-          </a>
-          <a href="#about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-            About
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-2">

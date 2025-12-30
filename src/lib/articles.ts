@@ -55,7 +55,7 @@ export const articles: Article[] = [
     difficulty: 'Intermediate',
     costRange: '$600-$2,500',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-urban-coop.jpg',
     seo: {
       metaTitle: 'Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)',
       metaDescription: 'Expert urban chicken coop designs for city backyards. Noise reduction, neighbor relations, space optimization, and regulations for city chicken keeping.',
@@ -76,7 +76,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$900 prevention vs $2,347 losses',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-coop-mistakes.jpg',
     seo: {
       metaTitle: '5 Expensive Chicken Coop Mistakes That Cost Beginners $1000+ (2025)',
       metaDescription: 'Avoid these costly chicken coop mistakes that cost me over $2,000 in my first year. Real failure stories with prevention strategies.',
@@ -97,7 +97,7 @@ export const articles: Article[] = [
     difficulty: 'Intermediate',
     costRange: '$800-$2,500',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-arizona.jpg',
     seo: {
       metaTitle: 'Arizona Chicken Coop Guide: Desert Climate Building Requirements (2025)',
       metaDescription: 'Complete Arizona chicken coop guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix and Tucson.',
@@ -118,7 +118,7 @@ export const articles: Article[] = [
     difficulty: 'Intermediate',
     costRange: '$50-$400',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-ventilation.jpg',
     seo: {
       metaTitle: 'Complete Chicken Coop Ventilation Guide (2025)',
       metaDescription: 'Expert ventilation guide with climate-specific designs, troubleshooting solutions, and cost-effective upgrades to prevent respiratory diseases.',
@@ -139,7 +139,7 @@ export const articles: Article[] = [
     difficulty: 'Advanced',
     costRange: '$200-$1,500',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-predator.jpg',
     seo: {
       metaTitle: 'Predator-Proof Chicken Coop: Complete Security Guide (2025)',
       metaDescription: 'Complete predator-proofing guide with 5-layer security systems, hardware cloth specs, and proven protection strategies for coyotes, raccoons, and hawks.',
@@ -160,7 +160,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$0-$500 (permits)',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-permits.jpg',
     seo: {
       metaTitle: 'Chicken Coop Permit Requirements: State-by-State Guide (2025)',
       metaDescription: 'Complete chicken coop permit guide covering all 50 states. Application processes, costs, timelines, and appeals procedures.',
@@ -181,7 +181,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$200-$2,000+',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-materials.jpg',
     seo: {
       metaTitle: 'Best Chicken Coop Materials for Every Budget (2025 Guide)',
       metaDescription: 'Complete chicken coop materials guide with real-world durability testing, current 2025 pricing, and regional supplier recommendations.',
@@ -201,7 +201,7 @@ export const articles: Article[] = [
     tags: ['Calculator', 'Planning', 'Space', 'Beginner', 'Tools'],
     difficulty: 'Beginner',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-coop-size-calculator.jpg',
     seo: {
       metaTitle: 'Chicken Coop Size Calculator: How Much Space Do You Need? (2025)',
       metaDescription: 'Free chicken coop size calculator with breed-specific requirements. Calculate exact indoor/outdoor space for your flock with climate considerations.',
@@ -222,7 +222,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$150-$800',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-small-coop-plans.jpg',
     seo: {
       metaTitle: 'Small Chicken Coop Plans: 15 Best Designs for Backyards Under 1000 sq ft',
       metaDescription: 'Discover the best small chicken coop plans for urban backyards. 15 space-saving designs with detailed pros/cons and city ordinance tips.',
@@ -244,7 +244,7 @@ export const articles: Article[] = [
     projectTime: '2-4 weeks',
     costRange: '$250-$1,200',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-how-to-build-coop.jpg',
     seo: {
       metaTitle: 'How to Build a Chicken Coop: Complete Step-by-Step Guide for 2025',
       metaDescription: 'Learn how to build a chicken coop with our beginner-friendly guide. Includes material lists, cost breakdowns, and common mistakes to avoid.',
@@ -265,7 +265,7 @@ export const articles: Article[] = [
     difficulty: 'Beginner',
     costRange: '$250-$1,200',
     featured: true,
-    image: undefined,
+    image: '/src/assets/guide-cost-breakdown.jpg',
     seo: {
       metaTitle: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
       metaDescription: 'Complete 2025 cost guide for building a chicken coop. Budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with material lists.',
