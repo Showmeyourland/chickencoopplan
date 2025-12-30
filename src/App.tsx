@@ -19,6 +19,7 @@ import DIYPlansComparison from "./pages/guides/DIYPlansComparison";
 import FourByFourCoopPlans from "./pages/guides/FourByFourCoopPlans";
 import ChickenCoopSizeCalculator from "./pages/guides/ChickenCoopSizeCalculator";
 import ChickenCoopMaterialsGuide from "./pages/guides/ChickenCoopMaterialsGuide";
+import ChickenCoopPermitGuide from "./pages/guides/ChickenCoopPermitGuide";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 
@@ -46,6 +47,7 @@ const App = () => (
             <Route path="/guides/4x4-chicken-coop-plans" element={<FourByFourCoopPlans />} />
             <Route path="/guides/chicken-coop-size-calculator" element={<ChickenCoopSizeCalculator />} />
             <Route path="/guides/coop-materials-guide" element={<ChickenCoopMaterialsGuide />} />
+            <Route path="/guides/coop-permit-guide" element={<ChickenCoopPermitGuide />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
