@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'free-chicken-coop-plans',
+    slug: 'free-chicken-coop-plans',
+    title: 'Free Chicken Coop Plans: 25 Best Sources Reviewed (2025)',
+    excerpt: 'Quality-first review of 25 best sources for free chicken coop plans, including hidden costs, plan scoring, and practical upgrade recommendations with 3 interactive tools.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Plan Review Specialist',
+    date: '2025-01-30',
+    updatedDate: '2025-01-30',
+    readingTime: 35,
+    category: 'Planning',
+    tags: ['Free Plans', 'Plan Review', 'DIY', 'Budget', 'Resources'],
+    difficulty: 'Beginner',
+    costRange: '$200-$1,500+',
+    featured: true,
+    image: '/src/assets/guide-free-coop-plans.jpg',
+    seo: {
+      metaTitle: 'Free Chicken Coop Plans: 25 Best Sources Reviewed (2025)',
+      metaDescription: 'Quality-first review of 25 best free coop plan sources with 3 tools: Plan Scorecard, Hidden Cost Estimator, and Materials Calculator.',
+    },
+  },
+  {
     id: 'chicken-coop-insulation-guide',
     slug: 'chicken-coop-insulation-guide',
     title: 'Chicken Coop Insulation Guide: When and How to Insulate (2025)',
