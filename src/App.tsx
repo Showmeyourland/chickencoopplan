@@ -22,6 +22,7 @@ import ChickenCoopMaterialsGuide from "./pages/guides/ChickenCoopMaterialsGuide"
 import ChickenCoopPermitGuide from "./pages/guides/ChickenCoopPermitGuide";
 import PredatorProofCoopGuide from "./pages/guides/PredatorProofCoopGuide";
 import ChickenCoopVentilationGuide from "./pages/guides/ChickenCoopVentilationGuide";
+import ArizonaChickenCoopGuide from "./pages/guides/ArizonaChickenCoopGuide";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 
@@ -52,6 +53,7 @@ const App = () => (
             <Route path="/guides/coop-permit-guide" element={<ChickenCoopPermitGuide />} />
             <Route path="/guides/predator-proof-coop-guide" element={<PredatorProofCoopGuide />} />
             <Route path="/guides/coop-ventilation-guide" element={<ChickenCoopVentilationGuide />} />
+            <Route path="/guides/arizona-chicken-coop-guide" element={<ArizonaChickenCoopGuide />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
