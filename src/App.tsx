@@ -21,6 +21,7 @@ import ExpensiveCoopMistakes from "./pages/guides/ExpensiveCoopMistakes";
 import UrbanChickenCoopPlans from "./pages/guides/UrbanChickenCoopPlans";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
+import Shop from "./pages/Shop";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/guides/urban-chicken-coop-plans" element={<UrbanChickenCoopPlans />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
+            <Route path="/shop" element={<Shop />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
