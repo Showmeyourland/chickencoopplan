@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Egg, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -27,11 +28,8 @@ const Footer = () => {
 
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                <Egg className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="font-display text-xl">CoopCraft</span>
+            <Link to="/" className="hover:opacity-80 transition-opacity">
+              <img src={logo} alt="ChickenCoopCraft" className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-primary-foreground/70">
               Professional DIY chicken coop plans for backyard farmers. 

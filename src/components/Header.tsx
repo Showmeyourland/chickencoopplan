@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Egg, ShoppingBag, Menu, X } from "lucide-react";
+import { ShoppingBag, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import {
@@ -9,6 +9,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -22,18 +23,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary">
-            <Egg className="h-6 w-6 text-primary-foreground" />
-          </div>
-          <div>
-            <span className="font-display text-xl text-foreground">
-              CoopCraft
-            </span>
-            <span className="hidden sm:block text-xs text-muted-foreground -mt-0.5">
-              Build Better Coops
-            </span>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="ChickenCoopCraft" className="h-12 w-auto" />
         </Link>
         
         <nav className="hidden md:flex items-center gap-6">
