@@ -27,8 +27,16 @@ const SEO = ({
 }: SEOProps) => {
   const siteName = 'CoopCraft';
   const siteUrl = 'https://buildingachickencoopplans.com';
-  const fullTitle = `${title} | ${siteName}`;
-  const canonicalUrl = canonical ? `${siteUrl}${canonical}` : undefined;
+  
+  // Prevent double-branding in title
+  const fullTitle = title.includes(siteName) ? title : `${title} | ${siteName}`;
+  
+  // Handle both absolute URLs and path-based canonicals
+  const canonicalUrl = canonical 
+    ? canonical.startsWith('http') 
+      ? canonical 
+      : `${siteUrl}${canonical.startsWith('/') ? canonical : `/${canonical}`}`
+    : undefined;
 
   return (
     <Helmet>
@@ -89,6 +97,16 @@ export const ArticleSchema = ({
   image,
   url,
 }: ArticleSchemaProps) => {
+  const siteUrl = 'https://buildingachickencoopplans.com';
+  
+  // Ensure URLs are absolute
+  const absoluteUrl = url.startsWith('http') ? url : `${siteUrl}${url.startsWith('/') ? url : `/${url}`}`;
+  const absoluteImage = image 
+    ? image.startsWith('http') 
+      ? image 
+      : `${siteUrl}${image.startsWith('/') ? image : `/${image}`}`
+    : `${siteUrl}/og-image.jpg`;
+  
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -100,8 +118,8 @@ export const ArticleSchema = ({
     },
     datePublished: datePublished,
     dateModified: dateModified || datePublished,
-    image: image,
-    url: url,
+    image: absoluteImage,
+    url: absoluteUrl,
     publisher: {
       '@type': 'Organization',
       name: 'CoopCraft',
@@ -112,7 +130,7 @@ export const ArticleSchema = ({
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': url,
+      '@id': absoluteUrl,
     },
   };
 

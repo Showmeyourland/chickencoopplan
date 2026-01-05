@@ -11,9 +11,9 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="CoopCraft | DIY Chicken Coop Plans & Building Guides"
+        title="DIY Chicken Coop Plans & Building Guides"
         description="Professional DIY chicken coop plans for backyard farmers. Step-by-step building guides, cost breakdowns, and expert tips for every budget."
-        canonical="https://buildingachickencoopplans.com/"
+        canonical="/"
         type="website"
       />
       <Header />
