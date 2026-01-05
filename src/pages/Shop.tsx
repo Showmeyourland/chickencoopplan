@@ -10,9 +10,9 @@ const Shop = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <SEO
-        title="Shop Chicken Coop Plans | CoopCraft"
+        title="Shop Chicken Coop Plans"
         description="Shop premium chicken coop plans and building kits. Coming soon - sign up to be notified when our store launches."
-        canonical="https://buildingachickencoopplans.com/shop"
+        canonical="/shop"
       />
       <Header />
       <main className="flex-1 flex items-center justify-center py-16">
