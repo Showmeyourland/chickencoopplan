@@ -9,6 +9,60 @@ import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { Article, getRelatedArticles } from "@/lib/articles";
 
+// Import guide images for SEO meta tags
+import guideArizona from '@/assets/guide-arizona.jpg';
+import guideChickenRun from '@/assets/guide-chicken-run.jpg';
+import guideCleaning from '@/assets/guide-cleaning.jpg';
+import guideCoopMistakes from '@/assets/guide-coop-mistakes.jpg';
+import guideCoopSizeCalculator from '@/assets/guide-coop-size-calculator.jpg';
+import guideCostBreakdown from '@/assets/guide-cost-breakdown.jpg';
+import guideFlooringOptions from '@/assets/guide-flooring-options.jpg';
+import guideFreeCoopPlans from '@/assets/guide-free-coop-plans.jpg';
+import guideFreeVsPremiumPlans from '@/assets/guide-free-vs-premium-plans.jpg';
+import guideHowToBuildCoop from '@/assets/guide-how-to-build-coop.jpg';
+import guideInsulation from '@/assets/guide-insulation.jpg';
+import guideLargeCoop from '@/assets/guide-large-coop.jpg';
+import guideLighting from '@/assets/guide-lighting.jpg';
+import guideMaterials from '@/assets/guide-materials.jpg';
+import guideMobileCoop from '@/assets/guide-mobile-coop.jpg';
+import guidePermits from '@/assets/guide-permits.jpg';
+import guidePredator from '@/assets/guide-predator.jpg';
+import guideSmallCoopPlans from '@/assets/guide-small-coop-plans.jpg';
+import guideUrbanCoop from '@/assets/guide-urban-coop.jpg';
+import guideVentilation from '@/assets/guide-ventilation.jpg';
+import guideWinterCoop from '@/assets/guide-winter-coop.jpg';
+import guide4x4CoopPlans from '@/assets/guide-4x4-coop-plans.jpg';
+
+// Map slug to imported image for SEO meta tags
+const seoImageMap: Record<string, string> = {
+  'arizona-chicken-coop-guide': guideArizona,
+  'chicken-run-design-guide': guideChickenRun,
+  'chicken-coop-cleaning-guide': guideCleaning,
+  'expensive-coop-mistakes': guideCoopMistakes,
+  'coop-size-calculator': guideCoopSizeCalculator,
+  'coop-cost-breakdown-2025': guideCostBreakdown,
+  'chicken-coop-flooring-guide': guideFlooringOptions,
+  'free-chicken-coop-plans': guideFreeCoopPlans,
+  'free-vs-premium-plans': guideFreeVsPremiumPlans,
+  'how-to-build-chicken-coop': guideHowToBuildCoop,
+  'chicken-coop-insulation-guide': guideInsulation,
+  'large-chicken-coop-plans': guideLargeCoop,
+  'chicken-coop-lighting-guide': guideLighting,
+  'coop-materials-guide': guideMaterials,
+  'mobile-chicken-coop-plans': guideMobileCoop,
+  'coop-permit-guide': guidePermits,
+  'predator-proof-coop-guide': guidePredator,
+  'small-chicken-coop-plans': guideSmallCoopPlans,
+  'urban-chicken-coop-plans': guideUrbanCoop,
+  'coop-ventilation-guide': guideVentilation,
+  'winter-chicken-coop-guide': guideWinterCoop,
+  '4x4-coop-plans': guide4x4CoopPlans,
+};
+
+const getSeoImage = (slug: string): string => {
+  return seoImageMap[slug] || '/og-image.jpg';
+};
+
 interface BlogLayoutProps {
   children: React.ReactNode;
   article: Article;
@@ -17,6 +71,7 @@ interface BlogLayoutProps {
 
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
   const relatedArticles = getRelatedArticles(article.slug, article.category, 3);
+  const resolvedImage = getSeoImage(article.slug);
   
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -34,7 +89,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
         title={article.seo?.metaTitle || article.title}
         description={article.seo?.metaDescription || article.excerpt}
         canonical={`/guides/${article.slug}`}
-        image={article.image}
+        image={resolvedImage}
         type="article"
         author={article.author}
         publishedTime={article.date}
@@ -46,7 +101,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
         author={article.author}
         datePublished={article.date}
         dateModified={article.updatedDate || article.date}
-        image={article.image || '/og-image.jpg'}
+        image={resolvedImage}
         url={`/guides/${article.slug}`}
       />
 
