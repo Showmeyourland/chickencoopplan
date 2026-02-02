@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'beginner-chicken-coop-plans',
+    slug: 'beginner-chicken-coop-plans',
+    title: 'Beginner-Friendly Chicken Coop Plans: Complete Guide for First-Time Builders (2025)',
+    excerpt: 'Step-by-step chicken coop plans for beginners. No experience needed. Basic tools only. Start your chicken journey with confidence using beginner-tested designs.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Beginner Builder Coach',
+    date: '2025-02-02',
+    updatedDate: '2025-02-02',
+    readingTime: 35,
+    category: 'Building',
+    tags: ['Beginner', 'First-Time Builder', 'Step-by-Step', 'Easy Build', 'Basic Tools'],
+    difficulty: 'Beginner',
+    costRange: '$400-$800',
+    featured: true,
+    image: '/src/assets/guide-beginner.jpg',
+    seo: {
+      metaTitle: 'Beginner-Friendly Chicken Coop Plans: Complete Guide for First-Time Builders (2025)',
+      metaDescription: 'Step-by-step chicken coop plans for beginners. No experience needed. Basic tools only. Start your chicken journey with confidence.',
+    },
+  },
+  {
     id: 'small-backyard-coop-plans',
     slug: 'small-backyard-coop-plans',
     title: 'Small Backyard Chicken Coop Plans: Space-Smart Designs for Urban Lots (2025)',

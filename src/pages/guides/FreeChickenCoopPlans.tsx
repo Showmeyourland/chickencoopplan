@@ -725,7 +725,7 @@ const FreeChickenCoopPlans = () => {
       <div className="prose prose-lg dark:prose-invert max-w-none">
         {/* Introduction */}
         <p className="lead text-xl text-muted-foreground mb-6">
-          If you search free chicken coop plans, you'll find thousands of sketches, blog posts, and PDFs. Some are genuinely buildable. Many look good in photos but skip the boring details that determine whether your coop is safe, dry, and easy to clean. This guide reviews 25 of the best places to start—then shows you the hidden costs you should expect and the upgrades that keep "free" plans from becoming expensive mistakes.
+          If you search free chicken coop plans, you'll find thousands of sketches, blog posts, and PDFs. Some are genuinely buildable. Many look good in photos but skip the boring details that determine whether your coop is safe, dry, and easy to clean. This guide reviews 25 of the best places to start—then shows you the hidden costs you should expect and the upgrades that keep "free" plans from becoming expensive mistakes. New to building? Start with our <Link to="/guides/beginner-chicken-coop-plans" className="text-primary hover:underline">beginner-friendly guide</Link> first.
         </p>
 
         <div className="bg-primary/5 p-6 rounded-lg my-8 border-l-4 border-primary">
