@@ -47,7 +47,7 @@ const SmallChickenCoopPlans = () => {
         </div>
 
         <p className="text-muted-foreground">
-          <Link to="/guides/how-to-build-chicken-coop" className="text-primary hover:underline">Looking for detailed construction guidance? Check our complete chicken coop building guide</Link> with step-by-step instructions for any of these designs.
+          <Link to="/guides/how-to-build-chicken-coop" className="text-primary hover:underline">Looking for detailed construction guidance? Check our complete chicken coop building guide</Link> with step-by-step instructions for any of these designs. For urban lot placement and setback strategies, see our <Link to="/guides/small-backyard-coop-plans" className="text-primary hover:underline">small backyard coop plans guide</Link>.
         </p>
       </section>
 
