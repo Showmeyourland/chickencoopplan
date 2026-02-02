@@ -394,6 +394,10 @@ const UrbanChickenCoopPlans = () => {
                 <li><strong>Hanging feeders/waterers:</strong> Ground-free systems maximize floor space</li>
                 <li><strong>Wall-mounted nesting boxes:</strong> External access preserves interior room</li>
               </ul>
+
+              <p>
+                For comprehensive placement strategies, setback compliance, and footprint optimization on lots under 1/4 acre, see our detailed <Link to="/guides/small-backyard-coop-plans" className="text-primary hover:underline">small backyard chicken coop plans guide</Link>.
+              </p>
             </div>
           </section>
 

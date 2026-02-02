@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'small-backyard-coop-plans',
+    slug: 'small-backyard-coop-plans',
+    title: 'Small Backyard Chicken Coop Plans: Space-Smart Designs for Urban Lots (2025)',
+    excerpt: 'Expert-designed chicken coop plans optimized for small backyards. Space-efficient designs for 4-8 hens that maximize your urban lot without compromising bird welfare.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Urban Lot Specialist',
+    date: '2025-02-02',
+    updatedDate: '2025-02-02',
+    readingTime: 30,
+    category: 'Planning',
+    tags: ['Small Backyard', 'Urban Lots', 'Space Efficiency', 'Compact Design', '4-8 Birds'],
+    difficulty: 'Beginner',
+    costRange: '$400-$1,200',
+    featured: true,
+    image: '/src/assets/guide-small-backyard-coop.jpg',
+    seo: {
+      metaTitle: 'Small Backyard Chicken Coop Plans: Space-Smart Designs for Urban Lots (2025)',
+      metaDescription: 'Expert-designed chicken coop plans optimized for small backyards. Space-efficient designs for 4-8 hens that maximize urban lots.',
+    },
+  },
+  {
     id: 'free-coop-plans-quality-checklist',
     slug: 'free-coop-plans-quality-checklist',
     title: 'Free Coop Plans Quality Checklist: 12 Must-Have Elements (2025)',
