@@ -746,6 +746,7 @@ const WinterChickenCoopGuide = () => {
         <p className="text-muted-foreground mb-6">
           People often "winterize" by sealing everything, then wonder why the coop smells, walls sweat, or comb tips frostbite. 
           That happens because humid air is trapped. Chickens exhale moisture all night; droppings add more humidity.
+          For comprehensive climate-specific ventilation guidance, see our <Link to="/guides/climate-chicken-coop-guide" className="text-primary hover:underline">climate design guide</Link>.
         </p>
         
         <div className="grid gap-6 md:grid-cols-2">

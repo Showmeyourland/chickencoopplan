@@ -112,7 +112,7 @@ const ArizonaChickenCoopGuide = () => {
             </p>
 
             <p>
-              This comprehensive guide covers everything Arizona chicken keepers need to know: state and local regulations (including the game-changing HB2325 law), desert-specific coop design principles, heat management systems that actually work in extreme temperatures, material choices for our intense sun and monsoon seasons, and predator protection against javelinas, coyotes, and desert wildlife. Whether you're in Phoenix, Tucson, Flagstaff, or rural Arizona, these proven strategies will keep your flock healthy and productive year-round.
+              This comprehensive guide covers everything Arizona chicken keepers need to know: state and local regulations (including the game-changing HB2325 law), desert-specific coop design principles, heat management systems that actually work in extreme temperatures, material choices for our intense sun and monsoon seasons, and predator protection against javelinas, coyotes, and desert wildlife. Whether you're in Phoenix, Tucson, Flagstaff, or rural Arizona, these proven strategies will keep your flock healthy and productive year-round. For a broader look at how different climates affect coop design, see our <Link to="/guides/climate-chicken-coop-guide" className="text-primary hover:underline">complete climate-specific design guide</Link>.
             </p>
           </section>
 
