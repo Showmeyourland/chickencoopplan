@@ -871,7 +871,7 @@ const FreeVsPremiumPlans = () => {
             <AccordionContent>
               Look for: complete material lists with quantities, ventilation specifications (sq ft of venting), predator protection 
               details (hardware cloth gauge, apron depth), and build photos from multiple people who've used the plans. Avoid plans 
-              with only renderings and no real photos.
+              with only renderings and no real photos. For a comprehensive evaluation process, check our <Link to="/guides/free-coop-plans-quality-checklist" className="text-primary hover:underline font-medium">Free Plan Quality Checklist</Link> with 12 must-have elements.
             </AccordionContent>
           </AccordionItem>
 
@@ -925,9 +925,9 @@ const FreeVsPremiumPlans = () => {
             <h3 className="font-semibold mb-1">Ventilation Guide</h3>
             <p className="text-sm text-muted-foreground">Climate-specific ventilation requirements</p>
           </Link>
-          <Link to="/guides/cost-breakdown-2025" className="block p-4 rounded-lg border hover:border-primary transition-colors">
-            <h3 className="font-semibold mb-1">2025 Cost Breakdown</h3>
-            <p className="text-sm text-muted-foreground">Current material prices and budget tiers</p>
+          <Link to="/guides/free-coop-plans-quality-checklist" className="block p-4 rounded-lg border hover:border-primary transition-colors">
+            <h3 className="font-semibold mb-1">Free Plan Quality Checklist</h3>
+            <p className="text-sm text-muted-foreground">12 must-have elements before you build</p>
           </Link>
           <Link to="/guides/how-to-build-chicken-coop" className="block p-4 rounded-lg border hover:border-primary transition-colors">
             <h3 className="font-semibold mb-1">How to Build a Chicken Coop</h3>
