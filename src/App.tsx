@@ -32,6 +32,7 @@ import ChickenCoopCleaningGuide from "./pages/guides/ChickenCoopCleaningGuide";
 import FreePlanQualityChecklist from "./pages/guides/FreePlanQualityChecklist";
 import SmallBackyardCoopPlans from "./pages/guides/SmallBackyardCoopPlans";
 import BeginnerChickenCoopPlans from "./pages/guides/BeginnerChickenCoopPlans";
+import ClimateChickenCoopGuide from "./pages/guides/ClimateChickenCoopGuide";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
@@ -73,6 +74,7 @@ const App = () => (
             <Route path="/guides/free-coop-plans-quality-checklist" element={<FreePlanQualityChecklist />} />
             <Route path="/guides/small-backyard-coop-plans" element={<SmallBackyardCoopPlans />} />
             <Route path="/guides/beginner-chicken-coop-plans" element={<BeginnerChickenCoopPlans />} />
+            <Route path="/guides/climate-chicken-coop-guide" element={<ClimateChickenCoopGuide />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />

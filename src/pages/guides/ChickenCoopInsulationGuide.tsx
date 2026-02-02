@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BlogLayout from '@/components/BlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -641,7 +642,7 @@ const ChickenCoopInsulationGuide = () => {
         <h2 id="climate-requirements" className="scroll-mt-20">Climate Requirements: Cold, Wind, Heat, and Humidity</h2>
         
         <p>
-          Insulation decisions aren't only about how cold it gets. The "need" depends on a mix of factors: minimum temperature, wind exposure, humidity patterns, and how quickly your coop loses or gains heat.
+          Insulation decisions aren't only about how cold it gets. The "need" depends on a mix of factors: minimum temperature, wind exposure, humidity patterns, and how quickly your coop loses or gains heat. For comprehensive climate-specific design guidance, see our <Link to="/guides/climate-chicken-coop-guide" className="text-primary hover:underline">climate coop design guide</Link>.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-8">

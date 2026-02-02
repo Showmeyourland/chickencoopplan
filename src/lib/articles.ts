@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'climate-chicken-coop-guide',
+    slug: 'climate-chicken-coop-guide',
+    title: 'Chicken Coop Plans by Climate: Weather-Specific Designs That Actually Work (2025)',
+    excerpt: 'Climate-specific chicken coop designs for hot, cold, humid, and temperate regions. Expert adaptations for extreme weather conditions that keep flocks healthy year-round.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Climate Adaptation Specialist',
+    date: '2025-02-02',
+    updatedDate: '2025-02-02',
+    readingTime: 40,
+    category: 'Building',
+    tags: ['Climate', 'Weather', 'Regional', 'Hot Climate', 'Cold Climate', 'Humid', 'Temperate'],
+    difficulty: 'Intermediate',
+    costRange: '$600-$2,500',
+    featured: true,
+    image: '/src/assets/guide-climate.jpg',
+    seo: {
+      metaTitle: 'Chicken Coop Plans by Climate: Weather-Specific Designs That Actually Work (2025)',
+      metaDescription: 'Climate-specific chicken coop designs for hot, cold, humid, and temperate regions. Expert adaptations for extreme weather conditions.',
+    },
+  },
+  {
     id: 'beginner-chicken-coop-plans',
     slug: 'beginner-chicken-coop-plans',
     title: 'Beginner-Friendly Chicken Coop Plans: Complete Guide for First-Time Builders (2025)',
