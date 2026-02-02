@@ -79,7 +79,7 @@ const HowToBuildChickenCoop = () => {
         <h2 className="font-display text-3xl text-foreground mb-6">Planning Your Chicken Coop (Week 1)</h2>
         
         <p className="text-muted-foreground mb-6">
-          Before you buy a single board, you need to nail down three critical decisions. I learned this the hard way when my neighbor called code enforcement on my first coop because I'd placed it 15 feet from the property line instead of the required 20 feet. If you're evaluating free plans, use our <Link to="/guides/free-coop-plans-quality-checklist" className="text-primary hover:underline font-medium">quality checklist</Link> to avoid dangerous designs.
+          Before you buy a single board, you need to nail down three critical decisions. I learned this the hard way when my neighbor called code enforcement on my first coop because I'd placed it 15 feet from the property line instead of the required 20 feet. If you're evaluating free plans, use our <Link to="/guides/free-coop-plans-quality-checklist" className="text-primary hover:underline font-medium">quality checklist</Link> to avoid dangerous designs. New to building? Our <Link to="/guides/beginner-chicken-coop-plans" className="text-primary hover:underline font-medium">beginner-friendly guide</Link> breaks down exactly what skills you need.
         </p>
 
         <h3 className="font-display text-xl text-foreground mb-4">Space Requirements: More Than You Think</h3>

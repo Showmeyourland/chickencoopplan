@@ -57,6 +57,7 @@ const imageMap: Record<string, string> = {
   'winter-chicken-coop-guide': guideWinterCoop,
   '4x4-coop-plans': guide4x4CoopPlans,
   'small-backyard-coop-plans': guideSmallBackyardCoop,
+  'beginner-chicken-coop-plans': guideBeginner,
 };
 
 const getArticleImage = (slug: string): string | undefined => {

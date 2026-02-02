@@ -34,6 +34,7 @@ import guideWinterCoop from '@/assets/guide-winter-coop.jpg';
 import guide4x4CoopPlans from '@/assets/guide-4x4-coop-plans.jpg';
 import guideFreeCoopQualityChecklist from '@/assets/guide-free-coop-quality-checklist.jpg';
 import guideSmallBackyardCoop from '@/assets/guide-small-backyard-coop.jpg';
+import guideBeginner from '@/assets/guide-beginner.jpg';
 
 // Map slug to imported image for SEO meta tags
 const seoImageMap: Record<string, string> = {
@@ -61,6 +62,7 @@ const seoImageMap: Record<string, string> = {
   '4x4-coop-plans': guide4x4CoopPlans,
   'free-coop-plans-quality-checklist': guideFreeCoopQualityChecklist,
   'small-backyard-coop-plans': guideSmallBackyardCoop,
+  'beginner-chicken-coop-plans': guideBeginner,
 };
 
 const getSeoImage = (slug: string): string => {
