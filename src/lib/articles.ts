@@ -41,6 +41,27 @@ export const difficultyLevels = ['Beginner', 'Intermediate', 'Advanced'] as cons
 
 export const articles: Article[] = [
   {
+    id: 'free-coop-plans-quality-checklist',
+    slug: 'free-coop-plans-quality-checklist',
+    title: 'Free Coop Plans Quality Checklist: 12 Must-Have Elements (2025)',
+    excerpt: 'Expert 12-point checklist for evaluating free chicken coop plans. Learn what separates safe, buildable designs from dangerous blueprints that waste time and money.',
+    author: 'Sarah Martinez',
+    authorCredentials: 'Backyard Chicken Expert | Plan Review Specialist',
+    date: '2025-02-02',
+    updatedDate: '2025-02-02',
+    readingTime: 25,
+    category: 'Planning',
+    tags: ['Free Plans', 'Evaluation', 'Checklist', 'Quality', 'Safety'],
+    difficulty: 'Beginner',
+    costRange: '$400-$1,500',
+    featured: true,
+    image: '/src/assets/guide-free-coop-quality-checklist.jpg',
+    seo: {
+      metaTitle: 'Free Coop Plans Quality Checklist: 12 Must-Have Elements (2025)',
+      metaDescription: 'Expert 12-point checklist for evaluating free chicken coop plans. Learn what separates safe, buildable designs from dangerous blueprints.',
+    },
+  },
+  {
     id: 'chicken-coop-cleaning-guide',
     slug: 'chicken-coop-cleaning-guide',
     title: 'Chicken Coop Cleaning Schedule: Maintenance Made Simple (2025)',

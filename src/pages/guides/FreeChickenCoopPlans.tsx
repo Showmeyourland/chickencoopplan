@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import BlogLayout from '@/components/BlogLayout';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
@@ -744,7 +745,7 @@ const FreeChickenCoopPlans = () => {
         <h2 id="how-to-pick" className="scroll-mt-20">How to Pick Free Chicken Coop Plans Without Regret</h2>
         
         <p>
-          Most "bad" coop builds don't fail because the builder can't cut a 2x4. They fail because the plan's priorities are wrong: tiny vents, exposed wire that predators can tear, roofs that leak at the first monsoon, and layouts that make cleaning miserable.
+          Most "bad" coop builds don't fail because the builder can't cut a 2x4. They fail because the plan's priorities are wrong: tiny vents, exposed wire that predators can tear, roofs that leak at the first monsoon, and layouts that make cleaning miserable. Before choosing any plan, use our <Link to="/guides/free-coop-plans-quality-checklist" className="text-primary hover:underline font-medium">12-point quality checklist</Link> to evaluate what you're getting.
         </p>
 
         <h3>Before You Choose Any Free Plan, Decide Three Things:</h3>
