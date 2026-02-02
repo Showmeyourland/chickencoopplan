@@ -40,13 +40,16 @@ import guideClimate from '@/assets/guide-climate.jpg';
 // Map slug to imported image for SEO meta tags
 const seoImageMap: Record<string, string> = {
   'arizona-chicken-coop-guide': guideArizona,
+  'beginner-chicken-coop-plans': guideBeginner,
   'chicken-run-design-guide': guideChickenRun,
   'chicken-coop-cleaning-guide': guideCleaning,
+  'climate-chicken-coop-guide': guideClimate,
   'expensive-coop-mistakes': guideCoopMistakes,
-  'coop-size-calculator': guideCoopSizeCalculator,
-  'coop-cost-breakdown-2025': guideCostBreakdown,
+  'chicken-coop-size-calculator': guideCoopSizeCalculator,
+  'cost-breakdown-2025': guideCostBreakdown,
   'chicken-coop-flooring-guide': guideFlooringOptions,
   'free-chicken-coop-plans': guideFreeCoopPlans,
+  'free-coop-plans-quality-checklist': guideFreeCoopQualityChecklist,
   'free-vs-premium-plans': guideFreeVsPremiumPlans,
   'how-to-build-chicken-coop': guideHowToBuildCoop,
   'chicken-coop-insulation-guide': guideInsulation,
@@ -60,11 +63,8 @@ const seoImageMap: Record<string, string> = {
   'urban-chicken-coop-plans': guideUrbanCoop,
   'coop-ventilation-guide': guideVentilation,
   'winter-chicken-coop-guide': guideWinterCoop,
-  '4x4-coop-plans': guide4x4CoopPlans,
-  'free-coop-plans-quality-checklist': guideFreeCoopQualityChecklist,
+  '4x4-chicken-coop-plans': guide4x4CoopPlans,
   'small-backyard-coop-plans': guideSmallBackyardCoop,
-  'beginner-chicken-coop-plans': guideBeginner,
-  'climate-chicken-coop-guide': guideClimate,
 };
 
 const getSeoImage = (slug: string): string => {

@@ -29,6 +29,7 @@ import guideVentilation from '@/assets/guide-ventilation.jpg';
 import guideWinterCoop from '@/assets/guide-winter-coop.jpg';
 import guide4x4CoopPlans from '@/assets/guide-4x4-coop-plans.jpg';
 import guideSmallBackyardCoop from '@/assets/guide-small-backyard-coop.jpg';
+import guideFreeCoopQualityChecklist from '@/assets/guide-free-coop-quality-checklist.jpg';
 
 // Map slug to imported image
 const imageMap: Record<string, string> = {
@@ -38,10 +39,11 @@ const imageMap: Record<string, string> = {
   'chicken-coop-cleaning-guide': guideCleaning,
   'climate-chicken-coop-guide': guideClimate,
   'expensive-coop-mistakes': guideCoopMistakes,
-  'coop-size-calculator': guideCoopSizeCalculator,
-  'coop-cost-breakdown-2025': guideCostBreakdown,
+  'chicken-coop-size-calculator': guideCoopSizeCalculator,
+  'cost-breakdown-2025': guideCostBreakdown,
   'chicken-coop-flooring-guide': guideFlooringOptions,
   'free-chicken-coop-plans': guideFreeCoopPlans,
+  'free-coop-plans-quality-checklist': guideFreeCoopQualityChecklist,
   'free-vs-premium-plans': guideFreeVsPremiumPlans,
   'how-to-build-chicken-coop': guideHowToBuildCoop,
   'chicken-coop-insulation-guide': guideInsulation,
@@ -55,7 +57,7 @@ const imageMap: Record<string, string> = {
   'urban-chicken-coop-plans': guideUrbanCoop,
   'coop-ventilation-guide': guideVentilation,
   'winter-chicken-coop-guide': guideWinterCoop,
-  '4x4-coop-plans': guide4x4CoopPlans,
+  '4x4-chicken-coop-plans': guide4x4CoopPlans,
   'small-backyard-coop-plans': guideSmallBackyardCoop,
 };
 
