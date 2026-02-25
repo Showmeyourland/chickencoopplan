@@ -1,6 +1,7 @@
 import BlogLayout from '@/components/BlogLayout';
 import { getArticleBySlug } from '@/lib/articles';
 import TableOfContents from '@/components/TableOfContents';
+import { FAQSchema } from '@/components/SEO';
 import CoopSizeCalculator from '@/components/CoopSizeCalculator';
 import heroImage from '@/assets/guide-coop-size-calculator.jpg';
 
@@ -24,6 +25,10 @@ const ChickenCoopSizeCalculator = () => {
 
   return (
     <BlogLayout article={article} showTableOfContents>
+      <FAQSchema questions={[
+        { question: "How many square feet per chicken in a coop?", answer: "The standard recommendation is 4 square feet per chicken inside the coop and 10 square feet per chicken in the outdoor run. For bantam breeds, 2–3 sq ft inside is acceptable. For large breeds like Jersey Giants, plan for 5–6 sq ft per bird." },
+        { question: "How many chickens fit in a 4x4 coop?", answer: "A 4x4 coop has 16 square feet of floor space. At the standard 4 sq ft per chicken, it comfortably houses 4 chickens. If your birds have consistent access to an outdoor run, you can stretch it to 5–6 standard-sized hens." },
+      ]} />
       {/* Hero Image */}
       <div className="rounded-xl overflow-hidden mb-8">
         <img 

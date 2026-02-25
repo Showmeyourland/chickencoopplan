@@ -18,7 +18,7 @@ const SEO = ({
   description,
   canonical,
   type = 'website',
-  image = '/og-image.jpg',
+  image = '/og-default.jpg',
   author,
   publishedTime,
   modifiedTime,
@@ -156,6 +156,65 @@ export const BreadcrumbSchema = ({ items }: BreadcrumbSchemaProps) => {
       item: `https://buildingachickencoopplans.com${item.url}`,
     })),
   };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
+
+// FAQPage Schema
+interface FAQSchemaProps {
+  questions: { question: string; answer: string }[];
+}
+
+export const FAQSchema = ({ questions }: FAQSchemaProps) => {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: questions.map(q => ({
+      '@type': 'Question',
+      name: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.answer,
+      },
+    })),
+  };
+
+  return (
+    <Helmet>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
+    </Helmet>
+  );
+};
+
+// WebSite Schema
+interface WebSiteSchemaProps {
+  name: string;
+  url: string;
+  searchUrl?: string;
+}
+
+export const WebSiteSchema = ({ name, url, searchUrl }: WebSiteSchemaProps) => {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name,
+    url,
+  };
+  
+  if (searchUrl) {
+    schema.potentialAction = {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: searchUrl,
+      },
+      'query-input': 'required name=search_term_string',
+    };
+  }
 
   return (
     <Helmet>

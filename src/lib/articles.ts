@@ -57,8 +57,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-climate.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Plans by Climate: Weather-Specific Designs That Actually Work (2025)',
-      metaDescription: 'Climate-specific chicken coop designs for hot, cold, humid, and temperate regions. Expert adaptations for extreme weather conditions.',
+      metaTitle: 'Chicken Coop Design by Climate: Hot, Cold & Humid Zones',
+      metaDescription: 'Build the right coop for your weather. From arctic winters to desert heat, here\'s how climate affects ventilation, insulation, roofing, and floor choice.',
     },
   },
   {
@@ -78,7 +78,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-beginner.jpg',
     seo: {
-      metaTitle: 'Beginner-Friendly Chicken Coop Plans: Complete Guide for First-Time Builders (2025)',
+      metaTitle: 'Beginner Chicken Coop Plans: Start Here If You\'ve Never Built One',
       metaDescription: 'Step-by-step chicken coop plans for beginners. No experience needed. Basic tools only. Start your chicken journey with confidence.',
     },
   },
@@ -141,8 +141,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-cleaning.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Cleaning Schedule: Maintenance Made Simple (2025)',
-      metaDescription: 'Complete cleaning schedule with 3 tools: Schedule Builder, Ammonia Checker, Deep-Clean Generator. Keep your coop healthy with minimal effort.',
+      metaTitle: 'How Often Should You Clean a Chicken Coop? Schedule + Deep Clean Guide',
+      metaDescription: 'Most backyard coops need a full clean every 1\u20132 months. Here\u2019s a week-by-week cleaning schedule, plus a deep clean checklist to keep your flock healthy year-round.',
     },
   },
   {
@@ -225,8 +225,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-insulation.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Insulation Guide: When and How to Insulate (2025)',
-      metaDescription: 'Complete insulation guide with 3 tools: Decision Wizard, R-Value Planner, Condensation Risk Checker. Know when and how to insulate safely.',
+      metaTitle: 'Chicken Coop Insulation Guide: Best Materials + What to Avoid',
+      metaDescription: 'Should you insulate your chicken coop? Yes \u2014 if temps drop below 20\u00b0F. Here\u2019s exactly what to use, what to skip, and how to install it without harming your flock.',
     },
   },
   {
@@ -246,7 +246,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-large-coop.jpg',
     seo: {
-      metaTitle: 'Large Chicken Coop Plans: Housing 20+ Birds Efficiently (2025)',
+      metaTitle: 'Large Chicken Coop Plans: Walk-In Designs for 20\u201350+ Birds',
       metaDescription: 'Large coop guide with 3 tools: Space Calculator, Ventilation Estimator, Automation Planner. Design for 20+ birds without the headaches.',
     },
   },
@@ -267,8 +267,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-flooring-options.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Flooring Options: Pros & Cons of Every Material (2025)',
-      metaDescription: 'Compare coop flooring with 3 tools: Cost Estimator, Cleaning Planner, Health Risk Checker. Dirt, wood, concrete, sand & more.',
+      metaTitle: 'Chicken Coop Flooring Guide: Best Materials for Health & Easy Cleaning',
+      metaDescription: 'Concrete, sand, rubber mats, or deep litter \u2014 a complete comparison of chicken coop flooring materials with costs, ease of cleaning, and flock health impact.',
     },
   },
   {
@@ -288,7 +288,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-mobile-coop.jpg',
     seo: {
-      metaTitle: 'Mobile Chicken Coop Plans: Best Tractor Designs for Rotational Grazing (2025)',
+      metaTitle: 'Mobile Chicken Coop Plans: Tractors, A-Frames & Portable Designs',
       metaDescription: 'Mobile coop guide with 3 tools: Rotation Planner, Weight Estimator, Pasture Impact Calculator. Build a tractor that actually moves.',
     },
   },
@@ -351,7 +351,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-urban-coop.jpg',
     seo: {
-      metaTitle: 'Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)',
+      metaTitle: 'Urban Chicken Coop Plans: Small-Space Designs + City Zoning Guide',
       metaDescription: 'Expert urban chicken coop designs for city backyards. Noise reduction, neighbor relations, space optimization, and regulations for city chicken keeping.',
     },
   },
@@ -393,7 +393,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-arizona.jpg',
     seo: {
-      metaTitle: 'Arizona Chicken Coop Guide: Desert Climate Building Requirements (2025)',
+      metaTitle: 'Arizona Chicken Coop Guide: Heat, Permits & Local Zoning Rules',
       metaDescription: 'Complete Arizona chicken coop guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix and Tucson.',
     },
   },
@@ -414,8 +414,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-ventilation.jpg',
     seo: {
-      metaTitle: 'Complete Chicken Coop Ventilation Guide (2025)',
-      metaDescription: 'Expert ventilation guide with climate-specific designs, troubleshooting solutions, and cost-effective upgrades to prevent respiratory diseases.',
+      metaTitle: 'Chicken Coop Ventilation Guide: How Much & Where to Put It',
+      metaDescription: 'Chickens need 1 sq ft of ventilation per 10 sq ft of coop space. Here\u2019s how to calculate it, where to install vents, and how to avoid the cold drafts that kill flocks.',
     },
   },
   {
@@ -435,8 +435,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-predator.jpg',
     seo: {
-      metaTitle: 'Predator-Proof Chicken Coop: Complete Security Guide (2025)',
-      metaDescription: 'Complete predator-proofing guide with 5-layer security systems, hardware cloth specs, and proven protection strategies for coyotes, raccoons, and hawks.',
+      metaTitle: 'Predator-Proof Chicken Coop Guide: Hardware, Locks & Aprons',
+      metaDescription: 'Hardware cloth, apron fencing, automatic doors, and secure latches \u2014 a complete guide to protecting your flock from foxes, raccoons, coyotes, and hawks.',
     },
   },
   {
@@ -456,8 +456,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-permits.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Permit Requirements: State-by-State Guide (2025)',
-      metaDescription: 'Complete chicken coop permit guide covering all 50 states. Application processes, costs, timelines, and appeals procedures.',
+      metaTitle: 'Do You Need a Permit to Build a Chicken Coop? (State Guide)',
+      metaDescription: 'Most areas require a permit for coops over 100\u2013120 sq ft. Find out if your state and city require a building permit before you break ground \u2014 and what happens if you skip it.',
     },
   },
   {
@@ -477,8 +477,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-materials.jpg',
     seo: {
-      metaTitle: 'Best Chicken Coop Materials for Every Budget (2025 Guide)',
-      metaDescription: 'Complete chicken coop materials guide with real-world durability testing, current 2025 pricing, and regional supplier recommendations.',
+      metaTitle: 'Chicken Coop Materials Guide: What to Buy & What to Skip',
+      metaDescription: 'Lumber, hardware cloth, roofing, flooring, insulation \u2014 a complete chicken coop materials list with costs, ratings, and what the pros actually use.',
     },
   },
   {
@@ -497,8 +497,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-coop-size-calculator.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Size Calculator: How Much Space Do You Need? (2025)',
-      metaDescription: 'Free chicken coop size calculator with breed-specific requirements. Calculate exact indoor/outdoor space for your flock with climate considerations.',
+      metaTitle: 'Chicken Coop Size Calculator: How Much Space Per Chicken?',
+      metaDescription: 'Use our free chicken coop size calculator. Standard rule: 4 sq ft per chicken inside + 10 sq ft per chicken in the run. Includes nesting box and roost bar sizing.',
     },
   },
   {
@@ -518,7 +518,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-4x4-coop-plans.jpg',
     seo: {
-      metaTitle: '4x4 Chicken Coop Plans: Complete Beginner Build Guide (2025)',
+      metaTitle: '4x4 Chicken Coop Plans: How Many Chickens Fit + Full Build Guide',
       metaDescription: 'Three complete 4x4 chicken coop plans for 3-4 birds. Budget, Standard, and Premium builds with step-by-step construction guides.',
     },
   },
@@ -539,7 +539,7 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-small-coop-plans.jpg',
     seo: {
-      metaTitle: 'Small Chicken Coop Plans: 15 Best Designs for Backyards Under 1000 sq ft',
+      metaTitle: 'Small Chicken Coop Plans: Designs for 4\u20138 Birds (Free Guides)',
       metaDescription: 'Discover the best small chicken coop plans for urban backyards. 15 space-saving designs with detailed pros/cons and city ordinance tips.',
     },
   },
@@ -582,8 +582,8 @@ export const articles: Article[] = [
     featured: true,
     image: '/src/assets/guide-cost-breakdown.jpg',
     seo: {
-      metaTitle: 'Chicken Coop Cost Breakdown 2025: Budget vs Premium Builds',
-      metaDescription: 'Complete 2025 cost guide for building a chicken coop. Budget ($250-400), standard ($400-700), and premium ($700-1,200) builds with material lists.',
+      metaTitle: 'How Much Does It Cost to Build a Chicken Coop? [2026 Guide]',
+      metaDescription: 'DIY chicken coop costs range from $100 to $4,000+. Get a complete breakdown by coop size, type, and materials \u2014 plus what you\u2019ll pay for DIY vs. hiring a contractor.',
     },
   },
 ];

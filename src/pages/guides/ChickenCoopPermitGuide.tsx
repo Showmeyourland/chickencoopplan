@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import SEO from '@/components/SEO';
+import SEO, { FAQSchema } from '@/components/SEO';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
@@ -36,10 +36,16 @@ const ChickenCoopPermitGuide = () => {
   return (
     <>
       <SEO
-        title="Chicken Coop Permit Requirements: Complete State-by-State Guide (2025)"
-        description="Complete chicken coop permit guide covering all 50 states. Application processes, costs, timelines, and appeals. Navigate coop permits with confidence using our comprehensive legal breakdown."
+        title="Do You Need a Permit to Build a Chicken Coop? (State Guide)"
+        description="Most areas require a permit for coops over 100–120 sq ft. Find out if your state and city require a building permit before you break ground — and what happens if you skip it."
         canonical="/guides/coop-permit-guide"
       />
+
+      <FAQSchema questions={[
+        { question: "Do you need a permit to build a chicken coop?", answer: "In most areas, you need a building permit if your chicken coop is larger than 100–120 square feet. Smaller coops are often exempt, but local zoning laws vary significantly. Always check with your city or county planning department before building." },
+        { question: "Can I build a chicken coop without a permit?", answer: "You may be able to build without a permit if your coop is under the size threshold for your jurisdiction (typically under 100 sq ft) and complies with local setback requirements. Building without a required permit can result in fines and forced removal of the structure." },
+        { question: "What size chicken coop requires a permit?", answer: "Most municipalities require a building permit for accessory structures — including chicken coops — that exceed 100 to 120 square feet of floor space. Some areas set the threshold as low as 60 sq ft. Check your local zoning code for the exact limit." },
+      ]} />
 
       <Header />
 

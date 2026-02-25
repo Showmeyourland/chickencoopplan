@@ -105,8 +105,8 @@ const PredatorProofCoopGuide = () => {
   return (
     <>
       <SEO
-        title="Predator-Proof Chicken Coop: Complete Security Guide (2025)"
-        description="Complete predator-proofing guide with regional threat assessment, 5-layer security systems, hardware cloth specifications, and proven protection strategies tested against coyotes, raccoons, hawks, and more."
+        title="Predator-Proof Chicken Coop Guide: Hardware, Locks & Aprons"
+        description="Hardware cloth, apron fencing, automatic doors, and secure latches — a complete guide to protecting your flock from foxes, raccoons, coyotes, and hawks."
         canonical="/guides/predator-proof-coop-guide"
         type="article"
       />
