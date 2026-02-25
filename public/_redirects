@@ -1,0 +1,66 @@
+# Trailing slash → no trailing slash (301 redirects)
+/guides/                              /guides                              301
+/recommended-plans/                   /recommended-plans                   301
+/plan-reviews/                        /plan-reviews                        301
+/shop/                                /shop                                301
+/guides/cost-breakdown-2025/          /guides/cost-breakdown-2025          301
+/guides/how-to-build-chicken-coop/    /guides/how-to-build-chicken-coop    301
+/guides/small-chicken-coop-plans/     /guides/small-chicken-coop-plans     301
+/guides/4x4-chicken-coop-plans/       /guides/4x4-chicken-coop-plans       301
+/guides/chicken-coop-size-calculator/ /guides/chicken-coop-size-calculator 301
+/guides/coop-materials-guide/         /guides/coop-materials-guide         301
+/guides/coop-permit-guide/            /guides/coop-permit-guide            301
+/guides/predator-proof-coop-guide/    /guides/predator-proof-coop-guide    301
+/guides/coop-ventilation-guide/       /guides/coop-ventilation-guide       301
+/guides/arizona-chicken-coop-guide/   /guides/arizona-chicken-coop-guide   301
+/guides/expensive-coop-mistakes/      /guides/expensive-coop-mistakes      301
+/guides/urban-chicken-coop-plans/     /guides/urban-chicken-coop-plans     301
+/guides/free-vs-premium-plans/        /guides/free-vs-premium-plans        301
+/guides/winter-chicken-coop-guide/    /guides/winter-chicken-coop-guide    301
+/guides/mobile-chicken-coop-plans/    /guides/mobile-chicken-coop-plans    301
+/guides/chicken-coop-flooring-guide/  /guides/chicken-coop-flooring-guide  301
+/guides/large-chicken-coop-plans/     /guides/large-chicken-coop-plans     301
+/guides/chicken-coop-insulation-guide/ /guides/chicken-coop-insulation-guide 301
+/guides/free-chicken-coop-plans/      /guides/free-chicken-coop-plans      301
+/guides/chicken-coop-lighting-guide/  /guides/chicken-coop-lighting-guide  301
+/guides/chicken-run-design-guide/     /guides/chicken-run-design-guide     301
+/guides/chicken-coop-cleaning-guide/  /guides/chicken-coop-cleaning-guide  301
+/guides/free-coop-plans-quality-checklist/ /guides/free-coop-plans-quality-checklist 301
+/guides/small-backyard-coop-plans/    /guides/small-backyard-coop-plans    301
+/guides/beginner-chicken-coop-plans/  /guides/beginner-chicken-coop-plans  301
+/guides/climate-chicken-coop-guide/   /guides/climate-chicken-coop-guide   301
+
+# Serve pre-rendered HTML for each route (200 rewrites)
+/guides                              /guides/index.html                              200
+/recommended-plans                   /recommended-plans/index.html                   200
+/plan-reviews                        /plan-reviews/index.html                        200
+/shop                                /shop/index.html                                200
+/guides/cost-breakdown-2025          /guides/cost-breakdown-2025/index.html          200
+/guides/how-to-build-chicken-coop    /guides/how-to-build-chicken-coop/index.html    200
+/guides/small-chicken-coop-plans     /guides/small-chicken-coop-plans/index.html     200
+/guides/4x4-chicken-coop-plans       /guides/4x4-chicken-coop-plans/index.html       200
+/guides/chicken-coop-size-calculator /guides/chicken-coop-size-calculator/index.html 200
+/guides/coop-materials-guide         /guides/coop-materials-guide/index.html         200
+/guides/coop-permit-guide            /guides/coop-permit-guide/index.html            200
+/guides/predator-proof-coop-guide    /guides/predator-proof-coop-guide/index.html    200
+/guides/coop-ventilation-guide       /guides/coop-ventilation-guide/index.html       200
+/guides/arizona-chicken-coop-guide   /guides/arizona-chicken-coop-guide/index.html   200
+/guides/expensive-coop-mistakes      /guides/expensive-coop-mistakes/index.html      200
+/guides/urban-chicken-coop-plans     /guides/urban-chicken-coop-plans/index.html     200
+/guides/free-vs-premium-plans        /guides/free-vs-premium-plans/index.html        200
+/guides/winter-chicken-coop-guide    /guides/winter-chicken-coop-guide/index.html    200
+/guides/mobile-chicken-coop-plans    /guides/mobile-chicken-coop-plans/index.html    200
+/guides/chicken-coop-flooring-guide  /guides/chicken-coop-flooring-guide/index.html  200
+/guides/large-chicken-coop-plans     /guides/large-chicken-coop-plans/index.html     200
+/guides/chicken-coop-insulation-guide /guides/chicken-coop-insulation-guide/index.html 200
+/guides/free-chicken-coop-plans      /guides/free-chicken-coop-plans/index.html      200
+/guides/chicken-coop-lighting-guide  /guides/chicken-coop-lighting-guide/index.html  200
+/guides/chicken-run-design-guide     /guides/chicken-run-design-guide/index.html     200
+/guides/chicken-coop-cleaning-guide  /guides/chicken-coop-cleaning-guide/index.html  200
+/guides/free-coop-plans-quality-checklist /guides/free-coop-plans-quality-checklist/index.html 200
+/guides/small-backyard-coop-plans    /guides/small-backyard-coop-plans/index.html    200
+/guides/beginner-chicken-coop-plans  /guides/beginner-chicken-coop-plans/index.html  200
+/guides/climate-chicken-coop-guide   /guides/climate-chicken-coop-guide/index.html   200
+
+# SPA fallback — must be last
+/*    /index.html   200
