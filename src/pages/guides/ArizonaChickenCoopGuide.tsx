@@ -39,8 +39,8 @@ const ArizonaChickenCoopGuide = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Arizona Chicken Coop Guide: Desert Climate Building Requirements (2025)"
-        description="Complete Arizona chicken coop building guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix, Tucson, and statewide requirements."
+        title="Arizona Chicken Coop Guide: Heat, Permits & Local Zoning Rules"
+        description="Complete Arizona chicken coop guide with desert climate considerations, local regulations, heat management, and material choices for Phoenix and Tucson."
         canonical="/guides/arizona-chicken-coop-guide"
       />
 

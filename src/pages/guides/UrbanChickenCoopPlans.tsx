@@ -48,8 +48,8 @@ const UrbanChickenCoopPlans = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Urban Chicken Coop Plans: Complete City Backyard Solutions (2025)"
-        description="Expert urban chicken coop designs for city backyards. Includes noise reduction, neighbor relations, space optimization, and regulations for successful city chicken keeping."
+        title="Urban Chicken Coop Plans: Small-Space Designs + City Zoning Guide"
+        description="Expert urban chicken coop designs for city backyards. Noise reduction, neighbor relations, space optimization, and regulations for city chicken keeping."
         canonical="/guides/urban-chicken-coop-plans"
       />
 

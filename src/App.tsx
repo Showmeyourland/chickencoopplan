@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -37,6 +37,15 @@ import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
 
+// Redirect trailing slashes to non-trailing versions (SEO deduplication)
+const TrailingSlashRedirect = () => {
+  const { pathname, search, hash } = useLocation();
+  if (pathname !== '/' && pathname.endsWith('/')) {
+    return <Navigate to={pathname.slice(0, -1) + search + hash} replace />;
+  }
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -46,6 +55,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <TrailingSlashRedirect />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/guides" element={<Guides />} />

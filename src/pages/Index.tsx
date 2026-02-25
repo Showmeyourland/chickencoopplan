@@ -5,16 +5,21 @@ import QuickFacts from "@/components/QuickFacts";
 import FeaturedGuides from "@/components/FeaturedGuides";
 import HomeFAQ from "@/components/HomeFAQ";
 import Footer from "@/components/Footer";
-import SEO from "@/components/SEO";
+import SEO, { WebSiteSchema } from "@/components/SEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO 
-        title="DIY Chicken Coop Plans & Building Guides"
-        description="Professional DIY chicken coop plans for backyard farmers. Step-by-step building guides, cost breakdowns, and expert tips for every budget."
+        title="Free DIY Chicken Coop Plans & Building Guides | CoopCraft"
+        description="Browse free DIY chicken coop plans with step-by-step instructions, full materials lists, and cost breakdowns. Beginner-friendly designs for every flock size and budget."
         canonical="/"
         type="website"
+      />
+      <WebSiteSchema 
+        name="CoopCraft"
+        url="https://buildingachickencoopplans.com"
+        searchUrl="https://buildingachickencoopplans.com/search?q={search_term_string}"
       />
       <Header />
       <main>

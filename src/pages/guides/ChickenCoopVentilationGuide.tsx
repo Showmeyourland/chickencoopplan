@@ -111,8 +111,8 @@ const ChickenCoopVentilationGuide = () => {
   return (
     <>
       <SEO
-        title="Complete Chicken Coop Ventilation Guide: Prevent Problems Before They Start (2025)"
-        description="Expert chicken coop ventilation guide with climate-specific designs, troubleshooting solutions, and cost-effective upgrades. Prevent respiratory diseases and flock health problems."
+        title="Chicken Coop Ventilation Guide: How Much & Where to Put It"
+        description="Chickens need 1 sq ft of ventilation per 10 sq ft of coop space. Here's how to calculate it, where to install vents, and how to avoid the cold drafts that kill flocks."
         canonical="/guides/coop-ventilation-guide"
         type="article"
       />

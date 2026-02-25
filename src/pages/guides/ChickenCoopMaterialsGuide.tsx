@@ -37,8 +37,8 @@ const ChickenCoopMaterialsGuide = () => {
   return (
     <>
       <SEO
-        title="Best Chicken Coop Materials for Every Budget (2025 Guide) - Tested & Rated"
-        description="Complete chicken coop materials guide with real-world durability testing, current 2025 pricing, and regional supplier recommendations. Save money with our budget-tested material choices."
+        title="Chicken Coop Materials Guide: What to Buy & What to Skip"
+        description="Lumber, hardware cloth, roofing, flooring, insulation — a complete chicken coop materials list with costs, ratings, and what the pros actually use."
         canonical="/guides/coop-materials-guide"
       />
 

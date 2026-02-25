@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import BlogLayout from "@/components/BlogLayout";
 import { getArticleBySlug } from "@/lib/articles";
+import { FAQSchema } from "@/components/SEO";
 
 const CoopCostBreakdown2025 = () => {
   const article = getArticleBySlug('cost-breakdown-2025');
@@ -11,6 +12,10 @@ const CoopCostBreakdown2025 = () => {
 
   return (
     <BlogLayout article={article}>
+      <FAQSchema questions={[
+        { question: "How much does it cost to build a chicken coop?", answer: "Building a chicken coop costs between $100 and $4,000+ depending on size, materials, and whether you hire a contractor. A small DIY A-frame runs $100–$400. A mid-size walk-in coop costs $500–$1,500 to build yourself. A large custom coop with a contractor can run $2,000–$4,000 or more." },
+        { question: "Is it cheaper to build or buy a chicken coop?", answer: "Building your own chicken coop is almost always cheaper than buying a pre-built one. A DIY coop for 4–6 chickens can cost as little as $100–$300 in materials. An equivalent pre-built coop from a retailer typically costs $400–$1,200." },
+      ]} />
       {/* Intro */}
       <section className="mb-12">
         <p className="text-xl text-foreground leading-relaxed mb-6">
