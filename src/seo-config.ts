@@ -119,7 +119,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/free-chicken-coop-plans`,
   },
   '/guides/chicken-coop-lighting-guide': {
-    title: 'Chicken Coop Lighting Guide: Keep Hens Laying Year-Round',
+    title: 'Chicken Coop Lighting Guide: Bulbs, Timers & Egg Production Tips',
     description: 'Chickens need 14–16 hours of light to lay consistently. Learn how to add supplemental lighting to your coop safely and on a timer.',
     canonical: `${SITE_URL}/guides/chicken-coop-lighting-guide`,
   },
