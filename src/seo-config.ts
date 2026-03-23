@@ -89,7 +89,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/free-vs-premium-plans`,
   },
   '/guides/winter-chicken-coop-guide': {
-    title: 'Winter Chicken Coop Guide: Keep Your Flock Warm & Healthy',
+    title: 'Winter Chicken Coop Guide: Insulation, Heating & Cold Weather Tips',
     description: 'Prepare your chicken coop for winter with insulation, ventilation, heating, and lighting tips. Keep your flock laying eggs through the coldest months.',
     canonical: `${SITE_URL}/guides/winter-chicken-coop-guide`,
   },
