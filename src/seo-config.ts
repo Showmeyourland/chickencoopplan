@@ -114,7 +114,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-coop-insulation-guide`,
   },
   '/guides/free-chicken-coop-plans': {
-    title: 'Free Chicken Coop Plans: Download & Build Today | CoopCraft',
+    title: 'Free Chicken Coop Plans: 25 Best Sources Reviewed [2026]',
     description: 'Download free chicken coop plans with detailed materials lists, cut diagrams, and step-by-step instructions. Designs for every flock size and budget.',
     canonical: `${SITE_URL}/guides/free-chicken-coop-plans`,
   },
