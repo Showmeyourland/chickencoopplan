@@ -29,7 +29,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/cost-breakdown-2025`,
   },
   '/guides/how-to-build-chicken-coop': {
-    title: 'How to Build a Chicken Coop: Step-by-Step Guide | CoopCraft',
+    title: 'How to Build a Chicken Coop: Step-by-Step Guide for Beginners',
     description: 'Learn how to build a chicken coop from scratch with our complete step-by-step guide. Includes materials list, tools needed, and beginner-friendly instructions.',
     canonical: `${SITE_URL}/guides/how-to-build-chicken-coop`,
   },
