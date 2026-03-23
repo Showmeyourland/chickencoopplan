@@ -139,7 +139,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/free-coop-plans-quality-checklist`,
   },
   '/guides/small-backyard-coop-plans': {
-    title: 'Small Backyard Chicken Coop Plans: Compact Designs That Fit',
+    title: 'Small Backyard Chicken Coop Plans: Designs for Yards Under 500 sq ft',
     description: 'Chicken coop plans designed for small backyards. Space-efficient designs for 3–6 hens with integrated runs, vertical space, and easy access for cleaning.',
     canonical: `${SITE_URL}/guides/small-backyard-coop-plans`,
   },
