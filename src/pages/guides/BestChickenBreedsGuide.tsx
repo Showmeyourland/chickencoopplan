@@ -8,7 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Sparkles, CheckCircle, Heart } from 'lucide-react';
+import { Sparkles, CheckCircle, Heart, AlertTriangle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { articles } from '@/lib/articles';
 import heroImage from '@/assets/guide-breeds.jpg';
