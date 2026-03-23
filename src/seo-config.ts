@@ -154,8 +154,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/climate-chicken-coop-guide`,
   },
   '/recommended-plans': {
-    title: 'Best Chicken Coop Plans - Expert Reviews Coming Soon | CoopCraft',
-    description: 'Get notified when our expert-reviewed chicken coop plans launch. Curated collection of the best DIY coop designs with detailed ratings and comparisons.',
+    title: 'Best Chicken Coop Plans 2026: Expert-Reviewed & Rated',
+    description: 'Expert-reviewed chicken coop plans rated by difficulty, cost, and build quality. Curated collection of the best DIY coop designs with detailed comparisons.',
     canonical: `${SITE_URL}/recommended-plans`,
   },
   '/plan-reviews': {
