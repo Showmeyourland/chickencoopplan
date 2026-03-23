@@ -29,7 +29,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/cost-breakdown-2025`,
   },
   '/guides/how-to-build-chicken-coop': {
-    title: 'How to Build a Chicken Coop: Step-by-Step Guide | CoopCraft',
+    title: 'How to Build a Chicken Coop: Step-by-Step Guide for Beginners',
     description: 'Learn how to build a chicken coop from scratch with our complete step-by-step guide. Includes materials list, tools needed, and beginner-friendly instructions.',
     canonical: `${SITE_URL}/guides/how-to-build-chicken-coop`,
   },
@@ -74,8 +74,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/arizona-chicken-coop-guide`,
   },
   '/guides/expensive-coop-mistakes': {
-    title: 'Expensive Chicken Coop Mistakes to Avoid | CoopCraft',
-    description: 'Avoid the most common and costly chicken coop building mistakes. From wrong materials to poor ventilation, learn what NOT to do before you start building.',
+    title: '7 Chicken Coop Mistakes That Cost Beginners $1,000+ (Avoid These)',
+    description: 'The most expensive chicken coop building mistakes — wrong materials, undersized vents, skipping the apron, and more. Learn what pros do differently.',
     canonical: `${SITE_URL}/guides/expensive-coop-mistakes`,
   },
   '/guides/urban-chicken-coop-plans': {
@@ -89,7 +89,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/free-vs-premium-plans`,
   },
   '/guides/winter-chicken-coop-guide': {
-    title: 'Winter Chicken Coop Guide: Keep Your Flock Warm & Healthy',
+    title: 'Winter Chicken Coop Guide: Insulation, Heating & Cold Weather Tips',
     description: 'Prepare your chicken coop for winter with insulation, ventilation, heating, and lighting tips. Keep your flock laying eggs through the coldest months.',
     canonical: `${SITE_URL}/guides/winter-chicken-coop-guide`,
   },
@@ -114,17 +114,17 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-coop-insulation-guide`,
   },
   '/guides/free-chicken-coop-plans': {
-    title: 'Free Chicken Coop Plans: Download & Build Today | CoopCraft',
+    title: 'Free Chicken Coop Plans: 25 Best Sources Reviewed [2026]',
     description: 'Download free chicken coop plans with detailed materials lists, cut diagrams, and step-by-step instructions. Designs for every flock size and budget.',
     canonical: `${SITE_URL}/guides/free-chicken-coop-plans`,
   },
   '/guides/chicken-coop-lighting-guide': {
-    title: 'Chicken Coop Lighting Guide: Keep Hens Laying Year-Round',
+    title: 'Chicken Coop Lighting Guide: Bulbs, Timers & Egg Production Tips',
     description: 'Chickens need 14–16 hours of light to lay consistently. Learn how to add supplemental lighting to your coop safely and on a timer.',
     canonical: `${SITE_URL}/guides/chicken-coop-lighting-guide`,
   },
   '/guides/chicken-run-design-guide': {
-    title: 'Chicken Run Design Guide: Sizing, Fencing & Predator Protection',
+    title: 'Chicken Run Design Guide: Size, Fencing & Predator-Proofing',
     description: 'Design a safe chicken run with proper sizing (10 sq ft per bird), predator-proof fencing, and covered roof options. Free plans and layout ideas.',
     canonical: `${SITE_URL}/guides/chicken-run-design-guide`,
   },
@@ -134,12 +134,12 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-coop-cleaning-guide`,
   },
   '/guides/free-coop-plans-quality-checklist': {
-    title: 'Free Coop Plans Quality Checklist: What to Look For | CoopCraft',
-    description: 'Not all free chicken coop plans are worth building. Use this checklist to evaluate plan quality before you buy materials or start cutting wood.',
+    title: 'Free Coop Plans Quality Checklist: 12 Things to Check First',
+    description: 'Not all free chicken coop plans are worth building. Use this 12-point checklist to evaluate plan quality before you buy materials or start cutting wood.',
     canonical: `${SITE_URL}/guides/free-coop-plans-quality-checklist`,
   },
   '/guides/small-backyard-coop-plans': {
-    title: 'Small Backyard Chicken Coop Plans: Compact Designs That Fit',
+    title: 'Small Backyard Chicken Coop Plans: Designs for Yards Under 500 sq ft',
     description: 'Chicken coop plans designed for small backyards. Space-efficient designs for 3–6 hens with integrated runs, vertical space, and easy access for cleaning.',
     canonical: `${SITE_URL}/guides/small-backyard-coop-plans`,
   },
@@ -154,8 +154,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/climate-chicken-coop-guide`,
   },
   '/recommended-plans': {
-    title: 'Best Chicken Coop Plans - Expert Reviews Coming Soon | CoopCraft',
-    description: 'Get notified when our expert-reviewed chicken coop plans launch. Curated collection of the best DIY coop designs with detailed ratings and comparisons.',
+    title: 'Best Chicken Coop Plans 2026: Expert-Reviewed & Rated',
+    description: 'Expert-reviewed chicken coop plans rated by difficulty, cost, and build quality. Curated collection of the best DIY coop designs with detailed comparisons.',
     canonical: `${SITE_URL}/recommended-plans`,
   },
   '/plan-reviews': {
