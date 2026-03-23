@@ -134,8 +134,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-coop-cleaning-guide`,
   },
   '/guides/free-coop-plans-quality-checklist': {
-    title: 'Free Coop Plans Quality Checklist: What to Look For | CoopCraft',
-    description: 'Not all free chicken coop plans are worth building. Use this checklist to evaluate plan quality before you buy materials or start cutting wood.',
+    title: 'Free Coop Plans Quality Checklist: 12 Things to Check First',
+    description: 'Not all free chicken coop plans are worth building. Use this 12-point checklist to evaluate plan quality before you buy materials or start cutting wood.',
     canonical: `${SITE_URL}/guides/free-coop-plans-quality-checklist`,
   },
   '/guides/small-backyard-coop-plans': {
