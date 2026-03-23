@@ -163,6 +163,21 @@ export const seoConfig: Record<string, RouteSEO> = {
     description: 'Honest reviews and ratings of popular chicken coop plans. Compare features, difficulty, cost, and quality before you buy or build.',
     canonical: `${SITE_URL}/plan-reviews`,
   },
+  '/guides/nesting-box-guide': {
+    title: 'Chicken Coop Nesting Boxes: How Many, Size & Placement Guide',
+    description: 'How many nesting boxes do you need? One per 3–4 hens. Get exact dimensions by breed size, placement tips, and DIY build instructions for your chicken coop.',
+    canonical: `${SITE_URL}/guides/nesting-box-guide`,
+  },
+  '/guides/chicken-coop-roofing-guide': {
+    title: 'Chicken Coop Roofing Guide: Metal vs Shingles + Pitch Calculator',
+    description: 'Compare corrugated metal, asphalt shingles, and polycarbonate for your chicken coop roof. Includes pitch recommendations by climate and a cost calculator.',
+    canonical: `${SITE_URL}/guides/chicken-coop-roofing-guide`,
+  },
+  '/guides/best-chicken-breeds-beginners': {
+    title: 'Best Chicken Breeds for Beginners: Top 10 Picks by Climate & Eggs',
+    description: 'The best chicken breeds for first-time keepers ranked by egg production, temperament, and climate tolerance. Includes an interactive breed finder tool.',
+    canonical: `${SITE_URL}/guides/best-chicken-breeds-beginners`,
+  },
   '/shop': {
     title: 'Shop Chicken Coop Plans | CoopCraft',
     description: 'Shop premium chicken coop plans and building kits. Coming soon - sign up to be notified when our store launches.',

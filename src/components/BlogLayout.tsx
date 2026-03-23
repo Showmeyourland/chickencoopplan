@@ -36,13 +36,18 @@ import guideFreeCoopQualityChecklist from '@/assets/guide-free-coop-quality-chec
 import guideSmallBackyardCoop from '@/assets/guide-small-backyard-coop.jpg';
 import guideBeginner from '@/assets/guide-beginner.jpg';
 import guideClimate from '@/assets/guide-climate.jpg';
+import guideNestingBoxes from '@/assets/guide-nesting-boxes.jpg';
+import guideRoofing from '@/assets/guide-roofing.jpg';
+import guideBreeds from '@/assets/guide-breeds.jpg';
 
 // Map slug to imported image for SEO meta tags
 const seoImageMap: Record<string, string> = {
   'arizona-chicken-coop-guide': guideArizona,
   'beginner-chicken-coop-plans': guideBeginner,
+  'best-chicken-breeds-beginners': guideBreeds,
   'chicken-run-design-guide': guideChickenRun,
   'chicken-coop-cleaning-guide': guideCleaning,
+  'chicken-coop-roofing-guide': guideRoofing,
   'climate-chicken-coop-guide': guideClimate,
   'expensive-coop-mistakes': guideCoopMistakes,
   'chicken-coop-size-calculator': guideCoopSizeCalculator,
@@ -57,6 +62,7 @@ const seoImageMap: Record<string, string> = {
   'chicken-coop-lighting-guide': guideLighting,
   'coop-materials-guide': guideMaterials,
   'mobile-chicken-coop-plans': guideMobileCoop,
+  'nesting-box-guide': guideNestingBoxes,
   'coop-permit-guide': guidePermits,
   'predator-proof-coop-guide': guidePredator,
   'small-chicken-coop-plans': guideSmallCoopPlans,

@@ -33,6 +33,9 @@ import FreePlanQualityChecklist from "./pages/guides/FreePlanQualityChecklist";
 import SmallBackyardCoopPlans from "./pages/guides/SmallBackyardCoopPlans";
 import BeginnerChickenCoopPlans from "./pages/guides/BeginnerChickenCoopPlans";
 import ClimateChickenCoopGuide from "./pages/guides/ClimateChickenCoopGuide";
+import NestingBoxGuide from "./pages/guides/NestingBoxGuide";
+import ChickenCoopRoofingGuide from "./pages/guides/ChickenCoopRoofingGuide";
+import BestChickenBreedsGuide from "./pages/guides/BestChickenBreedsGuide";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
@@ -85,6 +88,9 @@ const App = () => (
             <Route path="/guides/small-backyard-coop-plans" element={<SmallBackyardCoopPlans />} />
             <Route path="/guides/beginner-chicken-coop-plans" element={<BeginnerChickenCoopPlans />} />
             <Route path="/guides/climate-chicken-coop-guide" element={<ClimateChickenCoopGuide />} />
+            <Route path="/guides/nesting-box-guide" element={<NestingBoxGuide />} />
+            <Route path="/guides/chicken-coop-roofing-guide" element={<ChickenCoopRoofingGuide />} />
+            <Route path="/guides/best-chicken-breeds-beginners" element={<BestChickenBreedsGuide />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />
