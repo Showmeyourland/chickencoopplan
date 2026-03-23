@@ -74,8 +74,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/arizona-chicken-coop-guide`,
   },
   '/guides/expensive-coop-mistakes': {
-    title: 'Expensive Chicken Coop Mistakes to Avoid | CoopCraft',
-    description: 'Avoid the most common and costly chicken coop building mistakes. From wrong materials to poor ventilation, learn what NOT to do before you start building.',
+    title: '7 Chicken Coop Mistakes That Cost Beginners $1,000+ (Avoid These)',
+    description: 'The most expensive chicken coop building mistakes — wrong materials, undersized vents, skipping the apron, and more. Learn what pros do differently.',
     canonical: `${SITE_URL}/guides/expensive-coop-mistakes`,
   },
   '/guides/urban-chicken-coop-plans': {
