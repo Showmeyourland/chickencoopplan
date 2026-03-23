@@ -124,7 +124,7 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-coop-lighting-guide`,
   },
   '/guides/chicken-run-design-guide': {
-    title: 'Chicken Run Design Guide: Sizing, Fencing & Predator Protection',
+    title: 'Chicken Run Design Guide: Size, Fencing & Predator-Proofing',
     description: 'Design a safe chicken run with proper sizing (10 sq ft per bird), predator-proof fencing, and covered roof options. Free plans and layout ideas.',
     canonical: `${SITE_URL}/guides/chicken-run-design-guide`,
   },
