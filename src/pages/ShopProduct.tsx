@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { products } from "@/data/products";
 
 const ShopProduct = () => {
@@ -33,10 +34,12 @@ const ShopProduct = () => {
       <main className="flex-1 py-12">
         <div className="container max-w-6xl mx-auto px-4">
           {/* Back link */}
-          <Link to="/shop" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
-            <ArrowLeft className="h-4 w-4" />
-            Back to all plans
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: 'Shop', href: '/shop' },
+              { label: product.name },
+            ]}
+          />
 
           {/* Product layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

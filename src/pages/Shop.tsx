@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import EmailCapture from "@/components/EmailCapture";
 import { products } from "@/data/products";
 import {
@@ -37,6 +38,9 @@ const Shop = () => {
         {/* Hero */}
         <section className="py-16 md:py-20 bg-muted/30">
           <div className="container max-w-4xl mx-auto px-4 text-center">
+            <div className="text-left mb-6">
+              <Breadcrumbs items={[{ label: 'Shop' }]} />
+            </div>
             <Badge variant="secondary" className="mb-4">Instant PDF Download</Badge>
             <h1 className="text-4xl md:text-5xl font-display text-foreground leading-tight mb-4">
               Complete Chicken Coop Plans (PDF)
