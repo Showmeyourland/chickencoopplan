@@ -98,6 +98,11 @@ const App = () => (
             <Route path="/guides/nesting-box-guide" element={<NestingBoxGuide />} />
             <Route path="/guides/chicken-coop-roofing-guide" element={<ChickenCoopRoofingGuide />} />
             <Route path="/guides/best-chicken-breeds-beginners" element={<BestChickenBreedsGuide />} />
+            <Route path="/guides/chicken-coop-plans" element={<ChickenCoopPlansPillar />} />
+            <Route path="/guides/chicken-coop-plans-4-chickens" element={<CoopPlans4Chickens />} />
+            <Route path="/guides/a-frame-chicken-coop-plans" element={<AFrameCoopPlans />} />
+            <Route path="/guides/walk-in-chicken-coop-plans" element={<WalkInCoopPlans />} />
+            <Route path="/guides/chicken-coop-plans-materials-list" element={<CoopPlansMaterialsList />} />
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />
