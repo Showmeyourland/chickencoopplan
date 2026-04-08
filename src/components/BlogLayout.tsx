@@ -386,6 +386,17 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             </div>
           </div>
         </article>
+          <StickyPlanCTA
+            featuredProductSlug={featuredProduct.slug}
+            featuredProductName={featuredProduct.name}
+            featuredProductPrice={featuredProduct.price}
+          />
+          </div>
+        </div>
+        <MobilePlanCTA
+          featuredProductSlug={featuredProduct.slug}
+          featuredProductPrice={featuredProduct.price}
+        />
       </main>
 
       {/* Footer */}
