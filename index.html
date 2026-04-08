@@ -22,6 +22,32 @@
     <link rel="canonical" href="https://buildingachickencoopplans.com/" />
     <link rel="icon" type="image/x-icon" href="https://storage.googleapis.com/gpt-engineer-file-uploads/oj1youkwn3W4HTVwxkOW7Vi7yq12/uploads/1767061950728-Screenshot 2025-12-29 at 11.05.24 AM.png">
 
+    <!-- Sitewide JSON-LD: Organization + WebSite (hardcoded so it always appears in view-source) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CoopCraft",
+      "url": "https://buildingachickencoopplans.com",
+      "logo": "https://buildingachickencoopplans.com/assets/logo-KAJ3iibi.png",
+      "description": "Free DIY chicken coop plans with step-by-step instructions, materials lists, and cost breakdowns.",
+      "sameAs": []
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CoopCraft",
+      "url": "https://buildingachickencoopplans.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://buildingachickencoopplans.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <script>
     // Inline SEO: sets correct meta tags BEFORE React loads.
     // Runs synchronously so crawlers (Googlebot, Bingbot) see per-page metadata.
