@@ -7,9 +7,12 @@ import { articleSchema, guideBreadcrumbSchema } from "@/lib/guideSchemas";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedGuides from "@/components/RelatedGuides";
+import StickyPlanCTA from "@/components/StickyPlanCTA";
+import MobilePlanCTA from "@/components/MobilePlanCTA";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import EmailCapture from "@/components/EmailCapture";
 import { Article } from "@/lib/articles";
+import { getFeaturedProduct } from "@/data/guideToProduct";
 import { getGuideMeta } from "@/data/guideMetadata";
 import LastUpdated from "@/components/LastUpdated";
 import { howToData } from "@/lib/howto-steps";
@@ -110,6 +113,7 @@ interface BlogLayoutProps {
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
   const resolvedImage = getSeoImage(article.slug);
   const guideMeta = getGuideMeta(article.slug);
+  const featuredProduct = getFeaturedProduct(article.slug);
   
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -202,10 +206,11 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
       </header>
 
       {/* Article */}
-      <main className="py-12">
-        <article className="container max-w-4xl">
-          {/* Breadcrumb */}
+      <main className="py-12 pb-24 lg:pb-12">
+        <div className="container max-w-6xl">
           <Breadcrumbs items={breadcrumbItems} className="mb-8" />
+          <div className="lg:grid lg:grid-cols-[1fr_300px] lg:gap-12">
+          <article>
 
           {/* Article Header */}
           <header className="mb-12">
@@ -381,6 +386,17 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             </div>
           </div>
         </article>
+          <StickyPlanCTA
+            featuredProductSlug={featuredProduct.slug}
+            featuredProductName={featuredProduct.name}
+            featuredProductPrice={featuredProduct.price}
+          />
+          </div>
+        </div>
+        <MobilePlanCTA
+          featuredProductSlug={featuredProduct.slug}
+          featuredProductPrice={featuredProduct.price}
+        />
       </main>
 
       {/* Footer */}
