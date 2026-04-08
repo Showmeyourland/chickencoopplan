@@ -10,7 +10,15 @@ import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { Article, getRelatedArticles } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
+import { guideFaqData } from "@/lib/guideFaqs";
+import { faqPageSchema } from "@/lib/guideSchemas";
 import { Helmet } from "react-helmet-async";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 // Import guide images for SEO meta tags
 import guideArizona from '@/assets/guide-arizona.jpg';
