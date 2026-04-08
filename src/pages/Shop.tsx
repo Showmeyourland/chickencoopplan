@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import EmailCapture from "@/components/EmailCapture";
 import { products } from "@/data/products";
 import {
   Accordion,
@@ -129,6 +130,13 @@ const Shop = () => {
                 </AccordionItem>
               ))}
             </Accordion>
+          </div>
+        </section>
+
+        {/* Email Capture — shop footer */}
+        <section className="pb-12">
+          <div className="container max-w-3xl mx-auto px-4">
+            <EmailCapture variant="shop" />
           </div>
         </section>
 
