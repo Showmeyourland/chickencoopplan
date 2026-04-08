@@ -7,9 +7,12 @@ import { articleSchema, guideBreadcrumbSchema } from "@/lib/guideSchemas";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedGuides from "@/components/RelatedGuides";
+import StickyPlanCTA from "@/components/StickyPlanCTA";
+import MobilePlanCTA from "@/components/MobilePlanCTA";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import EmailCapture from "@/components/EmailCapture";
 import { Article } from "@/lib/articles";
+import { getFeaturedProduct } from "@/data/guideToProduct";
 import { getGuideMeta } from "@/data/guideMetadata";
 import LastUpdated from "@/components/LastUpdated";
 import { howToData } from "@/lib/howto-steps";
@@ -110,6 +113,7 @@ interface BlogLayoutProps {
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
   const resolvedImage = getSeoImage(article.slug);
   const guideMeta = getGuideMeta(article.slug);
+  const featuredProduct = getFeaturedProduct(article.slug);
   
   const breadcrumbItems = [
     { label: "Home", href: "/" },
