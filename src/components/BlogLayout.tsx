@@ -10,10 +10,6 @@ import NewsletterSignup from "@/components/NewsletterSignup";
 import { Article, getRelatedArticles } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
 import { Helmet } from "react-helmet-async";
-import AuthorBio from "@/components/AuthorBio";
-import RelatedArticles from "@/components/RelatedArticles";
-import NewsletterSignup from "@/components/NewsletterSignup";
-import { Article, getRelatedArticles } from "@/lib/articles";
 
 // Import guide images for SEO meta tags
 import guideArizona from '@/assets/guide-arizona.jpg';

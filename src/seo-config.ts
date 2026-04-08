@@ -1,6 +1,4 @@
 // Central SEO configuration — single source of truth for all route metadata
-// Used by both the Vite static pre-rendering plugin AND react-helmet-async at runtime
-
 export interface RouteSEO {
   title: string;
   description: string;
@@ -24,13 +22,13 @@ export const seoConfig: Record<string, RouteSEO> = {
     ogType: 'website',
   },
   '/guides/cost-breakdown-2025': {
-    title: 'How Much Does It Cost to Build a Chicken Coop? [2026 Guide]',
-    description: 'DIY chicken coop costs range from $100 to $4,000+. Get a complete breakdown by coop size, type, and materials — plus what you\'ll pay for DIY vs. hiring a contractor.',
+    title: 'How Much Does It Cost to Build a Chicken Coop in 2026?',
+    description: 'Real 2026 chicken coop building costs with dollar-by-dollar breakdowns for small, medium, and large coops. Materials list and budget-saving tips included.',
     canonical: `${SITE_URL}/guides/cost-breakdown-2025`,
   },
   '/guides/how-to-build-chicken-coop': {
-    title: 'How to Build a Chicken Coop: Step-by-Step Guide for Beginners',
-    description: 'Learn how to build a chicken coop from scratch with our complete step-by-step guide. Includes materials list, tools needed, and beginner-friendly instructions.',
+    title: 'How to Build a Chicken Coop: Complete 10-Day Guide (2026)',
+    description: 'Step-by-step instructions to build your own chicken coop in 10 days. Full materials list, tools, framing, roofing, and predator-proofing for beginners.',
     canonical: `${SITE_URL}/guides/how-to-build-chicken-coop`,
   },
   '/guides/small-chicken-coop-plans': {
@@ -44,28 +42,28 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/4x4-chicken-coop-plans`,
   },
   '/guides/chicken-coop-size-calculator': {
-    title: 'Chicken Coop Size Calculator: How Much Space Per Chicken?',
-    description: 'Use our free chicken coop size calculator. Standard rule: 4 sq ft per chicken inside + 10 sq ft per chicken in the run. Includes nesting box and roost bar sizing.',
+    title: 'Chicken Coop Size Calculator: Space Per Chicken (2026)',
+    description: 'Use our free chicken coop size calculator to get exact square footage per hen. Includes run size, nesting box count, and breed-specific adjustments.',
     canonical: `${SITE_URL}/guides/chicken-coop-size-calculator`,
   },
   '/guides/coop-materials-guide': {
-    title: 'Chicken Coop Materials Guide: What to Buy & What to Skip',
-    description: 'Lumber, hardware cloth, roofing, flooring, insulation — a complete chicken coop materials list with costs, ratings, and what the pros actually use.',
+    title: 'Chicken Coop Materials List: Complete 2026 Buying Guide',
+    description: 'Exact chicken coop materials list with lumber, hardware, roofing, and wire specs. Includes weather-resistance comparison and where to buy each item.',
     canonical: `${SITE_URL}/guides/coop-materials-guide`,
   },
   '/guides/coop-permit-guide': {
-    title: 'Do You Need a Permit to Build a Chicken Coop? (State Guide)',
-    description: 'Most areas require a permit for coops over 100–120 sq ft. Find out if your state and city require a building permit before you break ground — and what happens if you skip it.',
+    title: 'Do You Need a Permit to Build a Chicken Coop? State Guide',
+    description: 'Chicken coop permit rules explained state by state. Find out if your city requires a permit, HOA restrictions, and how to get approval fast.',
     canonical: `${SITE_URL}/guides/coop-permit-guide`,
   },
   '/guides/predator-proof-coop-guide': {
-    title: 'Predator-Proof Chicken Coop Guide: Hardware, Locks & Aprons',
-    description: 'Hardware cloth, apron fencing, automatic doors, and secure latches — a complete guide to protecting your flock from foxes, raccoons, coyotes, and hawks.',
+    title: 'Predator-Proof Chicken Coop: Hardware, Locks & Aprons',
+    description: 'Stop losing chickens to predators. This guide covers hardware cloth, predator aprons, locks, and proven fencing that keeps raccoons and coyotes out.',
     canonical: `${SITE_URL}/guides/predator-proof-coop-guide`,
   },
   '/guides/coop-ventilation-guide': {
-    title: 'Chicken Coop Ventilation Guide: How Much & Where to Put It',
-    description: 'Chickens need 1 sq ft of ventilation per 10 sq ft of coop space. Here\'s how to calculate it, where to install vents, and how to avoid the cold drafts that kill flocks.',
+    title: 'Chicken Coop Ventilation Guide: Design & Air Flow Tips',
+    description: 'Proper chicken coop ventilation prevents ammonia buildup, frostbite, and disease. Learn ventilation design, square footage rules, and common mistakes.',
     canonical: `${SITE_URL}/guides/coop-ventilation-guide`,
   },
   '/guides/arizona-chicken-coop-guide': {
@@ -109,8 +107,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/large-chicken-coop-plans`,
   },
   '/guides/chicken-coop-insulation-guide': {
-    title: 'Chicken Coop Insulation Guide: Best Materials + What to Avoid',
-    description: 'Should you insulate your chicken coop? Yes — if temps drop below 20°F. Here\'s exactly what to use, what to skip, and how to install it without harming your flock.',
+    title: 'Chicken Coop Insulation Guide: Do You Need It? (2026)',
+    description: 'Complete chicken coop insulation guide: best materials, winter vs summer, cost, and whether your flock actually needs insulation in your climate.',
     canonical: `${SITE_URL}/guides/chicken-coop-insulation-guide`,
   },
   '/guides/free-chicken-coop-plans': {
@@ -129,8 +127,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/guides/chicken-run-design-guide`,
   },
   '/guides/chicken-coop-cleaning-guide': {
-    title: 'How Often Should You Clean a Chicken Coop? Schedule + Deep Clean Guide',
-    description: 'Most backyard coops need a full clean every 1–2 months. Here\'s a week-by-week cleaning schedule, plus a deep clean checklist to keep your flock healthy year-round.',
+    title: 'How Often to Clean a Chicken Coop (And The Easy Way)',
+    description: 'How often to clean your chicken coop, the deep-litter method, daily vs weekly tasks, and the cleaning supplies that actually work. Beginner-friendly.',
     canonical: `${SITE_URL}/guides/chicken-coop-cleaning-guide`,
   },
   '/guides/free-coop-plans-quality-checklist': {
@@ -164,8 +162,8 @@ export const seoConfig: Record<string, RouteSEO> = {
     canonical: `${SITE_URL}/plan-reviews`,
   },
   '/guides/nesting-box-guide': {
-    title: 'Chicken Coop Nesting Boxes: How Many, Size & Placement Guide',
-    description: 'How many nesting boxes do you need? One per 3–4 hens. Get exact dimensions by breed size, placement tips, and DIY build instructions for your chicken coop.',
+    title: 'Chicken Coop Nesting Boxes: Size, Placement & DIY Guide',
+    description: 'How many nesting boxes per hen, exact dimensions by breed, placement tips, and DIY build instructions. The complete nesting box guide for 2026.',
     canonical: `${SITE_URL}/guides/nesting-box-guide`,
   },
   '/guides/chicken-coop-roofing-guide': {

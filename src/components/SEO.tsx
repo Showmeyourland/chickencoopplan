@@ -109,12 +109,12 @@ export const ArticleSchema = ({
   
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
+    '@type': 'Article',
     headline: title,
     description: description,
     author: {
-      '@type': 'Person',
-      name: author,
+      '@type': 'Organization',
+      name: 'CoopCraft',
     },
     datePublished: datePublished,
     dateModified: dateModified || datePublished,
@@ -125,7 +125,7 @@ export const ArticleSchema = ({
       name: 'CoopCraft',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://buildingachickencoopplans.com/logo.png',
+        url: 'https://buildingachickencoopplans.com/assets/logo-KAJ3iibi.png',
       },
     },
     mainEntityOfPage: {
