@@ -41,6 +41,11 @@ import guideClimate from '@/assets/guide-climate.jpg';
 import guideNestingBoxes from '@/assets/guide-nesting-boxes.jpg';
 import guideRoofing from '@/assets/guide-roofing.jpg';
 import guideBreeds from '@/assets/guide-breeds.jpg';
+import guideChickenCoopPlansPillar from '@/assets/guide-chicken-coop-plans-pillar.jpg';
+import guideCoopPlans4Chickens from '@/assets/guide-coop-plans-4-chickens.jpg';
+import guideAFrameCoop from '@/assets/guide-a-frame-coop.jpg';
+import guideWalkInCoop from '@/assets/guide-walk-in-coop.jpg';
+import guideCoopMaterialsList from '@/assets/guide-coop-materials-list.jpg';
 
 // Map slug to imported image for SEO meta tags
 const seoImageMap: Record<string, string> = {
@@ -73,6 +78,11 @@ const seoImageMap: Record<string, string> = {
   'winter-chicken-coop-guide': guideWinterCoop,
   '4x4-chicken-coop-plans': guide4x4CoopPlans,
   'small-backyard-coop-plans': guideSmallBackyardCoop,
+  'chicken-coop-plans': guideChickenCoopPlansPillar,
+  'chicken-coop-plans-4-chickens': guideCoopPlans4Chickens,
+  'a-frame-chicken-coop-plans': guideAFrameCoop,
+  'walk-in-chicken-coop-plans': guideWalkInCoop,
+  'chicken-coop-plans-materials-list': guideCoopMaterialsList,
 };
 
 const getSeoImage = (slug: string): string => {

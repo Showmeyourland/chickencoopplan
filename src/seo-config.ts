@@ -176,6 +176,36 @@ export const seoConfig: Record<string, RouteSEO> = {
     description: 'The best chicken breeds for first-time keepers ranked by egg production, temperament, and climate tolerance. Includes an interactive breed finder tool.',
     canonical: `${SITE_URL}/guides/best-chicken-breeds-beginners`,
   },
+  '/guides/chicken-coop-plans': {
+    title: 'Chicken Coop Plans: 20 Free DIY Designs for Every Backyard (2026)',
+    description: 'Free chicken coop plans organized by flock size, style, budget, and climate. Every plan includes materials lists, cut diagrams, and step-by-step instructions.',
+    canonical: `${SITE_URL}/guides/chicken-coop-plans`,
+    ogType: 'article',
+  },
+  '/guides/chicken-coop-plans-4-chickens': {
+    title: 'Chicken Coop Plans for 4 Chickens: 5 Beginner-Friendly Designs (2026)',
+    description: 'Five proven chicken coop plans sized for 4 hens. Includes the Classic 4x4, A-Frame, Tractor, Urban Corner, and Converted Shed with costs and materials.',
+    canonical: `${SITE_URL}/guides/chicken-coop-plans-4-chickens`,
+    ogType: 'article',
+  },
+  '/guides/a-frame-chicken-coop-plans': {
+    title: 'A-Frame Chicken Coop Plans: Simple Weekend Build Designs (2026)',
+    description: 'Three free A-frame chicken coop plans from $100-400. The simplest coop you can build — fewest cuts, lowest cost, and a weekend build for 3-5 hens.',
+    canonical: `${SITE_URL}/guides/a-frame-chicken-coop-plans`,
+    ogType: 'article',
+  },
+  '/guides/walk-in-chicken-coop-plans': {
+    title: 'Walk-In Chicken Coop Plans: Full-Size Designs for 10+ Hens (2026)',
+    description: 'Five walk-in chicken coop plans from 6x8 to 10x16. Stand-up access, easy cleaning, and room for 10-24 hens. DIY costs from $850 to $2,700.',
+    canonical: `${SITE_URL}/guides/walk-in-chicken-coop-plans`,
+    ogType: 'article',
+  },
+  '/guides/chicken-coop-plans-materials-list': {
+    title: 'Chicken Coop Plans with Materials List: Free Downloadable Guide (2026)',
+    description: 'Complete chicken coop materials lists with 2026 prices for 4x4, 4x8, and 8x8 coops. Exact quantities, specs, and where to buy every item.',
+    canonical: `${SITE_URL}/guides/chicken-coop-plans-materials-list`,
+    ogType: 'article',
+  },
   '/shop': {
     title: 'Shop Chicken Coop Plans | CoopCraft',
     description: 'Shop premium chicken coop plans and building kits. Coming soon - sign up to be notified when our store launches.',
