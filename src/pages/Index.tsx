@@ -8,6 +8,7 @@ import HomeFAQ from "@/components/HomeFAQ";
 import HomepageContent from "@/components/HomepageContent";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import EmailCapture from "@/components/EmailCapture";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -51,6 +52,9 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <div className="container max-w-3xl mx-auto px-4 py-10">
+          <EmailCapture />
+        </div>
         <CoopDesigns />
         <QuickFacts />
         <GuideIndex />

@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import EmailCapture from "@/components/EmailCapture";
 import { Article, getRelatedArticles } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
 import { guideFaqData } from "@/lib/guideFaqs";
@@ -278,6 +279,11 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             {children}
           </div>
 
+          {/* Email Capture — mid-article */}
+          <div className="my-10">
+            <EmailCapture />
+          </div>
+
           {/* Visible FAQ Section */}
           {guideFaqData[article.slug] && (
             <section className="mt-12 mb-8">
@@ -296,6 +302,11 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
               </Accordion>
             </section>
           )}
+
+          {/* Email Capture — end of article */}
+          <div className="my-10">
+            <EmailCapture />
+          </div>
 
           {/* Mid-Article Newsletter */}
           <div className="my-12">
