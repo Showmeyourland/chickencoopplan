@@ -10,6 +10,8 @@ import RelatedGuides from "@/components/RelatedGuides";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import EmailCapture from "@/components/EmailCapture";
 import { Article } from "@/lib/articles";
+import { getGuideMeta } from "@/data/guideMetadata";
+import LastUpdated from "@/components/LastUpdated";
 import { howToData } from "@/lib/howto-steps";
 import { guideFaqData } from "@/lib/guideFaqs";
 import { faqPageSchema } from "@/lib/guideSchemas";
@@ -107,6 +109,7 @@ interface BlogLayoutProps {
 
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
   const resolvedImage = getSeoImage(article.slug);
+  const guideMeta = getGuideMeta(article.slug);
   
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -136,9 +139,8 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             title: article.seo?.metaTitle || article.title,
             description: article.seo?.metaDescription || article.excerpt,
             slug: article.slug,
-            // TODO: Replace with real dates from frontmatter or CMS later
-            datePublished: article.date || "2026-01-01",
-            dateModified: article.updatedDate || "2026-04-07",
+            datePublished: guideMeta?.datePublished || article.date || "2026-01-01",
+            dateModified: guideMeta?.dateModified || article.updatedDate || "2026-04-07",
             imageUrl: resolvedImage.startsWith('http') ? resolvedImage : `https://buildingachickencoopplans.com${resolvedImage}`,
           }))}
         </script>
@@ -228,13 +230,14 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
                 <User className="h-4 w-4" />
                 <span>{article.author}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4" />
-                <span>{article.date}</span>
-                {article.updatedDate && (
-                  <span className="text-xs">(Updated: {article.updatedDate})</span>
-                )}
-              </div>
+              {guideMeta ? (
+                <LastUpdated datePublished={guideMeta.datePublished} dateModified={guideMeta.dateModified} />
+              ) : (
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <span>{article.date}</span>
+                </div>
+              )}
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 <span>{article.readingTime} min read</span>
