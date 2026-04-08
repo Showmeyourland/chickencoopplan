@@ -9,7 +9,7 @@ import AuthorBio from "@/components/AuthorBio";
 import RelatedGuides from "@/components/RelatedGuides";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import EmailCapture from "@/components/EmailCapture";
-import { Article, getRelatedArticles } from "@/lib/articles";
+import { Article } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
 import { guideFaqData } from "@/lib/guideFaqs";
 import { faqPageSchema } from "@/lib/guideSchemas";
