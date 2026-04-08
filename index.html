@@ -49,12 +49,14 @@
     </script>
 
     <script>
-    // Inline SEO: sets correct meta tags BEFORE React loads.
+    // Inline SEO: sets correct meta tags AND JSON-LD schemas BEFORE React loads.
     // Runs synchronously so crawlers (Googlebot, Bingbot) see per-page metadata.
     (function(){
-      var defined = "https://buildingachickencoopplans.com";
-      var defined2 = defined;
-      var defined3 = {
+      var S = "https://buildingachickencoopplans.com";
+      var L = S + "/assets/logo-KAJ3iibi.png";
+      var today = "2026-04-08";
+      // [title, description, path]
+      var routes = {
         "/":["Free DIY Chicken Coop Plans & Building Guides | CoopCraft","Browse free DIY chicken coop plans with step-by-step instructions, full materials lists, and cost breakdowns. Beginner-friendly designs for every flock size and budget.","/"],
         "/guides":["Chicken Coop Building Guides & Tutorials | CoopCraft","Free chicken coop building guides covering design, materials, costs, ventilation, insulation, and more. Step-by-step tutorials for every skill level.","/guides"],
         "/guides/cost-breakdown-2025":["How Much Does It Cost to Build a Chicken Coop in 2026?","Real 2026 chicken coop building costs with dollar-by-dollar breakdowns for small, medium, and large coops. Materials list and budget-saving tips included.","/guides/cost-breakdown-2025"],
@@ -86,28 +88,134 @@
         "/guides/nesting-box-guide":["Chicken Coop Nesting Boxes: Size, Placement & DIY Guide","How many nesting boxes per hen, exact dimensions by breed, placement tips, and DIY build instructions. The complete nesting box guide for 2026.","/guides/nesting-box-guide"],
         "/guides/chicken-coop-roofing-guide":["Chicken Coop Roofing Guide: Metal vs Shingles + Pitch Calculator","Compare corrugated metal, asphalt shingles, and polycarbonate for your chicken coop roof. Includes pitch recommendations by climate and a cost calculator.","/guides/chicken-coop-roofing-guide"],
         "/guides/best-chicken-breeds-beginners":["Best Chicken Breeds for Beginners: Top 10 Picks by Climate & Eggs","The best chicken breeds for first-time keepers ranked by egg production, temperament, and climate tolerance. Includes an interactive breed finder tool.","/guides/best-chicken-breeds-beginners"],
+        "/guides/chicken-coop-plans":["Chicken Coop Plans: 20 Free DIY Designs for Every Backyard (2026)","Free chicken coop plans organized by flock size, style, budget, and climate. Every plan includes materials lists, cut diagrams, and step-by-step instructions.","/guides/chicken-coop-plans"],
+        "/guides/chicken-coop-plans-4-chickens":["Chicken Coop Plans for 4 Chickens: 5 Beginner-Friendly Designs (2026)","Five proven chicken coop plans sized for 4 hens. Includes the Classic 4x4, A-Frame, Tractor, Urban Corner, and Converted Shed with costs and materials.","/guides/chicken-coop-plans-4-chickens"],
+        "/guides/a-frame-chicken-coop-plans":["A-Frame Chicken Coop Plans: Simple Weekend Build Designs (2026)","Three free A-frame chicken coop plans from $100-400. The simplest coop you can build \u2014 fewest cuts, lowest cost, and a weekend build for 3-5 hens.","/guides/a-frame-chicken-coop-plans"],
+        "/guides/walk-in-chicken-coop-plans":["Walk-In Chicken Coop Plans: Full-Size Designs for 10+ Hens (2026)","Five walk-in chicken coop plans from 6x8 to 10x16. Stand-up access, easy cleaning, and room for 10-24 hens. DIY costs from $850 to $2,700.","/guides/walk-in-chicken-coop-plans"],
+        "/guides/chicken-coop-plans-materials-list":["Chicken Coop Plans with Materials List: Free Downloadable Guide (2026)","Complete chicken coop materials lists with 2026 prices for 4x4, 4x8, and 8x8 coops. Exact quantities, specs, and where to buy every item.","/guides/chicken-coop-plans-materials-list"],
         "/recommended-plans":["Best Chicken Coop Plans 2026: Expert-Reviewed & Rated","Expert-reviewed chicken coop plans rated by difficulty, cost, and build quality. Curated collection of the best DIY coop designs with detailed comparisons.","/recommended-plans"],
         "/plan-reviews":["Chicken Coop Plan Reviews & Ratings | CoopCraft","Honest reviews and ratings of popular chicken coop plans. Compare features, difficulty, cost, and quality before you buy or build.","/plan-reviews"],
         "/shop":["Shop Chicken Coop Plans | CoopCraft","Shop premium chicken coop plans and building kits. Coming soon - sign up to be notified when our store launches.","/shop"]
       };
-      var defined4 = location.pathname.replace(/\/$/,"") || "/";
-      var defined5 = defined3[defined4];
-      if(defined5){
-        document.title = defined5[0];
-        var defined6 = document.querySelector('meta[name="description"]');
-        if(defined6) defined6.setAttribute("content",defined5[1]);
-        var defined7 = document.querySelector('link[rel="canonical"]');
-        if(defined7) defined7.setAttribute("href",defined+defined5[2]);
-        var defined8 = document.querySelector('meta[property="og:title"]');
-        if(defined8) defined8.setAttribute("content",defined5[0]);
-        var defined9 = document.querySelector('meta[property="og:description"]');
-        if(defined9) defined9.setAttribute("content",defined5[1]);
-        var defined10 = document.querySelector('meta[property="og:url"]');
-        if(defined10) defined10.setAttribute("content",defined+defined5[2]);
-        var defined11 = document.querySelector('meta[name="twitter:title"]');
-        if(defined11) defined11.setAttribute("content",defined5[0]);
-        var defined12 = document.querySelector('meta[name="twitter:description"]');
-        if(defined12) defined12.setAttribute("content",defined5[1]);
+
+      var path = location.pathname.replace(/\/$/,"") || "/";
+      var r = routes[path];
+
+      if(r){
+        document.title = r[0];
+        var m = document.querySelector('meta[name="description"]');
+        if(m) m.setAttribute("content",r[1]);
+        var c = document.querySelector('link[rel="canonical"]');
+        if(c) c.setAttribute("href",S+r[2]);
+        var o1 = document.querySelector('meta[property="og:title"]');
+        if(o1) o1.setAttribute("content",r[0]);
+        var o2 = document.querySelector('meta[property="og:description"]');
+        if(o2) o2.setAttribute("content",r[1]);
+        var o3 = document.querySelector('meta[property="og:url"]');
+        if(o3) o3.setAttribute("content",S+r[2]);
+        var t1 = document.querySelector('meta[name="twitter:title"]');
+        if(t1) t1.setAttribute("content",r[0]);
+        var t2 = document.querySelector('meta[name="twitter:description"]');
+        if(t2) t2.setAttribute("content",r[1]);
+      }
+
+      // --- Per-route JSON-LD injection ---
+      function injectSchema(obj){
+        var el = document.createElement("script");
+        el.type = "application/ld+json";
+        el.textContent = JSON.stringify(obj);
+        document.head.appendChild(el);
+      }
+
+      function makeArticle(title,desc,url){
+        return {"@context":"https://schema.org","@type":"Article","headline":title,"description":desc,"url":url,"datePublished":"2026-01-01","dateModified":today,"author":{"@type":"Organization","name":"CoopCraft"},"publisher":{"@type":"Organization","name":"CoopCraft","logo":{"@type":"ImageObject","url":L}},"mainEntityOfPage":{"@type":"WebPage","@id":url}};
+      }
+
+      function makeBreadcrumb(pageName,pageUrl){
+        return {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":S+"/"},{"@type":"ListItem","position":2,"name":"Guides","item":S+"/guides"},{"@type":"ListItem","position":3,"name":pageName,"item":pageUrl}]};
+      }
+
+      // Inject Article + BreadcrumbList for all /guides/* pages
+      if(r && path.indexOf("/guides/") === 0){
+        var fullUrl = S + r[2];
+        injectSchema(makeArticle(r[0], r[1], fullUrl));
+        injectSchema(makeBreadcrumb(r[0], fullUrl));
+      }
+
+      // HowTo schemas for step-by-step guides
+      var howtos = {
+        "/guides/how-to-build-chicken-coop":{n:"How to Build a Chicken Coop: Complete 10-Day Guide",d:"Step-by-step instructions to build your own chicken coop in 10 days.",s:[["Planning Your Chicken Coop","Determine flock size, location, and design. Calculate space requirements at 4 sq ft per bird inside and 10 sq ft per bird in the run."],["Gather Materials and Tools","Purchase lumber, hardware cloth, roofing, screws, and gather basic tools including circular saw, drill, measuring tape, and level."],["Build the Foundation","Construct a level foundation using pressure-treated 4x4 skids or concrete blocks. Ensure proper drainage and predator protection."],["Frame the Structure","Cut and assemble wall frames using 2x4 lumber. Build front and back walls with appropriate height for roof pitch."],["Install Walls and Siding","Attach plywood or T1-11 siding to the framed walls. Cut openings for doors, windows, and ventilation."],["Install Roofing","Install rafters, add roof sheathing, and apply metal roofing or shingles with proper overhang."],["Build Interior Features","Install roosting bars, build nesting boxes (one per 3-4 hens), and add a droppings board."],["Install Ventilation","Add soffit vents and ridge vents for passive airflow. Cover all openings with 1/2-inch hardware cloth."],["Construct the Run","Build a predator-proof run with buried hardware cloth apron, secure door, and optional covered roof."],["Final Inspection","Check all hardware cloth seams, test door latches, add bedding, and fill waterers before introducing your flock."]]},
+        "/guides/nesting-box-guide":{n:"How to Build Chicken Coop Nesting Boxes",d:"DIY nesting box build instructions with sizing by breed, placement tips, and materials list.",s:[["Determine How Many Nesting Boxes","Plan one nesting box for every 3-4 hens."],["Choose the Right Size","Standard breeds need 12x12x12 inch boxes, bantams need 10x10x10, large breeds need 14x14x14."],["Cut the Lumber","Cut plywood panels for the bottom, sides, back, and dividers."],["Assemble the Box Frame","Screw side panels to the bottom, attach back panel, and install dividers."],["Add Front Lip and Landing Bar","Attach a 4-inch front lip and a landing perch at the front."],["Mount the Nesting Boxes","Install 18-24 inches off floor, lower than roosting bars, in a dark quiet corner."],["Add Bedding and Train Hens","Fill with pine shavings or straw. Place ceramic eggs to encourage laying."]]},
+        "/guides/predator-proof-coop-guide":{n:"How to Predator-Proof a Chicken Coop",d:"Complete guide to protecting your flock with hardware cloth, locks, and aprons.",s:[["Assess Local Predator Threats","Identify common predators: raccoons, foxes, coyotes, hawks, owls, rats, snakes, or weasels."],["Replace Chicken Wire with Hardware Cloth","Use 1/2-inch welded hardware cloth on all openings."],["Install Buried Apron","Bury 12-24 inches of hardware cloth outward from the coop base."],["Secure Doors with Two-Step Locks","Use carabiner clips or two-step latches on every door."],["Cover the Run","Install hardware cloth or heavy-duty bird netting as a roof."],["Install Automatic Coop Door","Add a light-sensor or timer-based automatic door."],["Inspect Monthly","Check all hardware cloth for rust or gaps and look for signs of digging."]]},
+        "/guides/chicken-coop-insulation-guide":{n:"How to Insulate a Chicken Coop",d:"Step-by-step insulation guide for cold climates.",s:[["Decide If You Need Insulation","Insulate if winter temps regularly drop below 20\u00b0F."],["Choose Insulation Material","Use rigid foam board (R-5 to R-10). Avoid exposed fiberglass."],["Seal Air Leaks First","Caulk gaps around windows, doors, and where walls meet the roof."],["Install Wall Insulation","Cut rigid foam between studs, secure, and cover with plywood."],["Insulate the Ceiling","Add insulation between rafters \u2014 most critical area since heat rises."],["Maintain Ventilation","Never cover vents with insulation to prevent moisture buildup."],["Add Vapor Barrier","In very cold climates, add a vapor barrier on the warm side."]]},
+        "/guides/chicken-coop-cleaning-guide":{n:"How to Clean a Chicken Coop",d:"Complete cleaning schedule with daily, weekly, and monthly tasks.",s:[["Daily: Quick 5-Minute Check","Refresh waterers, top off feed, collect eggs, visual check of flock."],["Weekly: Spot Clean","Scrape droppings boards, add fresh bedding to nesting boxes."],["Monthly: Thorough Cleaning","Remove all bedding, sweep floors, scrub waterers and feeders with vinegar."],["Seasonal Deep Clean","Remove everything, pressure wash all surfaces with 1:10 bleach solution."],["Sanitize and Treat for Pests","Apply diatomaceous earth and spray roosts with mite treatment."],["Replace Bedding","Add 4-6 inches of fresh pine shavings, refill feeders and waterers."]]},
+        "/guides/coop-ventilation-guide":{n:"How to Ventilate a Chicken Coop",d:"Ventilation design guide with placement rules and common mistakes.",s:[["Calculate Required Ventilation Area","At least 1 sq ft of ventilation per 10 sq ft of floor space."],["Plan Vent Placement","Place intake vents low on one wall and exhaust vents high on the opposite."],["Install Soffit Vents","Cut openings under the roof overhang and cover with hardware cloth."],["Add Ridge or Gable Vents","Install ridge vents along roof peak or gable vents at each end."],["Cover All Openings","Use 1/2-inch hardware cloth over every vent for predator protection."],["Add Adjustable Winter Covers","Install hinged plywood covers on lower vents for winter."]]},
+        "/guides/chicken-coop-roofing-guide":{n:"How to Roof a Chicken Coop",d:"Compare roofing materials, calculate pitch, and install a weatherproof roof.",s:[["Choose Roofing Material","Corrugated metal is best value \u2014 lightweight, durable, lasts 40+ years."],["Calculate Roof Pitch","Minimum 3:12 for metal, 4:12 for shingles."],["Install Rafters and Sheathing","Space rafters 24 inches on center, attach plywood or purlins."],["Add Drip Edge and Underlayment","Install drip edge and roofing felt for waterproofing."],["Install Roofing Material","For metal: start at bottom, overlap panels. For shingles: start with a starter strip."],["Seal Ridge and Edges","Install ridge cap and seal all screw holes."],["Add Overhang","Extend roof 6-12 inches beyond walls for rain protection."]]}
+      };
+
+      var howto = howtos[path];
+      if(howto){
+        var hs = {"@context":"https://schema.org","@type":"HowTo","name":howto.n,"description":howto.d,"step":[]};
+        for(var i=0;i<howto.s.length;i++){
+          hs.step.push({"@type":"HowToStep","position":i+1,"name":howto.s[i][0],"text":howto.s[i][1]});
+        }
+        injectSchema(hs);
+      }
+
+      // FAQ schemas for pages with FAQ sections
+      var faqs = {
+        "/":[
+          ["How much does it cost to build a chicken coop?","A basic small chicken coop costs $200\u2013$500 for materials. Medium coops run $500\u2013$1,000, and large walk-in coops can cost $1,000\u2013$2,500+. Using reclaimed materials can significantly reduce costs."],
+          ["How big should a chicken coop be?","Each chicken needs 3\u20134 square feet of indoor coop space and 8\u201310 square feet of outdoor run space. For 6 chickens, plan for at least a 4x6 coop with a 48\u201360 square foot run."],
+          ["Can a beginner build a chicken coop?","Yes! Many of our plans are designed specifically for beginners with basic tools. A simple coop can be built in a weekend with a drill, circular saw, measuring tape, and level."],
+          ["Do I need a permit to build a chicken coop?","Permit requirements vary by location. Many areas allow small coops (under 120 sq ft) without permits, but always check local zoning and HOA rules before building."],
+          ["What is the best material for a chicken coop?","Pressure-treated lumber for the frame, exterior-grade plywood for walls, and metal roofing are the most durable and cost-effective combination. Use 1/2-inch hardware cloth for predator protection."]
+        ],
+        "/guides/chicken-coop-plans":[
+          ["Are these chicken coop plans really free?","Yes. Every plan we publish is completely free \u2014 no email signup required, no hidden paywalls, no surprise upsells."],
+          ["How long does it take to build a chicken coop?","A simple 4x4 coop can be built in a weekend (8\u201312 hours). A 6x8 with a run takes 16\u201324 hours. A walk-in structure: 30\u201340 hours."],
+          ["Can a beginner build a chicken coop?","Absolutely. Pick a simple design (A-frame or basic rectangle), avoid complex joinery, and take your time."],
+          ["What\u2019s the most important thing in a coop plan?","Predator-proofing. Hardware cloth, buried aprons, and locking latches aren\u2019t optional. After that: ventilation."],
+          ["Do I need a permit to build a chicken coop?","It depends on your municipality. Check with your local zoning office before you buy lumber."],
+          ["How big should my chicken coop be?","3\u20134 square feet per bird inside, 8\u201310 square feet per bird in the run. If unsure, build larger."]
+        ],
+        "/guides/chicken-coop-plans-4-chickens":[
+          ["Can I keep 4 chickens in a 4x4 coop?","Yes, but barely. A 4x4 gives exactly the 16-square-foot minimum. It works if they also have access to a decent run or free-range time."],
+          ["How much does it cost to build a coop for 4 chickens?","Expect $200\u2013$350 for a basic design, $250\u2013$400 for a tractor, $300\u2013$500 for an urban coop, and $400\u2013$700 for a converted shed."],
+          ["How many eggs will 4 chickens lay?","A healthy hen lays about 5\u20136 eggs per week. Four hens give roughly 20\u201324 eggs per week in peak season."],
+          ["Do I need a permit for 4 chickens?","Most cities allow four hens without a permit. Check your local ordinances."],
+          ["Can 4 chickens stay in the coop all day?","They can, but shouldn\u2019t if you can help it. Give them an attached run of at least 40 square feet."]
+        ],
+        "/guides/a-frame-chicken-coop-plans":[
+          ["How long does it take to build an A-frame chicken coop?","A basic 4x8 A-frame takes 6\u20138 hours for one person, 4\u20135 hours with two."],
+          ["How many chickens can fit in a 4x8 A-frame?","Comfortably, 4\u20135 hens. About 20 sq ft of usable floor space due to sloped walls."],
+          ["Is an A-frame coop predator-proof?","Yes, if you use hardware cloth on end walls, a buried apron, and a two-step door latch."],
+          ["Can an A-frame coop handle winter?","In mild winters, yes. In harsh-winter zones, consider a rectangular coop with insulation."],
+          ["What\u2019s the cheapest chicken coop to build?","An A-frame. A functional 4x8 costs $100\u2013$150, roughly half the cost of a comparable rectangular coop."]
+        ],
+        "/guides/walk-in-chicken-coop-plans":[
+          ["Can I build a walk-in coop in a subdivision?","Yes, but check local codes. Many towns allow structures under 200 sqft without a permit."],
+          ["How long does it take to build a walk-in coop?","A 6x8 takes 16\u201320 hours. An 8x10 runs 24\u201332 hours. A 10x12 is a 40+ hour project."],
+          ["Should I insulate a walk-in coop?","In climates colder than 0\u00b0F regularly, yes. Add 2\u20133 inches of rigid foam on north-facing walls."],
+          ["What\u2019s the best flooring for a walk-in coop?","Deep litter method (6\u20138 inches of pine shavings) is most practical."],
+          ["Can I attach a run directly to a walk-in coop?","Absolutely. A 10x16 coop can have a 10x20 or 10x24 run attached."]
+        ],
+        "/guides/chicken-coop-plans-materials-list":[
+          ["Do I really need pressure-treated lumber?","For anything touching the ground, yes. It lasts 15\u201320 years vs. 2\u20133 for regular wood."],
+          ["What\u2019s the difference between 1/4-inch and 1/2-inch hardware cloth?","1/4-inch keeps out snakes and mice. 1/2-inch stops raccoons but lets snakes through."],
+          ["Can I use regular screws?","You can, but they\u2019ll rust within 6 months. Exterior screws cost $5\u201310 more per box and last the life of the coop."],
+          ["Should I stain or paint the coop?","Stain looks better and lasts longer outdoors. Choose one rated for exterior use and poultry-safe."],
+          ["How much should I budget including tools?","$185\u2013$250 for a 4x4, $380\u2013$480 for a 4x8, $750\u2013$950 for an 8x8. Add $150\u2013$200 if you need tools."]
+        ]
+      };
+
+      var faq = faqs[path];
+      if(faq){
+        var fs = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[]};
+        for(var j=0;j<faq.length;j++){
+          fs.mainEntity.push({"@type":"Question","name":faq[j][0],"acceptedAnswer":{"@type":"Answer","text":faq[j][1]}});
+        }
+        injectSchema(fs);
       }
     })();
     </script>
