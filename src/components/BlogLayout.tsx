@@ -8,6 +8,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import EmailCapture from "@/components/EmailCapture";
 import { Article, getRelatedArticles } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
 import { guideFaqData } from "@/lib/guideFaqs";
