@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import SitewideSchema from "@/components/SitewideSchema";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Guides from "./pages/Guides";
@@ -58,6 +59,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <SitewideSchema />
           <TrailingSlashRedirect />
           <Routes>
             <Route path="/" element={<Index />} />

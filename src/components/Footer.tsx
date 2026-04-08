@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div className="space-y-4">
             <Link to="/" className="hover:opacity-80 transition-opacity">
-              <img src={logo} alt="ChickenCoopCraft" className="h-10 w-auto" />
+              <img src={logo} alt="" className="h-10 w-auto" />
             </Link>
             <p className="text-sm text-primary-foreground/70">
               Professional DIY chicken coop plans for backyard farmers. 
@@ -67,7 +67,7 @@ const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/50">
-          © 2025 CoopCraft. All rights reserved.
+          © 2026 CoopCraft. All rights reserved.
         </div>
       </div>
     </footer>

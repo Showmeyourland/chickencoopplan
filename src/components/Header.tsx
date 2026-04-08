@@ -24,7 +24,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="ChickenCoopCraft" className="h-12 w-auto" />
+          <img src={logo} alt="CoopCraft — free chicken coop plans and building guides" className="h-12 w-auto" />
         </Link>
         
         <nav className="hidden md:flex items-center gap-6">
