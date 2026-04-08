@@ -10,7 +10,15 @@ import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { Article, getRelatedArticles } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
+import { guideFaqData } from "@/lib/guideFaqs";
+import { faqPageSchema } from "@/lib/guideSchemas";
 import { Helmet } from "react-helmet-async";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 // Import guide images for SEO meta tags
 import guideArizona from '@/assets/guide-arizona.jpg';
@@ -160,6 +168,14 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
           </script>
         </Helmet>
       )}
+      {/* FAQPage Schema for guides with FAQ data */}
+      {guideFaqData[article.slug] && (
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify(faqPageSchema(guideFaqData[article.slug]))}
+          </script>
+        </Helmet>
+      )}
 
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
@@ -261,6 +277,25 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
           <div className="prose prose-lg max-w-none">
             {children}
           </div>
+
+          {/* Visible FAQ Section */}
+          {guideFaqData[article.slug] && (
+            <section className="mt-12 mb-8">
+              <h2 className="text-3xl font-display text-foreground mb-6">Frequently Asked Questions</h2>
+              <Accordion type="single" collapsible className="w-full">
+                {guideFaqData[article.slug].map((faq, i) => (
+                  <AccordionItem key={i} value={`faq-${i}`}>
+                    <AccordionTrigger className="text-left text-base font-medium">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
+          )}
 
           {/* Mid-Article Newsletter */}
           <div className="my-12">
