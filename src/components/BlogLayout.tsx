@@ -341,7 +341,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
               <Link to="/" className="hover:text-foreground transition-colors">Plans</Link>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2025 CoopCraft. All rights reserved.
+              © 2026 CoopCraft. All rights reserved.
             </p>
           </div>
         </div>
