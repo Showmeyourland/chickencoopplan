@@ -160,7 +160,6 @@ const CoopDesigns = () => {
                   loading="lazy"
                   decoding="async"
                 />
-                />
                 {design.popular && (
                   <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">
                     Most Popular
