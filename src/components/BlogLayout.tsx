@@ -206,10 +206,11 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
       </header>
 
       {/* Article */}
-      <main className="py-12">
-        <article className="container max-w-4xl">
-          {/* Breadcrumb */}
+      <main className="py-12 pb-24 lg:pb-12">
+        <div className="container max-w-6xl">
           <Breadcrumbs items={breadcrumbItems} className="mb-8" />
+          <div className="lg:grid lg:grid-cols-[1fr_300px] lg:gap-12">
+          <article>
 
           {/* Article Header */}
           <header className="mb-12">
