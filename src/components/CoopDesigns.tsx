@@ -155,8 +155,10 @@ const CoopDesigns = () => {
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img
                   src={design.image}
-                  alt={design.name}
+                  alt={`${design.name} chicken coop plan — ${design.capacity}, ${design.dimensions}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
                 {design.popular && (
                   <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">

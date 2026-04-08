@@ -2,10 +2,11 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import CoopDesigns from "@/components/CoopDesigns";
 import QuickFacts from "@/components/QuickFacts";
-import FeaturedGuides from "@/components/FeaturedGuides";
+import GuideIndex from "@/components/GuideIndex";
 import HomeFAQ from "@/components/HomeFAQ";
+import HomepageContent from "@/components/HomepageContent";
 import Footer from "@/components/Footer";
-import SEO, { WebSiteSchema } from "@/components/SEO";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
@@ -16,18 +17,14 @@ const Index = () => {
         canonical="/"
         type="website"
       />
-      <WebSiteSchema 
-        name="CoopCraft"
-        url="https://buildingachickencoopplans.com"
-        searchUrl="https://buildingachickencoopplans.com/search?q={search_term_string}"
-      />
       <Header />
       <main>
         <Hero />
         <CoopDesigns />
         <QuickFacts />
-        <FeaturedGuides />
+        <GuideIndex />
         <HomeFAQ />
+        <HomepageContent />
       </main>
       <Footer />
     </div>

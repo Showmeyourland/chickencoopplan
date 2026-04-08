@@ -73,8 +73,10 @@ const Hero = () => {
             <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-card">
               <img 
                 src={heroImage} 
-                alt="Beautiful backyard chicken coop" 
+                alt="Beautiful backyard chicken coop with free building plans"
                 className="w-full h-full object-cover"
+                loading="eager"
+                fetchPriority="high"
               />
               
               {/* Floating badge */}

@@ -2,12 +2,14 @@ import { Link } from "react-router-dom";
 import { Egg, ArrowLeft, Clock, Calendar, User, Share2, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import SEO, { ArticleSchema } from "@/components/SEO";
+import SEO, { ArticleSchema, BreadcrumbSchema } from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedArticles from "@/components/RelatedArticles";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import { Article, getRelatedArticles } from "@/lib/articles";
+import { howToData } from "@/lib/howto-steps";
+import { Helmet } from "react-helmet-async";
 
 // Import guide images for SEO meta tags
 import guideArizona from '@/assets/guide-arizona.jpg';
@@ -118,6 +120,32 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
         image={resolvedImage}
         url={`/guides/${article.slug}`}
       />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Guides', url: '/guides' },
+          { name: article.title, url: `/guides/${article.slug}` },
+        ]}
+      />
+      {/* HowTo Schema for step-by-step guides */}
+      {howToData[article.slug] && (
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'HowTo',
+              name: howToData[article.slug].name,
+              description: howToData[article.slug].description,
+              step: howToData[article.slug].steps.map((step, i) => ({
+                '@type': 'HowToStep',
+                position: i + 1,
+                name: step.name,
+                text: step.text,
+              })),
+            })}
+          </script>
+        </Helmet>
+      )}
 
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
@@ -313,7 +341,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
               <Link to="/" className="hover:text-foreground transition-colors">Plans</Link>
             </div>
             <p className="text-sm text-muted-foreground">
-              © 2025 CoopCraft. All rights reserved.
+              © 2026 CoopCraft. All rights reserved.
             </p>
           </div>
         </div>
