@@ -122,22 +122,25 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
         publishedTime={article.date}
         modifiedTime={article.updatedDate}
       />
-      <ArticleSchema 
-        title={article.title}
-        description={article.excerpt}
-        author={article.author}
-        datePublished={article.date}
-        dateModified={article.updatedDate || article.date}
-        image={resolvedImage}
-        url={`/guides/${article.slug}`}
-      />
-      <BreadcrumbSchema
-        items={[
-          { name: 'Home', url: '/' },
-          { name: 'Guides', url: '/guides' },
-          { name: article.title, url: `/guides/${article.slug}` },
-        ]}
-      />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema({
+            title: article.seo?.metaTitle || article.title,
+            description: article.seo?.metaDescription || article.excerpt,
+            slug: article.slug,
+            // TODO: Replace with real dates from frontmatter or CMS later
+            datePublished: article.date || "2026-01-01",
+            dateModified: article.updatedDate || "2026-04-07",
+            imageUrl: resolvedImage.startsWith('http') ? resolvedImage : `https://buildingachickencoopplans.com${resolvedImage}`,
+          }))}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(guideBreadcrumbSchema({
+            title: article.title,
+            slug: article.slug,
+          }))}
+        </script>
+      </Helmet>
       {/* HowTo Schema for step-by-step guides */}
       {howToData[article.slug] && (
         <Helmet>
