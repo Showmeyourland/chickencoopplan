@@ -45,7 +45,7 @@ import CoopPlansMaterialsList from "./pages/guides/CoopPlansMaterialsList";
 import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
-
+import ShopProduct from "./pages/ShopProduct";
 // Redirect trailing slashes to non-trailing versions (SEO deduplication)
 const TrailingSlashRedirect = () => {
   const { pathname, search, hash } = useLocation();
@@ -106,6 +106,7 @@ const App = () => (
             <Route path="/recommended-plans" element={<RecommendedPlans />} />
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/shop/:slug" element={<ShopProduct />} />
             
             {/* Legacy URL Redirects - preserving backlinks from expired domain */}
             <Route path="/simple-chicken-coop-plans-learn-easily-build-chicken-coop" element={<Navigate to="/guides/small-chicken-coop-plans" replace />} />
