@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import SEO from "@/components/SEO";
 import { articleSchema, guideBreadcrumbSchema } from "@/lib/guideSchemas";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import ReadingProgressBar from "@/components/ReadingProgressBar";
 import AuthorBio from "@/components/AuthorBio";
 import RelatedGuides from "@/components/RelatedGuides";
 import StickyPlanCTA from "@/components/StickyPlanCTA";
@@ -127,6 +128,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
 
   return (
     <div className="min-h-screen bg-background">
+      <ReadingProgressBar />
       <SEO 
         title={article.seo?.metaTitle || article.title}
         description={article.seo?.metaDescription || article.excerpt}
