@@ -168,6 +168,14 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
           </script>
         </Helmet>
       )}
+      {/* FAQPage Schema for guides with FAQ data */}
+      {guideFaqData[article.slug] && (
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify(faqPageSchema(guideFaqData[article.slug]))}
+          </script>
+        </Helmet>
+      )}
 
       {/* Header */}
       <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/80">
