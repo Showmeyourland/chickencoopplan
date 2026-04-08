@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import SitewideSchema from "@/components/SitewideSchema";
+import StickyEmailBar from "@/components/StickyEmailBar";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Guides from "./pages/Guides";
@@ -46,6 +47,7 @@ import RecommendedPlans from "./pages/RecommendedPlans";
 import PlanReviews from "./pages/PlanReviews";
 import Shop from "./pages/Shop";
 import ShopProduct from "./pages/ShopProduct";
+import ThanksForSubscribing from "./pages/ThanksForSubscribing";
 // Redirect trailing slashes to non-trailing versions (SEO deduplication)
 const TrailingSlashRedirect = () => {
   const { pathname, search, hash } = useLocation();
@@ -65,6 +67,7 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <SitewideSchema />
+          <StickyEmailBar />
           <TrailingSlashRedirect />
           <Routes>
             <Route path="/" element={<Index />} />
@@ -107,6 +110,7 @@ const App = () => (
             <Route path="/plan-reviews" element={<PlanReviews />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/shop/:slug" element={<ShopProduct />} />
+            <Route path="/thanks-for-subscribing" element={<ThanksForSubscribing />} />
             
             {/* Legacy URL Redirects - preserving backlinks from expired domain */}
             <Route path="/simple-chicken-coop-plans-learn-easily-build-chicken-coop" element={<Navigate to="/guides/small-chicken-coop-plans" replace />} />
