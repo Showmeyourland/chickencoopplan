@@ -127,6 +127,7 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
 
   return (
     <div className="min-h-screen bg-background">
+      <ReadingProgressBar />
       <SEO 
         title={article.seo?.metaTitle || article.title}
         description={article.seo?.metaDescription || article.excerpt}
