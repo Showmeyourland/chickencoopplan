@@ -106,7 +106,6 @@ interface BlogLayoutProps {
 }
 
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
-  const relatedArticles = getRelatedArticles(article.slug, article.category, 3);
   const resolvedImage = getSeoImage(article.slug);
   
   const breadcrumbItems = [
