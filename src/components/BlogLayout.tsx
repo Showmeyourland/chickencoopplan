@@ -6,10 +6,10 @@ import SEO from "@/components/SEO";
 import { articleSchema, guideBreadcrumbSchema } from "@/lib/guideSchemas";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import AuthorBio from "@/components/AuthorBio";
-import RelatedArticles from "@/components/RelatedArticles";
+import RelatedGuides from "@/components/RelatedGuides";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import EmailCapture from "@/components/EmailCapture";
-import { Article, getRelatedArticles } from "@/lib/articles";
+import { Article } from "@/lib/articles";
 import { howToData } from "@/lib/howto-steps";
 import { guideFaqData } from "@/lib/guideFaqs";
 import { faqPageSchema } from "@/lib/guideSchemas";
@@ -106,7 +106,6 @@ interface BlogLayoutProps {
 }
 
 const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayoutProps) => {
-  const relatedArticles = getRelatedArticles(article.slug, article.category, 3);
   const resolvedImage = getSeoImage(article.slug);
   
   const breadcrumbItems = [
@@ -358,12 +357,8 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             bio="With over a decade of experience in backyard farming and DIY construction, our team provides practical, tested advice for building the perfect chicken coop."
           />
 
-          {/* Related Articles */}
-          {relatedArticles.length > 0 && (
-            <div className="mt-12">
-              <RelatedArticles articles={relatedArticles} variant="grid" />
-            </div>
-          )}
+          {/* Related Guides */}
+          <RelatedGuides currentSlug={article.slug} />
 
           {/* Bottom CTA */}
           <div className="mt-16 p-8 bg-primary/10 rounded-2xl border border-primary/20">
