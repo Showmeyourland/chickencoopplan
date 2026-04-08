@@ -278,6 +278,25 @@ const BlogLayout = ({ children, article, showTableOfContents = true }: BlogLayou
             {children}
           </div>
 
+          {/* Visible FAQ Section */}
+          {guideFaqData[article.slug] && (
+            <section className="mt-12 mb-8">
+              <h2 className="text-3xl font-display text-foreground mb-6">Frequently Asked Questions</h2>
+              <Accordion type="single" collapsible className="w-full">
+                {guideFaqData[article.slug].map((faq, i) => (
+                  <AccordionItem key={i} value={`faq-${i}`}>
+                    <AccordionTrigger className="text-left text-base font-medium">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </section>
+          )}
+
           {/* Mid-Article Newsletter */}
           <div className="my-12">
             <NewsletterSignup 
