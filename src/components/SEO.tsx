@@ -38,6 +38,10 @@ const SEO = ({
       : `${siteUrl}${canonical.startsWith('/') ? canonical : `/${canonical}`}`
     : undefined;
 
+  const absoluteImage = image
+    ? image.startsWith('http') ? image : `${siteUrl}${image.startsWith('/') ? image : `/${image}`}`
+    : `${siteUrl}/og-default.jpg`;
+
   return (
     <Helmet>
       {/* Basic Meta Tags */}
@@ -50,14 +54,19 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content={siteName} />
+      <meta property="og:locale" content="en_US" />
       {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
-      {image && <meta property="og:image" content={`${siteUrl}${image}`} />}
+      <meta property="og:image" content={absoluteImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={fullTitle} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      {image && <meta name="twitter:image" content={`${siteUrl}${image}`} />}
+      <meta name="twitter:image" content={absoluteImage} />
+      <meta name="twitter:image:alt" content={fullTitle} />
 
       {/* Article-specific meta tags */}
       {type === 'article' && (
